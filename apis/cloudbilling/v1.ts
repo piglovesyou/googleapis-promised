@@ -104,7 +104,7 @@ function Cloudbilling(options) { // eslint-disable-line
      * @param {string} params.name The resource name of the billing account to retrieve. For example, `billingAccounts/012345-567890-ABCDEF`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -203,7 +203,7 @@ function Cloudbilling(options) { // eslint-disable-line
      * @param {string=} params.pageToken A token identifying a page of results to return. This should be a `next_page_token` value returned from a previous `ListBillingAccounts` call. If unspecified, the first page of results is returned.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -308,7 +308,7 @@ function Cloudbilling(options) { // eslint-disable-line
        * @param {string=} params.pageToken A token identifying a page of results to be returned. This should be a `next_page_token` value returned from a previous `ListProjectBillingInfo` call. If unspecified, the first page of results is returned.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -401,7 +401,7 @@ function Cloudbilling(options) { // eslint-disable-line
      * @param {string} params.name The resource name of the project for which billing information is retrieved. For example, `projects/tokyo-rain-123`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getBillingInfo: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -496,7 +496,7 @@ function Cloudbilling(options) { // eslint-disable-line
      * @param {cloudbilling(v1).ProjectBillingInfo} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateBillingInfo: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -599,7 +599,7 @@ function Cloudbilling(options) { // eslint-disable-line
      * @param {string=} params.pageToken A token identifying a page of results to return. This should be a `next_page_token` value returned from a previous `ListServices` call. If unspecified, the first page of results is returned.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -707,7 +707,7 @@ function Cloudbilling(options) { // eslint-disable-line
        * @param {string=} params.startTime Optional inclusive start time of the time range for which the pricing versions will be returned. Timestamps in the future are not allowed. Maximum allowable time range is 1 month (31 days). Time range as a whole is optional. If not specified, the latest pricing will be returned (up to 12 hours old at most).
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

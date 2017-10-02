@@ -94,7 +94,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {monitoring(v3).CreateCollectdTimeSeriesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -176,7 +176,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {monitoring(v3).Group} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -253,7 +253,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string} params.name The group to delete. The format is "projects/{project_id_or_number}/groups/{group_id}".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -330,7 +330,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string} params.name The group to retrieve. The format is "projects/{project_id_or_number}/groups/{group_id}".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -419,7 +419,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -502,7 +502,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {monitoring(v3).Group} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -593,7 +593,7 @@ function Monitoring(options) { // eslint-disable-line
          * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -675,7 +675,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {monitoring(v3).MetricDescriptor} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -754,7 +754,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string} params.name The metric descriptor on which to execute the request. The format is "projects/{project_id_or_number}/metricDescriptors/{metric_id}". An example of {metric_id} is: "custom.googleapis.com/my_test_metric".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -833,7 +833,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string} params.name The metric descriptor on which to execute the request. The format is "projects/{project_id_or_number}/metricDescriptors/{metric_id}". An example value of {metric_id} is "compute.googleapis.com/instance/disk/read_bytes_count".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -920,7 +920,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1001,7 +1001,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string} params.name The monitored resource descriptor to get. The format is "projects/{project_id_or_number}/monitoredResourceDescriptors/{resource_type}". The {resource_type} is a predefined type, such as cloudsql_database.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1088,7 +1088,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string=} params.pageToken If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1169,7 +1169,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {monitoring(v3).CreateTimeSeriesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1264,7 +1264,7 @@ function Monitoring(options) { // eslint-disable-line
        * @param {string=} params.view Specifies which information is returned about the time series.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

@@ -51,7 +51,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string} params.tasklist Task list identifier.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string} params.tasklist Task list identifier.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -125,7 +125,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {tasks(v1).TaskList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -163,7 +163,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string=} params.pageToken Token specifying the result page to return. Optional.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -201,7 +201,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {tasks(v1).TaskList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -239,7 +239,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {tasks(v1).TaskList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -280,7 +280,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string} params.tasklist Task list identifier.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clear: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -318,7 +318,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string} params.tasklist Task list identifier.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -356,7 +356,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string} params.tasklist Task list identifier.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -396,7 +396,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {tasks(v1).Task} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -443,7 +443,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string=} params.updatedMin Lower bound for a task's last modification time (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by last modification time.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -483,7 +483,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {string} params.tasklist Task list identifier.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     move: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -522,7 +522,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {tasks(v1).Task} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -561,7 +561,7 @@ function Tasks(options) { // eslint-disable-line
      * @param {tasks(v1).Task} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

@@ -54,7 +54,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).Account} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -95,7 +95,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the contact.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -132,7 +132,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the contact.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -169,7 +169,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).Contact} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -205,7 +205,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -243,7 +243,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).Contact} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -281,7 +281,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).Contact} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -322,7 +322,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the location or latest for the last known location.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -358,7 +358,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -399,7 +399,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the setting. The following IDs are valid:  - locale - The key to the user’s language/locale (BCP 47 identifier) that Glassware should use to render localized content.  - timezone - The key to the user’s current time zone region as defined in the tz database. Example: America/Los_Angeles.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -440,7 +440,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the subscription.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -477,7 +477,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).Subscription} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -513,7 +513,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -551,7 +551,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).Subscription} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -592,7 +592,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the timeline item.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -629,7 +629,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string} params.id The ID of the timeline item.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -669,7 +669,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -713,7 +713,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string=} params.sourceItemId If provided, only items with the given sourceItemId will be returned.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -751,7 +751,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {mirror(v1).TimelineItem} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -792,7 +792,7 @@ function Mirror(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -832,7 +832,7 @@ function Mirror(options) { // eslint-disable-line
        * @param {string} params.itemId The ID of the timeline item the attachment belongs to.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -870,7 +870,7 @@ function Mirror(options) { // eslint-disable-line
        * @param {string} params.itemId The ID of the timeline item the attachment belongs to.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -910,7 +910,7 @@ function Mirror(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       insert: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -948,7 +948,7 @@ function Mirror(options) { // eslint-disable-line
        * @param {string} params.itemId The ID of the timeline item whose attachments should be listed.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

@@ -51,7 +51,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {integer} params.id The account id
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -87,7 +87,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Account} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -165,7 +165,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Account} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -206,7 +206,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {integer} params.accountId The account id.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -242,7 +242,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -284,7 +284,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.billingId The billing id to get the budget information for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -323,7 +323,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Budget} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -362,7 +362,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Budget} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -405,7 +405,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.dealId The id of the deal id to associate with this creative.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addDeal: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -443,7 +443,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.buyerCreativeId The buyer-specific id for this creative.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -480,7 +480,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Creative} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -522,7 +522,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string=} params.pageToken A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response. Optional.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -560,7 +560,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.buyerCreativeId The buyer-specific id for this creative.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listDeals: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -599,7 +599,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.dealId The id of the deal id to disassociate with this creative.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removeDeal: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -641,7 +641,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).DeleteOrderDealsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -679,7 +679,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).AddOrderDealsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -717,7 +717,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.proposalId The proposalId to get deals for. To search across all proposals specify order_id = '-' as part of the URL.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -755,7 +755,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).EditAllOrderDealsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -797,7 +797,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).AddOrderNotesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -835,7 +835,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.proposalId The proposalId to get notes for. To search across all proposals specify order_id = '-' as part of the URL.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -877,7 +877,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).UpdatePrivateAuctionProposalRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateproposal: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -922,7 +922,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.startDateTime The start time of the report in ISO 8601 timestamp format using UTC.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -964,7 +964,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.configId The specific id of the configuration to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1002,7 +1002,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.configId The specific id of the configuration to retrieve.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1040,7 +1040,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).PretargetingConfig} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1077,7 +1077,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.accountId The account id to get the pretargeting configs for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1116,7 +1116,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).PretargetingConfig} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1155,7 +1155,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).PretargetingConfig} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1196,7 +1196,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.productId The id for the product to get the head revision for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1233,7 +1233,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string=} params.pqlQuery The pql query used to query for products.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1274,7 +1274,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.proposalId Id of the proposal to retrieve.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1311,7 +1311,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).CreateOrdersRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1351,7 +1351,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Proposal} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1388,7 +1388,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string=} params.pqlQuery Query string to retrieve specific proposals.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1425,7 +1425,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {string} params.proposalId The proposal id for which the setup is complete
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setupcomplete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1465,7 +1465,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {adexchangebuyer(v1.4).Proposal} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1506,7 +1506,7 @@ function Adexchangebuyer(options) { // eslint-disable-line
      * @param {integer} params.accountId The accountId of the publisher to get profiles for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {

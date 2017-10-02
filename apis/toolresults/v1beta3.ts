@@ -51,7 +51,7 @@ function Toolresults(options) { // eslint-disable-line
      * @param {string} params.projectId A Project id.  Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getSettings: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Toolresults(options) { // eslint-disable-line
      * @param {string} params.projectId A Project id.  Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     initializeSettings: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -128,7 +128,7 @@ function Toolresults(options) { // eslint-disable-line
        * @param {toolresults(v1beta3).History} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -166,7 +166,7 @@ function Toolresults(options) { // eslint-disable-line
        * @param {string} params.projectId A Project id.  Required.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -206,7 +206,7 @@ function Toolresults(options) { // eslint-disable-line
        * @param {string} params.projectId A Project id.  Required.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -247,7 +247,7 @@ function Toolresults(options) { // eslint-disable-line
          * @param {toolresults(v1beta3).Execution} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -286,7 +286,7 @@ function Toolresults(options) { // eslint-disable-line
          * @param {string} params.projectId A Project id.  Required.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -326,7 +326,7 @@ function Toolresults(options) { // eslint-disable-line
          * @param {string} params.projectId A Project id.  Required.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -367,7 +367,7 @@ function Toolresults(options) { // eslint-disable-line
          * @param {toolresults(v1beta3).Execution} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         patch: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -408,7 +408,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {string} params.projectId A Project id.  Required.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -447,7 +447,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {string} params.projectId A Project id.  Required.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -490,7 +490,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {toolresults(v1beta3).Step} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           create: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -530,7 +530,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {string} params.stepId A Step id.  Required.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -570,7 +570,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {string} params.stepId A tool results step ID.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           getPerfMetricsSummary: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -611,7 +611,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {string} params.projectId A Project id.  Required.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -653,7 +653,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {toolresults(v1beta3).Step} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           patch: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -694,7 +694,7 @@ function Toolresults(options) { // eslint-disable-line
            * @param {toolresults(v1beta3).PublishXunitXmlFilesRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           publishXunitXmlFiles: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -736,7 +736,7 @@ function Toolresults(options) { // eslint-disable-line
              * @param {toolresults(v1beta3).PerfMetricsSummary} params.resource Request body data
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             create: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -779,7 +779,7 @@ function Toolresults(options) { // eslint-disable-line
              * @param {toolresults(v1beta3).PerfSampleSeries} params.resource Request body data
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             create: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -820,7 +820,7 @@ function Toolresults(options) { // eslint-disable-line
              * @param {string} params.stepId A tool results step ID.
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             get: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -861,7 +861,7 @@ function Toolresults(options) { // eslint-disable-line
              * @param {string} params.stepId A tool results step ID.
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             list: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -904,7 +904,7 @@ function Toolresults(options) { // eslint-disable-line
                * @param {toolresults(v1beta3).BatchCreatePerfSamplesRequest} params.resource Request body data
                * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
                * @param {callback} callback The callback that handles the response.
-               * @return {object} Request object
+               * @return {PromiseWithReq}  Promise that resolves response data
                */
               batchCreate: function (params, options, callback) {
                 if (typeof options === 'function') {
@@ -947,7 +947,7 @@ function Toolresults(options) { // eslint-disable-line
                * @param {string} params.stepId A tool results step ID.
                * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
                * @param {callback} callback The callback that handles the response.
-               * @return {object} Request object
+               * @return {PromiseWithReq}  Promise that resolves response data
                */
               list: function (params, options, callback) {
                 if (typeof options === 'function') {
@@ -992,7 +992,7 @@ function Toolresults(options) { // eslint-disable-line
              * @param {string} params.stepId A Step id.  Required.
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             list: function (params, options, callback) {
               if (typeof options === 'function') {

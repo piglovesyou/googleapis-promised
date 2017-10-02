@@ -101,7 +101,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.summaryAccountId Account ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -192,7 +192,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -275,7 +275,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -366,7 +366,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -449,7 +449,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -540,7 +540,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -628,7 +628,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).AccountUserProfile} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -733,7 +733,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.userRoleId Select only user profiles with the specified user role ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -826,7 +826,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).AccountUserProfile} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -915,7 +915,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).AccountUserProfile} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1006,7 +1006,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1109,7 +1109,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1202,7 +1202,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Account} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1291,7 +1291,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Account} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1382,7 +1382,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1470,7 +1470,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Ad} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1589,7 +1589,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.type Select only ads with these types.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1682,7 +1682,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Ad} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1771,7 +1771,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Ad} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1859,7 +1859,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1946,7 +1946,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2034,7 +2034,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).AdvertiserGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2136,7 +2136,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2229,7 +2229,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).AdvertiserGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2318,7 +2318,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).AdvertiserGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2409,7 +2409,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2497,7 +2497,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Advertiser} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2605,7 +2605,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.subaccountId Select only advertisers with these subaccount IDs.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2698,7 +2698,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Advertiser} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2787,7 +2787,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Advertiser} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2874,7 +2874,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2970,7 +2970,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CampaignCreativeAssociation} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3073,7 +3073,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3164,7 +3164,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3260,7 +3260,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Campaign} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3369,7 +3369,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.subaccountId Select only campaigns that belong to this subaccount.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3462,7 +3462,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Campaign} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3551,7 +3551,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Campaign} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3642,7 +3642,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3748,7 +3748,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.userProfileIds Select only change logs with these user profile IDs.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3839,7 +3839,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.regionDartIds Select only cities from these regions.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3930,7 +3930,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4013,7 +4013,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4101,7 +4101,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4188,7 +4188,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4276,7 +4276,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).ContentCategory} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4378,7 +4378,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4471,7 +4471,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).ContentCategory} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4560,7 +4560,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).ContentCategory} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4652,7 +4652,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).ConversionsBatchInsertRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     batchinsert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4743,7 +4743,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4826,7 +4826,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4932,7 +4932,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5025,7 +5025,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5116,7 +5116,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5208,7 +5208,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeFieldValue} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5314,7 +5314,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5411,7 +5411,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeFieldValue} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5504,7 +5504,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeFieldValue} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5592,7 +5592,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5679,7 +5679,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5767,7 +5767,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeField} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5870,7 +5870,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5963,7 +5963,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeField} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6052,7 +6052,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeField} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6143,7 +6143,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6231,7 +6231,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6335,7 +6335,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6428,7 +6428,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6517,7 +6517,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).CreativeGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6608,7 +6608,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6696,7 +6696,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Creative} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6808,7 +6808,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.types Select only creatives with these creative types.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6901,7 +6901,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Creative} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -6990,7 +6990,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Creative} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7097,7 +7097,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).DimensionValueRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     query: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7188,7 +7188,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7291,7 +7291,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7382,7 +7382,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7470,7 +7470,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).DirectorySite} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7579,7 +7579,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7676,7 +7676,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7764,7 +7764,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).DynamicTargetingKey} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7851,7 +7851,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -7939,7 +7939,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8026,7 +8026,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8114,7 +8114,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).EventTag} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8207,7 +8207,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8300,7 +8300,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).EventTag} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8389,7 +8389,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).EventTag} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8484,7 +8484,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.reportId The ID of the report.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8585,7 +8585,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8673,7 +8673,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8757,7 +8757,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generatetag: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8844,7 +8844,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -8932,7 +8932,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightActivity} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9041,7 +9041,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.tagString Select only floodlight activities with the specified tag string.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9134,7 +9134,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightActivity} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9223,7 +9223,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightActivity} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9314,7 +9314,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9402,7 +9402,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightActivityGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9507,7 +9507,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.type Select only floodlight activity groups with the specified floodlight activity group type.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9600,7 +9600,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightActivityGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9689,7 +9689,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightActivityGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9780,7 +9780,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9864,7 +9864,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -9957,7 +9957,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightConfiguration} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10046,7 +10046,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).FloodlightConfiguration} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10141,7 +10141,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.projectId Project ID for order documents.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10250,7 +10250,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.type Select only inventory items with this type.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10342,7 +10342,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10433,7 +10433,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10525,7 +10525,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).LandingPage} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10612,7 +10612,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10709,7 +10709,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).LandingPage} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10802,7 +10802,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).LandingPage} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10889,7 +10889,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -10976,7 +10976,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11067,7 +11067,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11150,7 +11150,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11241,7 +11241,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11324,7 +11324,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11415,7 +11415,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11498,7 +11498,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11593,7 +11593,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.projectId Project ID for order documents.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11702,7 +11702,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11797,7 +11797,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.projectId Project ID for orders.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11904,7 +11904,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -11995,7 +11995,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12083,7 +12083,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).PlacementGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12198,7 +12198,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12291,7 +12291,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).PlacementGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12380,7 +12380,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).PlacementGroup} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12468,7 +12468,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12555,7 +12555,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12643,7 +12643,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).PlacementStrategy} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12745,7 +12745,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12838,7 +12838,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).PlacementStrategy} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -12927,7 +12927,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).PlacementStrategy} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13017,7 +13017,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.tagFormats Tag formats to generate for these placements.  Note: PLACEMENT_TAG_STANDARD can only be generated for 1x1 placements.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generatetags: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13104,7 +13104,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13192,7 +13192,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Placement} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13310,7 +13310,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13403,7 +13403,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Placement} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13492,7 +13492,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Placement} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13583,7 +13583,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13666,7 +13666,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13757,7 +13757,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13840,7 +13840,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -13931,7 +13931,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14034,7 +14034,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14121,7 +14121,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14212,7 +14212,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.remarketingListId Remarketing list ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14305,7 +14305,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).RemarketingListShare} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14394,7 +14394,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).RemarketingListShare} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14485,7 +14485,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14573,7 +14573,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).RemarketingList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14680,7 +14680,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14773,7 +14773,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).RemarketingList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14862,7 +14862,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).RemarketingList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -14950,7 +14950,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.reportId The ID of the report.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15037,7 +15037,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.reportId The ID of the report.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15125,7 +15125,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Report} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15226,7 +15226,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15319,7 +15319,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Report} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15407,7 +15407,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {boolean=} params.synchronous If set and true, tries to run the report synchronously.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     run: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15500,7 +15500,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Report} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15589,7 +15589,7 @@ function Dfareporting(options) { // eslint-disable-line
        * @param {dfareporting(v2.7).Report} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       query: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -15686,7 +15686,7 @@ function Dfareporting(options) { // eslint-disable-line
        * @param {string} params.reportId The ID of the report.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -15790,7 +15790,7 @@ function Dfareporting(options) { // eslint-disable-line
        * @param {string=} params.sortOrder Order of sorted results.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -15881,7 +15881,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -15969,7 +15969,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Site} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16080,7 +16080,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {boolean=} params.unmappedSite Select only sites that have not been mapped to a directory site.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16173,7 +16173,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Site} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16262,7 +16262,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Site} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16353,7 +16353,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16441,7 +16441,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Size} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16528,7 +16528,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {integer=} params.width Select only sizes with this width.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16619,7 +16619,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16707,7 +16707,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Subaccount} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16809,7 +16809,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16902,7 +16902,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Subaccount} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -16991,7 +16991,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).Subaccount} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17082,7 +17082,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17188,7 +17188,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17279,7 +17279,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17367,7 +17367,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).TargetingTemplate} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17470,7 +17470,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.sortOrder Order of sorted results.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17563,7 +17563,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).TargetingTemplate} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17652,7 +17652,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).TargetingTemplate} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17740,7 +17740,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId The user profile ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17820,7 +17820,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17911,7 +17911,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -17994,7 +17994,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18085,7 +18085,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18169,7 +18169,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18257,7 +18257,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18344,7 +18344,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18432,7 +18432,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).UserRole} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18536,7 +18536,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string=} params.subaccountId Select only user roles that belong to this subaccount.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18629,7 +18629,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).UserRole} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18718,7 +18718,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {dfareporting(v2.7).UserRole} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18809,7 +18809,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -18892,7 +18892,7 @@ function Dfareporting(options) { // eslint-disable-line
      * @param {string} params.profileId User profile ID associated with this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {

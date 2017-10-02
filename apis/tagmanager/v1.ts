@@ -51,7 +51,7 @@ function Tagmanager(options) { // eslint-disable-line
      * @param {string} params.accountId The GTM Account ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -87,7 +87,7 @@ function Tagmanager(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Tagmanager(options) { // eslint-disable-line
      * @param {tagmanager(v1).Account} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -165,7 +165,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {tagmanager(v1).Container} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -203,7 +203,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {string} params.containerId The GTM Container ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -241,7 +241,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {string} params.containerId The GTM Container ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -278,7 +278,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {string} params.accountId The GTM Account ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -318,7 +318,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {tagmanager(v1).Container} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -358,7 +358,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Environment} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -397,7 +397,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.environmentId The GTM Environment ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -436,7 +436,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.environmentId The GTM Environment ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -474,7 +474,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerId The GTM Container ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -515,7 +515,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Environment} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         patch: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -556,7 +556,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Environment} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -597,7 +597,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Folder} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -636,7 +636,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.folderId The GTM Folder ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -675,7 +675,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.folderId The GTM Folder ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -713,7 +713,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerId The GTM Container ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -754,7 +754,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Folder} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -794,7 +794,7 @@ function Tagmanager(options) { // eslint-disable-line
            * @param {string} params.folderId The GTM Folder ID.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -840,7 +840,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Folder} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -882,7 +882,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Environment} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -923,7 +923,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Tag} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -962,7 +962,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.tagId The GTM Tag ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1001,7 +1001,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.tagId The GTM Tag ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1039,7 +1039,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerId The GTM Container ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1080,7 +1080,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Tag} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1121,7 +1121,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Trigger} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1160,7 +1160,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.triggerId The GTM Trigger ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1199,7 +1199,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.triggerId The GTM Trigger ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1237,7 +1237,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerId The GTM Container ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1278,7 +1278,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Trigger} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1319,7 +1319,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Variable} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1358,7 +1358,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.variableId The GTM Variable ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1397,7 +1397,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.variableId The GTM Variable ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1435,7 +1435,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerId The GTM Container ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1476,7 +1476,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).Variable} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1517,7 +1517,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).CreateContainerVersionRequestVersionOptions} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1556,7 +1556,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerVersionId The GTM Container Version ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1595,7 +1595,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerVersionId The GTM Container Version ID. Specify published to retrieve the currently published version.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1635,7 +1635,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {boolean=} params.includeDeleted Also retrieve deleted (archived) versions when true.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1675,7 +1675,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string=} params.fingerprint When provided, this fingerprint must match the fingerprint of the container version in storage.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         publish: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1714,7 +1714,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerVersionId The GTM Container Version ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         restore: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1753,7 +1753,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {string} params.containerVersionId The GTM Container Version ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         undelete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1794,7 +1794,7 @@ function Tagmanager(options) { // eslint-disable-line
          * @param {tagmanager(v1).ContainerVersion} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1835,7 +1835,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {tagmanager(v1).UserAccess} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1873,7 +1873,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {string} params.permissionId The GTM User ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1911,7 +1911,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {string} params.permissionId The GTM User ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1948,7 +1948,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {string} params.accountId The GTM Account ID. @required tagmanager.accounts.permissions.list
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1987,7 +1987,7 @@ function Tagmanager(options) { // eslint-disable-line
        * @param {tagmanager(v1).UserAccess} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {

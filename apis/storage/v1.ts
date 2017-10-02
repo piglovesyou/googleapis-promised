@@ -105,7 +105,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -199,7 +199,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -293,7 +293,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).BucketAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -382,7 +382,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -482,7 +482,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).BucketAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -582,7 +582,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).BucketAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -674,7 +674,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -766,7 +766,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -855,7 +855,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -952,7 +952,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Bucket} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1058,7 +1058,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1158,7 +1158,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Bucket} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1253,7 +1253,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Policy} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1346,7 +1346,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1446,7 +1446,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Bucket} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1536,7 +1536,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Channel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     stop: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1631,7 +1631,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1725,7 +1725,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1819,7 +1819,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ObjectAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1910,7 +1910,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2010,7 +2010,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ObjectAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2110,7 +2110,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ObjectAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2204,7 +2204,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2297,7 +2297,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2391,7 +2391,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Notification} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2480,7 +2480,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2581,7 +2581,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2681,7 +2681,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2781,7 +2781,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ObjectAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2876,7 +2876,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2982,7 +2982,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ObjectAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3088,7 +3088,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ObjectAccessControl} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3199,7 +3199,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).ComposeRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     compose: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3324,7 +3324,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Object} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     copy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3420,7 +3420,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3524,7 +3524,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3619,7 +3619,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3733,7 +3733,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3842,7 +3842,7 @@ function Storage(options) { // eslint-disable-line
      * @param {boolean=} params.versions If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3949,7 +3949,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Object} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4073,7 +4073,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Object} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     rewrite: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4174,7 +4174,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Policy} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4273,7 +4273,7 @@ function Storage(options) { // eslint-disable-line
      * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4384,7 +4384,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Object} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4484,7 +4484,7 @@ function Storage(options) { // eslint-disable-line
      * @param {storage(v1).Channel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     watchAll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4578,7 +4578,7 @@ function Storage(options) { // eslint-disable-line
        * @param {string=} params.userProject The project to be billed for this request, for Requester Pays buckets.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {

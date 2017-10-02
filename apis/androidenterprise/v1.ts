@@ -53,7 +53,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -92,7 +92,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getState: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -130,7 +130,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -170,7 +170,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).DeviceState} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setState: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -211,7 +211,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string=} params.notificationSetId The notification set ID as returned by Enterprises.PullNotificationSet. This must be provided.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     acknowledgeNotificationSet: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -249,7 +249,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string=} params.enterpriseToken The Enterprise token appended to the Callback URL.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     completeSignup: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -287,7 +287,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).AdministratorWebTokenSpec} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     createWebToken: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -324,7 +324,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -362,7 +362,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).Enterprise} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     enroll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -399,7 +399,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string=} params.callbackUrl The callback URL to which the Admin will be redirected after successfully creating an enterprise. Before redirecting there the system will add a single query parameter to this URL named "enterpriseToken" which will contain an opaque token to be used for the CompleteSignup request. Beware that this means that the URL will be parsed, the parameter added and then a new URL formatted, i.e. there may be some minor formatting changes and, more importantly, the URL must be well-formed so that it can be parsed.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generateSignupUrl: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -436,7 +436,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -473,7 +473,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAndroidDevicePolicyConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -511,7 +511,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string=} params.keyType The type of credential to return with the service account. Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getServiceAccount: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -548,7 +548,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getStoreLayout: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -586,7 +586,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).Enterprise} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -623,7 +623,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.domain The exact primary domain name of the enterprise to look up.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -660,7 +660,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string=} params.requestMode The request mode for pulling notifications. Specifying waitForNotifications will cause the request to block and wait until one or more notifications are present, or return an empty notification list if no notifications are present after some time. Speciying returnImmediately will cause the request to immediately return the pending notifications, or an empty list if no notifications are present. If omitted, defaults to waitForNotifications.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     pullNotificationSet: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -697,7 +697,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     sendTestPushNotification: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -735,7 +735,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).EnterpriseAccount} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setAccount: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -773,7 +773,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).AndroidDevicePolicyConfig} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setAndroidDevicePolicyConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -811,7 +811,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StoreLayout} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setStoreLayout: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -848,7 +848,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     unenroll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -891,7 +891,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -930,7 +930,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -968,7 +968,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1009,7 +1009,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).Entitlement} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1050,7 +1050,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).Entitlement} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1092,7 +1092,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.groupLicenseId The ID of the product the group license is for, e.g. "app:com.google.android.gm".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1129,7 +1129,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1171,7 +1171,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.groupLicenseId The ID of the product the group license is for, e.g. "app:com.google.android.gm".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1215,7 +1215,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1255,7 +1255,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1294,7 +1294,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1335,7 +1335,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).Install} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1376,7 +1376,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).Install} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1420,7 +1420,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1460,7 +1460,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1499,7 +1499,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1540,7 +1540,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ManagedConfiguration} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1581,7 +1581,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ManagedConfiguration} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1624,7 +1624,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1663,7 +1663,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1701,7 +1701,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1741,7 +1741,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ManagedConfiguration} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1781,7 +1781,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ManagedConfiguration} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1823,7 +1823,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.permissionId The ID of the permission.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1866,7 +1866,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ProductsApproveRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     approve: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1905,7 +1905,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.productId The ID of the product.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generateApprovalUrl: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1944,7 +1944,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.productId The ID of the product, e.g. "app:com.google.android.gm".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1983,7 +1983,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.productId The ID of the product.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAppRestrictionsSchema: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2021,7 +2021,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.productId The ID of the product.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2063,7 +2063,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string=} params.token A pagination token is contained in a request''s response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2101,7 +2101,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.productId The ID of the product.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     unapprove: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2143,7 +2143,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.keyId The ID of the key.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2181,7 +2181,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ServiceAccountKey} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2218,7 +2218,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2261,7 +2261,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.pageId The ID of the page.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2300,7 +2300,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.pageId The ID of the page.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2339,7 +2339,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StoreCluster} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2377,7 +2377,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.pageId The ID of the page.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2417,7 +2417,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StoreCluster} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2457,7 +2457,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StoreCluster} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2499,7 +2499,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.pageId The ID of the page.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2537,7 +2537,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.pageId The ID of the page.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2575,7 +2575,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StorePage} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2612,7 +2612,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2651,7 +2651,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StorePage} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2690,7 +2690,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).StorePage} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2732,7 +2732,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2770,7 +2770,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generateAuthenticationToken: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2808,7 +2808,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generateToken: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2846,7 +2846,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2884,7 +2884,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAvailableProductSet: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2922,7 +2922,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).User} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2960,7 +2960,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.enterpriseId The ID of the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2999,7 +2999,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).User} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3037,7 +3037,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     revokeToken: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3076,7 +3076,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).ProductSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setAvailableProductSet: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3115,7 +3115,7 @@ function Androidenterprise(options) { // eslint-disable-line
      * @param {androidenterprise(v1).User} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

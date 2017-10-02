@@ -51,7 +51,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -91,7 +91,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string=} params.pageToken The standard list page token.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -132,7 +132,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).ManagedService} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -169,7 +169,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string} params.serviceName The name of the service.  See the [overview](/service-management/overview) for naming requirements.  For example: `example.googleapis.com`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -207,7 +207,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).DisableServiceRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     disable: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -245,7 +245,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).EnableServiceRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     enable: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -282,7 +282,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).GenerateConfigReportRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generateConfigReport: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -319,7 +319,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string} params.serviceName The name of the service.  See the `ServiceManager` overview for naming requirements.  For example: `example.googleapis.com`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -358,7 +358,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string=} params.view Specifies which parts of the Service Config should be returned in the response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -396,7 +396,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -436,7 +436,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string=} params.producerProjectId Include services produced by the specified project.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -474,7 +474,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -512,7 +512,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {servicemanagement(v1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -549,7 +549,7 @@ function Servicemanagement(options) { // eslint-disable-line
      * @param {string} params.serviceName The name of the service. See the [overview](/service-management/overview) for naming requirements. For example: `example.googleapis.com`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     undelete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -588,7 +588,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {servicemanagement(v1).Service} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -627,7 +627,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {string=} params.view Specifies which parts of the Service Config should be returned in the response.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -666,7 +666,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {string} params.serviceName The name of the service.  See the [overview](/service-management/overview) for naming requirements.  For example: `example.googleapis.com`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -704,7 +704,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {servicemanagement(v1).SubmitConfigSourceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       submit: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -744,7 +744,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {servicemanagement(v1).GetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -782,7 +782,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {servicemanagement(v1).SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -820,7 +820,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {servicemanagement(v1).TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -860,7 +860,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {servicemanagement(v1).Rollout} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -898,7 +898,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {string} params.serviceName The name of the service.  See the [overview](/service-management/overview) for naming requirements.  For example: `example.googleapis.com`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -938,7 +938,7 @@ function Servicemanagement(options) { // eslint-disable-line
        * @param {string} params.serviceName The name of the service.  See the [overview](/service-management/overview) for naming requirements.  For example: `example.googleapis.com`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

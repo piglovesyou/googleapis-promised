@@ -52,7 +52,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).Folder} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -89,7 +89,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.name the resource name of the Folder to be deleted. Must be of the form `folders/{folder_id}`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.name The resource name of the Folder to retrieve. Must be of the form `folders/{folder_id}`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -164,7 +164,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -204,7 +204,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {boolean=} params.showDeleted Controls whether Folders in the [DELETE_REQUESTED} state should be returned.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -242,7 +242,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).MoveFolderRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     move: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -281,7 +281,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).Folder} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -318,7 +318,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).SearchFoldersRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -356,7 +356,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -394,7 +394,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -432,7 +432,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v2beta1).UndeleteFolderRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     undelete: function (params, options, callback) {
       if (typeof options === 'function') {

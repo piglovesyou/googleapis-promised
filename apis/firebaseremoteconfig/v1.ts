@@ -51,7 +51,7 @@ function Firebaseremoteconfig(options) { // eslint-disable-line
      * @param {string} params.project The GMP project identifier. Required. See note at the beginning of this file regarding project ids.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getRemoteConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -90,7 +90,7 @@ function Firebaseremoteconfig(options) { // eslint-disable-line
      * @param {firebaseremoteconfig(v1).RemoteConfig} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateRemoteConfig: function (params, options, callback) {
       if (typeof options === 'function') {

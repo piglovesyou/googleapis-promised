@@ -53,7 +53,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta3).AllocateIdsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     allocateIds: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -91,7 +91,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta3).BeginTransactionRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     beginTransaction: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -129,7 +129,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta3).CommitRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     commit: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -167,7 +167,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta3).LookupRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     lookup: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -205,7 +205,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta3).RollbackRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     rollback: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -243,7 +243,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta3).RunQueryRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     runQuery: function (params, options, callback) {
       if (typeof options === 'function') {

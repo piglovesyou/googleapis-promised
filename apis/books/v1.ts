@@ -53,7 +53,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.userId ID of user for whom to retrieve bookshelves.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -91,7 +91,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.userId ID of user for whom to retrieve bookshelves.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -134,7 +134,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.userId ID of user for whom to retrieve bookshelf volumes.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -178,7 +178,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.upload_client_token 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addBook: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -215,7 +215,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.volumeId The id of the book to be removed.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     deleteBook: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -252,7 +252,7 @@ function Books(options) { // eslint-disable-line
      * @param {books(v1).BooksCloudloadingResource} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateBook: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -293,7 +293,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.cpksver The device/version ID from which to request the data.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listOfflineMetadata: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -337,7 +337,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.volumeId The volume to retrieve layers for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -378,7 +378,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.volumeId The volume to retrieve layers for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -425,7 +425,7 @@ function Books(options) { // eslint-disable-line
        * @param {integer=} params.w The requested pixel width for any images. If width is provided height must also be provided.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -474,7 +474,7 @@ function Books(options) { // eslint-disable-line
        * @param {integer=} params.w The requested pixel width for any images. If width is provided height must also be provided.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -517,7 +517,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId The volume to retrieve annotations for.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -568,7 +568,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId The volume to retrieve annotations for.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -608,7 +608,7 @@ function Books(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getUserSettings: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -648,7 +648,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.volumeIds The volume(s) to release restrictions for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     releaseDownloadAccess: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -690,7 +690,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.volumeId The volume to request concurrent/download restrictions for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     requestAccess: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -734,7 +734,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.volumeIds The volume(s) to request download restrictions for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     syncVolumeLicenses: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -771,7 +771,7 @@ function Books(options) { // eslint-disable-line
      * @param {books(v1).Usersettings} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateUserSettings: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -814,7 +814,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.source String to identify the originator of this request.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -855,7 +855,7 @@ function Books(options) { // eslint-disable-line
        * @param {books(v1).Annotation} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       insert: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -901,7 +901,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.volumeId The volume to restrict annotations to.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -939,7 +939,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId Volume id to get the summary for.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       summary: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -978,7 +978,7 @@ function Books(options) { // eslint-disable-line
        * @param {books(v1).Annotation} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1020,7 +1020,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId ID of volume to add.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       addVolume: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1058,7 +1058,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.source String to identify the originator of this request.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       clearVolumes: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1096,7 +1096,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.source String to identify the originator of this request.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1133,7 +1133,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.source String to identify the originator of this request.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1173,7 +1173,7 @@ function Books(options) { // eslint-disable-line
        * @param {integer} params.volumePosition Position on shelf to move the item (0 puts the item before the current first item, 1 puts it between the first and the second and so on.)
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       moveVolume: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1213,7 +1213,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId ID of volume to remove.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       removeVolume: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1258,7 +1258,7 @@ function Books(options) { // eslint-disable-line
          * @param {integer=} params.startIndex Index of the first element to return (starts at 0)
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1300,7 +1300,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId ID of volume for which to retrieve a reading position.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1343,7 +1343,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId ID of volume for which to update the reading position.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setPosition: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1386,7 +1386,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.source String to identify the originator of this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1427,7 +1427,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.locale ISO-639-1 language and ISO-3166-1 country code. Default is en-US if unset.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listCategories: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1468,7 +1468,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.pageToken The value of the nextToken from the previous page.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listCategoryVolumes: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1511,7 +1511,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.source String to identify the originator of this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1559,7 +1559,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.volumeId Volume id to exercise the offer
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     accept: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1602,7 +1602,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.serial device serial
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     dismiss: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1644,7 +1644,7 @@ function Books(options) { // eslint-disable-line
      * @param {string=} params.serial device serial
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1685,7 +1685,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.series_id String that identifies the series
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1725,7 +1725,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.series_id String that identifies the series
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1772,7 +1772,7 @@ function Books(options) { // eslint-disable-line
      * @param {string} params.volumeId ID of volume to retrieve.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1822,7 +1822,7 @@ function Books(options) { // eslint-disable-line
      * @param {integer=} params.startIndex Index of the first result to return (starts at 0)
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1864,7 +1864,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId ID of the source volume.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1909,7 +1909,7 @@ function Books(options) { // eslint-disable-line
        * @param {integer=} params.startIndex Index of the first result to return (starts at 0)
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1950,7 +1950,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.source String to identify the originator of this request.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1990,7 +1990,7 @@ function Books(options) { // eslint-disable-line
        * @param {string} params.volumeId ID of the source volume.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       rate: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2034,7 +2034,7 @@ function Books(options) { // eslint-disable-line
        * @param {string=} params.volumeId The ids of the volumes to be returned. If not specified all that match the processingState are returned.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

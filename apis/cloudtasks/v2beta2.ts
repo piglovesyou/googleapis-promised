@@ -52,7 +52,7 @@ function Cloudtasks(options) { // eslint-disable-line
        * @param {string} params.name Resource name for the location.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -92,7 +92,7 @@ function Cloudtasks(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -191,7 +191,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).Queue} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -278,7 +278,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {string} params.name Required.  The queue name. For example: `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -368,7 +368,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {string} params.name Required.  The resource name of the queue. For example: `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -462,7 +462,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).GetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -568,7 +568,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {string} params.parent Required.  The location name. For example: `projects/PROJECT_ID/locations/LOCATION_ID`
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -674,7 +674,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).Queue} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         patch: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -769,7 +769,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).PauseQueueRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         pause: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -864,7 +864,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).PurgeQueueRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         purge: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -959,7 +959,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).ResumeQueueRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         resume: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1053,7 +1053,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).SetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1147,7 +1147,7 @@ function Cloudtasks(options) { // eslint-disable-line
          * @param {cloudtasks(v2beta2).TestIamPermissionsRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         testIamPermissions: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1240,7 +1240,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {cloudtasks(v2beta2).AcknowledgeTaskRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           acknowledge: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1335,7 +1335,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {cloudtasks(v2beta2).CancelLeaseRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           cancelLease: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1431,7 +1431,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {cloudtasks(v2beta2).CreateTaskRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           create: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1518,7 +1518,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {string} params.name Required.  The task name. For example: `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID`
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           delete: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1609,7 +1609,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {string=} params.responseView The response_view specifies which subset of the Task will be returned.  By default response_view is Task.View.BASIC; not all information is retrieved by default because some data, such as payloads, might be desirable to return only when needed because of its large size or because of the sensitivity of data that it contains.  Authorization for Task.View.FULL requires `cloudtasks.tasks.fullView` [Google IAM](/iam/) permission on the Task.name resource.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1716,7 +1716,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {string=} params.responseView The response_view specifies which subset of the Task will be returned.  By default response_view is Task.View.BASIC; not all information is retrieved by default because some data, such as payloads, might be desirable to return only when needed because of its large size or because of the sensitivity of data that it contains.  Authorization for Task.View.FULL requires `cloudtasks.tasks.fullView` [Google IAM](/iam/) permission on the Task.name resource.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1811,7 +1811,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {cloudtasks(v2beta2).PullTasksRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           pull: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1906,7 +1906,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {cloudtasks(v2beta2).RenewLeaseRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           renewLease: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2001,7 +2001,7 @@ function Cloudtasks(options) { // eslint-disable-line
            * @param {cloudtasks(v2beta2).RunTaskRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           run: function (params, options, callback) {
             if (typeof options === 'function') {

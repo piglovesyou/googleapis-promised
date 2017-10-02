@@ -52,7 +52,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table from which the column is being deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -90,7 +90,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table to which the column belongs.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -128,7 +128,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Column} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -167,7 +167,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table whose columns are being listed.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -206,7 +206,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Column} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -245,7 +245,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Column} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -288,7 +288,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {boolean=} params.typed Should typed values be returned in the (JSON) response -- numbers for numeric values and parsed geometries for KML values? Default is true.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     sql: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -327,7 +327,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {boolean=} params.typed Should typed values be returned in the (JSON) response -- numbers for numeric values and parsed geometries for KML values? Default is true.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     sqlGet: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -369,7 +369,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table from which the style is being deleted
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -407,7 +407,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table to which the requested style belongs
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -445,7 +445,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).StyleSetting} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -484,7 +484,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table whose styles are being listed
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -523,7 +523,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).StyleSetting} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -562,7 +562,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).StyleSetting} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -604,7 +604,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId ID of the table that is being copied.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     copy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -641,7 +641,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId ID of the table that is being deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -678,7 +678,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Identifier(ID) for the table being requested.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -723,7 +723,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     importRows: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -766,7 +766,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     importTable: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -804,7 +804,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Table} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -842,7 +842,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string=} params.pageToken Continuation token specifying which result page to return. Optional.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -881,7 +881,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Table} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -920,7 +920,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Table} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -962,7 +962,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.taskId 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1000,7 +1000,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.taskId 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1040,7 +1040,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Table whose tasks are being listed.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1082,7 +1082,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {integer} params.templateId Identifier for the template which is being deleted
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1120,7 +1120,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {integer} params.templateId Identifier for the template that is being requested
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1158,7 +1158,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Template} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1197,7 +1197,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {string} params.tableId Identifier for the table whose templates are being requested
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1236,7 +1236,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Template} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1275,7 +1275,7 @@ function Fusiontables(options) { // eslint-disable-line
      * @param {fusiontables(v1).Template} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

@@ -105,7 +105,7 @@ function Clouddebugger(options) { // eslint-disable-line
        * @param {clouddebugger(v2).RegisterDebuggeeRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       register: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -196,7 +196,7 @@ function Clouddebugger(options) { // eslint-disable-line
          * @param {string=} params.waitToken A token that, if specified, blocks the method call until the list of active breakpoints has changed, or a server-selected timeout has expired. The value should be set from the `next_wait_token` field in the last response. The initial value should be set to `"init"`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -294,7 +294,7 @@ function Clouddebugger(options) { // eslint-disable-line
          * @param {clouddebugger(v2).UpdateActiveBreakpointRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -387,7 +387,7 @@ function Clouddebugger(options) { // eslint-disable-line
        * @param {string=} params.project Project number of a Google Cloud project whose debuggees to list.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -478,7 +478,7 @@ function Clouddebugger(options) { // eslint-disable-line
          * @param {string} params.debuggeeId ID of the debuggee whose breakpoint to delete.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -571,7 +571,7 @@ function Clouddebugger(options) { // eslint-disable-line
          * @param {string} params.debuggeeId ID of the debuggee whose breakpoint to get.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -665,7 +665,7 @@ function Clouddebugger(options) { // eslint-disable-line
          * @param {string=} params.waitToken A wait token that, if specified, blocks the call until the breakpoints list has changed, or a server selected timeout has expired.  The value should be set from the last response. The error code `google.rpc.Code.ABORTED` (RPC) is returned on wait timeout, which should be called again with the same `wait_token`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -759,7 +759,7 @@ function Clouddebugger(options) { // eslint-disable-line
          * @param {clouddebugger(v2).Breakpoint} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         set: function (params, options, callback) {
           if (typeof options === 'function') {

@@ -52,7 +52,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).AddMatterPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -90,7 +90,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).CloseMatterRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     close: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -127,7 +127,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).Matter} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -164,7 +164,7 @@ function Vault(options) { // eslint-disable-line
      * @param {string} params.matterId The matter ID
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -202,7 +202,7 @@ function Vault(options) { // eslint-disable-line
      * @param {string=} params.view Specifies which parts of the Matter to return in the response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -242,7 +242,7 @@ function Vault(options) { // eslint-disable-line
      * @param {string=} params.view Specifies which parts of the matter to return in response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -280,7 +280,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).RemoveMatterPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removePermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -318,7 +318,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).ReopenMatterRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reopen: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -356,7 +356,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).UndeleteMatterRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     undelete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -394,7 +394,7 @@ function Vault(options) { // eslint-disable-line
      * @param {vault(v1).Matter} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -433,7 +433,7 @@ function Vault(options) { // eslint-disable-line
        * @param {vault(v1).Hold} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -471,7 +471,7 @@ function Vault(options) { // eslint-disable-line
        * @param {string} params.matterId The matter ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -509,7 +509,7 @@ function Vault(options) { // eslint-disable-line
        * @param {string} params.matterId The matter ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -548,7 +548,7 @@ function Vault(options) { // eslint-disable-line
        * @param {string=} params.pageToken The pagination token as returned in the response. An empty token means start from the beginning.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -587,7 +587,7 @@ function Vault(options) { // eslint-disable-line
        * @param {vault(v1).Hold} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -627,7 +627,7 @@ function Vault(options) { // eslint-disable-line
          * @param {vault(v1).HeldAccount} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -666,7 +666,7 @@ function Vault(options) { // eslint-disable-line
          * @param {string} params.matterId The matter ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -704,7 +704,7 @@ function Vault(options) { // eslint-disable-line
          * @param {string} params.matterId The matter ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {

@@ -51,7 +51,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.accountId Account to get information about.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.filterAdClientId Ad clients to list accounts for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -127,7 +127,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {string} params.adClientId Ad client to get.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -166,7 +166,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {string=} params.pageToken A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -207,7 +207,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {string} params.adUnitId Ad unit to delete.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -246,7 +246,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {string} params.adUnitId Ad unit to get.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -286,7 +286,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {string=} params.hostCustomChannelId Host custom channel to attach to the ad code.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getAdCode: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -325,7 +325,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {adsensehost(v4.1).AdUnit} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       insert: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -366,7 +366,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {string=} params.pageToken A continuation token, used to page through ad units. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -406,7 +406,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {adsensehost(v4.1).AdUnit} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -445,7 +445,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {adsensehost(v4.1).AdUnit} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -493,7 +493,7 @@ function Adsensehost(options) { // eslint-disable-line
        * @param {integer=} params.startIndex Index of the first row of report data to return.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       generate: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -534,7 +534,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.adClientId Ad client to get.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -572,7 +572,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string=} params.pageToken A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -616,7 +616,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.websiteUrl The URL of the user's hosted website.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     start: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -653,7 +653,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.token The token returned to the association callback URL.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verify: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -695,7 +695,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.customChannelId Custom channel to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -733,7 +733,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.customChannelId Custom channel to get.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -771,7 +771,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {adsensehost(v4.1).CustomChannel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -810,7 +810,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string=} params.pageToken A continuation token, used to page through custom channels. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -849,7 +849,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {adsensehost(v4.1).CustomChannel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -887,7 +887,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {adsensehost(v4.1).CustomChannel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -936,7 +936,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {integer=} params.startIndex Index of the first row of report data to return.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     generate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -978,7 +978,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string} params.urlChannelId URL channel to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1016,7 +1016,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {adsensehost(v4.1).UrlChannel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1055,7 +1055,7 @@ function Adsensehost(options) { // eslint-disable-line
      * @param {string=} params.pageToken A continuation token, used to page through URL channels. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {

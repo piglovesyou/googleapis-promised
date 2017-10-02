@@ -104,7 +104,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string} params.projectId The ID of the Google Cloud Platform Console project that the Google service account is associated with. Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -197,7 +197,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {storagetransfer(v1).TransferJob} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -287,7 +287,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string=} params.projectId The ID of the Google Cloud Platform Console project that owns the job. Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -387,7 +387,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string=} params.pageToken The list page token.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -482,7 +482,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {storagetransfer(v1).UpdateTransferJobRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -571,7 +571,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource to be cancelled.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -656,7 +656,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -744,7 +744,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -848,7 +848,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {string=} params.pageToken The list page token.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -939,7 +939,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {storagetransfer(v1).PauseTransferOperationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     pause: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1030,7 +1030,7 @@ function Storagetransfer(options) { // eslint-disable-line
      * @param {storagetransfer(v1).ResumeTransferOperationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resume: function (params, options, callback) {
       if (typeof options === 'function') {

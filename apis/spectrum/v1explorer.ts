@@ -51,7 +51,7 @@ function Spectrum(options) { // eslint-disable-line
      * @param {spectrum(v1explorer).PawsGetSpectrumRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getSpectrum: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Spectrum(options) { // eslint-disable-line
      * @param {spectrum(v1explorer).PawsGetSpectrumBatchRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getSpectrumBatch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -125,7 +125,7 @@ function Spectrum(options) { // eslint-disable-line
      * @param {spectrum(v1explorer).PawsInitRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     init: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -162,7 +162,7 @@ function Spectrum(options) { // eslint-disable-line
      * @param {spectrum(v1explorer).PawsNotifySpectrumUseRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     notifySpectrumUse: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -199,7 +199,7 @@ function Spectrum(options) { // eslint-disable-line
      * @param {spectrum(v1explorer).PawsRegisterRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     register: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -236,7 +236,7 @@ function Spectrum(options) { // eslint-disable-line
      * @param {spectrum(v1explorer).PawsVerifyDeviceRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verifyDevice: function (params, options, callback) {
       if (typeof options === 'function') {

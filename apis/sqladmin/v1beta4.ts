@@ -53,7 +53,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -92,7 +92,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -131,7 +131,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).BackupRun} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -171,7 +171,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -214,7 +214,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -253,7 +253,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -292,7 +292,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).Database} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -330,7 +330,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list Cloud SQL instances.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -370,7 +370,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).Database} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -410,7 +410,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).Database} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -451,7 +451,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string=} params.databaseVersion Database version for flag retrieval. Flags are specific to the database version.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -494,7 +494,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).InstancesCloneRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clone: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -532,7 +532,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -571,7 +571,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).InstancesExportRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     export: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -610,7 +610,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).InstancesFailoverRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     failover: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -648,7 +648,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -687,7 +687,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).InstancesImportRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     import: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -725,7 +725,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).DatabaseInstance} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -765,7 +765,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list Cloud SQL instances.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -804,7 +804,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).DatabaseInstance} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -842,7 +842,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project ID of the project that contains the read replica.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     promoteReplica: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -880,7 +880,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetSslConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -918,7 +918,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance to be restarted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     restart: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -957,7 +957,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).InstancesRestoreBackupRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     restoreBackup: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -995,7 +995,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project ID of the project that contains the read replica.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     startReplica: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1033,7 +1033,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project ID of the project that contains the read replica.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     stopReplica: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1072,7 +1072,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).InstancesTruncateLogRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     truncateLog: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1111,7 +1111,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).DatabaseInstance} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1153,7 +1153,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1193,7 +1193,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1236,7 +1236,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).SslCertsCreateEphemeralRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     createEphemeral: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1275,7 +1275,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.sha1Fingerprint Sha1 FingerPrint.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1314,7 +1314,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.sha1Fingerprint Sha1 FingerPrint.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1353,7 +1353,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).SslCertsInsertRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1391,7 +1391,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list Cloud SQL instances.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1432,7 +1432,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list tiers.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1476,7 +1476,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1515,7 +1515,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).User} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1553,7 +1553,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1594,7 +1594,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta4).User} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

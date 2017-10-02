@@ -51,7 +51,7 @@ function Dlp(options) { // eslint-disable-line
      * @param {dlp(v2beta1).GooglePrivacyDlpV2beta1DeidentifyContentRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     deidentify: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Dlp(options) { // eslint-disable-line
      * @param {dlp(v2beta1).GooglePrivacyDlpV2beta1InspectContentRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     inspect: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -125,7 +125,7 @@ function Dlp(options) { // eslint-disable-line
      * @param {dlp(v2beta1).GooglePrivacyDlpV2beta1RedactContentRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     redact: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -166,7 +166,7 @@ function Dlp(options) { // eslint-disable-line
      * @param {dlp(v2beta1).GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     analyze: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -209,7 +209,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {dlp(v2beta1).GoogleLongrunningCancelOperationRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -246,7 +246,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {dlp(v2beta1).GooglePrivacyDlpV2beta1CreateInspectOperationRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -283,7 +283,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource to be deleted.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -320,7 +320,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -360,7 +360,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -403,7 +403,7 @@ function Dlp(options) { // eslint-disable-line
          * @param {string=} params.pageToken The value returned by the last `ListInspectFindingsResponse`; indicates that this is a continuation of a prior `ListInspectFindings` call, and that the system should return the next page of data.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -447,7 +447,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {dlp(v2beta1).GoogleLongrunningCancelOperationRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -484,7 +484,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource to be deleted.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -521,7 +521,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -561,7 +561,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -602,7 +602,7 @@ function Dlp(options) { // eslint-disable-line
      * @param {string=} params.languageCode Optional language code for localized friendly category names. If omitted or if localized strings are not available, en-US strings will be returned.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -641,7 +641,7 @@ function Dlp(options) { // eslint-disable-line
        * @param {string=} params.languageCode Optional BCP-47 language code for localized info type friendly names. If omitted, or if localized strings are not available, en-US strings will be returned.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

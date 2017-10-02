@@ -51,7 +51,7 @@ function Language(options) { // eslint-disable-line
      * @param {language(v1).AnalyzeEntitiesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     analyzeEntities: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Language(options) { // eslint-disable-line
      * @param {language(v1).AnalyzeEntitySentimentRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     analyzeEntitySentiment: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -125,7 +125,7 @@ function Language(options) { // eslint-disable-line
      * @param {language(v1).AnalyzeSentimentRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     analyzeSentiment: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -162,7 +162,7 @@ function Language(options) { // eslint-disable-line
      * @param {language(v1).AnalyzeSyntaxRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     analyzeSyntax: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -199,7 +199,7 @@ function Language(options) { // eslint-disable-line
      * @param {language(v1).AnnotateTextRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     annotateText: function (params, options, callback) {
       if (typeof options === 'function') {

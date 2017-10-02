@@ -53,7 +53,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {appengine(v1alpha).AuthorizedCertificate} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -91,7 +91,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string} params.authorizedCertificatesId Part of `name`. See documentation of `appsId`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -130,7 +130,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string=} params.view Controls the set of fields returned in the GET response.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -170,7 +170,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string=} params.view Controls the set of fields returned in the LIST response.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -210,7 +210,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {appengine(v1alpha).AuthorizedCertificate} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -251,7 +251,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string=} params.pageToken Continuation token for fetching the next page of results.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -292,7 +292,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {appengine(v1alpha).DomainMapping} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -330,7 +330,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string} params.domainMappingsId Part of `name`. See documentation of `appsId`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -368,7 +368,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string} params.domainMappingsId Part of `name`. See documentation of `appsId`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -407,7 +407,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string=} params.pageToken Continuation token for fetching the next page of results.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -448,7 +448,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {appengine(v1alpha).DomainMapping} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -488,7 +488,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string} params.locationsId Part of `name`. See documentation of `appsId`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -528,7 +528,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -568,7 +568,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string} params.operationsId Part of `name`. See documentation of `appsId`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -608,7 +608,7 @@ function Appengine(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

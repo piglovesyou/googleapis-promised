@@ -53,7 +53,7 @@ function Testing(options) { // eslint-disable-line
        * @param {string} params.testMatrixId Test matrix that will be canceled.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -92,7 +92,7 @@ function Testing(options) { // eslint-disable-line
        * @param {testing(v1).TestMatrix} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -130,7 +130,7 @@ function Testing(options) { // eslint-disable-line
        * @param {string} params.testMatrixId Unique test matrix id which was assigned by the service.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -172,7 +172,7 @@ function Testing(options) { // eslint-disable-line
      * @param {string=} params.projectId For authorization, the cloud project requesting the TestEnvironmentCatalog. Optional
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {

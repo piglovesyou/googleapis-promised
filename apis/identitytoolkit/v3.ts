@@ -51,7 +51,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyCreateAuthUriRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     createAuthUri: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyDeleteAccountRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     deleteAccount: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -125,7 +125,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyDownloadAccountRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     downloadAccount: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -162,7 +162,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyGetAccountInfoRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAccountInfo: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -199,7 +199,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).Relyingparty} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getOobConfirmationCode: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -237,7 +237,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {string=} params.projectNumber GCP project number of the request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getProjectConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -273,7 +273,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getPublicKeys: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -309,7 +309,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getRecaptchaParam: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -346,7 +346,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyResetPasswordRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetPassword: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -383,7 +383,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartySendVerificationCodeRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     sendVerificationCode: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -420,7 +420,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartySetAccountInfoRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setAccountInfo: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -457,7 +457,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartySetProjectConfigRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setProjectConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -494,7 +494,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartySignOutUserRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     signOutUser: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -531,7 +531,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartySignupNewUserRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     signupNewUser: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -568,7 +568,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyUploadAccountRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     uploadAccount: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -605,7 +605,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyVerifyAssertionRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verifyAssertion: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -642,7 +642,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyVerifyCustomTokenRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verifyCustomToken: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -679,7 +679,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyVerifyPasswordRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verifyPassword: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -716,7 +716,7 @@ function Identitytoolkit(options) { // eslint-disable-line
      * @param {identitytoolkit(v3).IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verifyPhoneNumber: function (params, options, callback) {
       if (typeof options === 'function') {

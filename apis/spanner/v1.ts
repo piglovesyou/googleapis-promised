@@ -52,7 +52,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {string} params.name Required. The name of the requested instance configuration. Values are of the form `projects/<project>/instanceConfigs/<config>`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -91,7 +91,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {string} params.parent Required. The name of the project for which a list of supported instance configurations is requested. Values are of the form `projects/<project>`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -131,7 +131,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {spanner(v1).CreateInstanceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -168,7 +168,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {string} params.name Required. The name of the instance to be deleted. Values are of the form `projects/<project>/instances/<instance>`
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -205,7 +205,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {string} params.name Required. The name of the requested instance. Values are of the form `projects/<project>/instances/<instance>`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -243,7 +243,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {spanner(v1).GetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -283,7 +283,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {string} params.parent Required. The name of the project for which a list of instances is requested. Values are of the form `projects/<project>`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -321,7 +321,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {spanner(v1).UpdateInstanceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -359,7 +359,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {spanner(v1).SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -397,7 +397,7 @@ function Spanner(options) { // eslint-disable-line
        * @param {spanner(v1).TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -436,7 +436,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {spanner(v1).CreateDatabaseRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -473,7 +473,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.database Required. The database to be dropped.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         dropDatabase: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -510,7 +510,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.name Required. The name of the requested database. Values are of the form `projects/<project>/instances/<instance>/databases/<database>`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -547,7 +547,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.database Required. The database whose schema we wish to get.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getDdl: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -585,7 +585,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {spanner(v1).GetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -624,7 +624,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.parent Required. The instance whose databases should be listed. Values are of the form `projects/<project>/instances/<instance>`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -662,7 +662,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {spanner(v1).SetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -700,7 +700,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {spanner(v1).TestIamPermissionsRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         testIamPermissions: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -738,7 +738,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {spanner(v1).UpdateDatabaseDdlRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         updateDdl: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -776,7 +776,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string} params.name The name of the operation resource to be cancelled.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           cancel: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -813,7 +813,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string} params.name The name of the operation resource to be deleted.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           delete: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -850,7 +850,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string} params.name The name of the operation resource.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -890,7 +890,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string=} params.pageToken The standard list page token.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -930,7 +930,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).BeginTransactionRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           beginTransaction: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -968,7 +968,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).CommitRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           commit: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1006,7 +1006,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).CreateSessionRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           create: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1043,7 +1043,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string} params.name Required. The name of the session to delete.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           delete: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1081,7 +1081,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).ExecuteSqlRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           executeSql: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1119,7 +1119,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).ExecuteSqlRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           executeStreamingSql: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1156,7 +1156,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string} params.name Required. The name of the session to retrieve.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1196,7 +1196,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {string=} params.pageToken If non-empty, `page_token` should contain a next_page_token from a previous ListSessionsResponse.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1234,7 +1234,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).ReadRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           read: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1272,7 +1272,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).RollbackRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           rollback: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1310,7 +1310,7 @@ function Spanner(options) { // eslint-disable-line
            * @param {spanner(v1).ReadRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           streamingRead: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -1350,7 +1350,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.name The name of the operation resource to be cancelled.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         cancel: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1387,7 +1387,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.name The name of the operation resource to be deleted.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1424,7 +1424,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string} params.name The name of the operation resource.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1464,7 +1464,7 @@ function Spanner(options) { // eslint-disable-line
          * @param {string=} params.pageToken The standard list page token.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {

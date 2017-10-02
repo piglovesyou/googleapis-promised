@@ -52,7 +52,7 @@ function Searchconsole(options) { // eslint-disable-line
        * @param {searchconsole(v1).RunMobileFriendlyTestRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       run: function (params, options, callback) {
         if (typeof options === 'function') {

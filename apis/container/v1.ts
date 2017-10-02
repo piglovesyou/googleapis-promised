@@ -109,7 +109,7 @@ function Container(options) { // eslint-disable-line
        * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) to return operations for.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getServerconfig: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -214,7 +214,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetAddonsConfigRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         addons: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -318,7 +318,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).CompleteIPRotationRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         completeIpRotation: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -418,7 +418,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).CreateClusterRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -517,7 +517,7 @@ function Container(options) { // eslint-disable-line
          * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -616,7 +616,7 @@ function Container(options) { // eslint-disable-line
          * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -720,7 +720,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetLegacyAbacRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         legacyAbac: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -815,7 +815,7 @@ function Container(options) { // eslint-disable-line
          * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides, or "-" for all zones.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -919,7 +919,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetLocationsRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         locations: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1023,7 +1023,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetLoggingServiceRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         logging: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1127,7 +1127,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).UpdateMasterRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         master: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1231,7 +1231,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetMonitoringServiceRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         monitoring: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1335,7 +1335,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetLabelsRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         resourceLabels: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1375,7 +1375,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetMaintenancePolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setMaintenancePolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1479,7 +1479,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetMasterAuthRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setMasterAuth: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1583,7 +1583,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).SetNetworkPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setNetworkPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1687,7 +1687,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).StartIPRotationRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         startIpRotation: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1792,7 +1792,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).UpdateClusterRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1901,7 +1901,7 @@ function Container(options) { // eslint-disable-line
            * @param {container(v1).SetNodePoolAutoscalingRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           autoscaling: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2005,7 +2005,7 @@ function Container(options) { // eslint-disable-line
            * @param {container(v1).CreateNodePoolRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           create: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2108,7 +2108,7 @@ function Container(options) { // eslint-disable-line
            * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           delete: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2211,7 +2211,7 @@ function Container(options) { // eslint-disable-line
            * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2310,7 +2310,7 @@ function Container(options) { // eslint-disable-line
            * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2418,7 +2418,7 @@ function Container(options) { // eslint-disable-line
            * @param {container(v1).RollbackNodePoolUpgradeRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           rollback: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2526,7 +2526,7 @@ function Container(options) { // eslint-disable-line
            * @param {container(v1).SetNodePoolManagementRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           setManagement: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2634,7 +2634,7 @@ function Container(options) { // eslint-disable-line
            * @param {container(v1).SetNodePoolSizeRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           setSize: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2742,7 +2742,7 @@ function Container(options) { // eslint-disable-line
            * @param {container(v1).UpdateNodePoolRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           update: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2845,7 +2845,7 @@ function Container(options) { // eslint-disable-line
          * @param {container(v1).CancelOperationRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         cancel: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -2944,7 +2944,7 @@ function Container(options) { // eslint-disable-line
          * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -3038,7 +3038,7 @@ function Container(options) { // eslint-disable-line
          * @param {string} params.zone The name of the Google Compute Engine [zone](/compute/docs/zones#available) to return operations for, or `-` for all zones.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {

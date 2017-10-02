@@ -52,7 +52,7 @@ function Translate(options) { // eslint-disable-line
      * @param {translate(v2).DetectLanguageRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     detect: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -89,7 +89,7 @@ function Translate(options) { // eslint-disable-line
      * @param {string} params.q The input text upon which to perform language detection. Repeat this parameter to perform language detection on multiple text inputs.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -131,7 +131,7 @@ function Translate(options) { // eslint-disable-line
      * @param {string=} params.target The language to use to return localized, human readable names of supported languages.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -177,7 +177,7 @@ function Translate(options) { // eslint-disable-line
      * @param {string} params.target The language to use for translation of the input text, set to one of the language codes listed in Language Support.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -214,7 +214,7 @@ function Translate(options) { // eslint-disable-line
      * @param {translate(v2).TranslateTextRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     translate: function (params, options, callback) {
       if (typeof options === 'function') {

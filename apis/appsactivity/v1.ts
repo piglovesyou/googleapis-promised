@@ -57,7 +57,7 @@ function Appsactivity(options) { // eslint-disable-line
      * @param {string=} params.userId Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {

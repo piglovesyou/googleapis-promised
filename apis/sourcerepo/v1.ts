@@ -53,7 +53,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {sourcerepo(v1).Repo} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -90,7 +90,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {string} params.name The name of the repo to delete. Values are of the form `projects/<project>/repos/<repo>`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -127,7 +127,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {string} params.name The name of the requested repository. Values are of the form `projects/<project>/repos/<repo>`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -164,7 +164,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -203,7 +203,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {string=} params.pageToken Resume listing repositories where a prior ListReposResponse left off. This is an opaque token that must be obtained from a recent, prior ListReposResponse's next_page_token field.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -241,7 +241,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {sourcerepo(v1).SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -279,7 +279,7 @@ function Sourcerepo(options) { // eslint-disable-line
        * @param {sourcerepo(v1).TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {

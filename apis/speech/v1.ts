@@ -52,7 +52,7 @@ function Speech(options) { // eslint-disable-line
      * @param {speech(v1).CancelOperationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -89,7 +89,7 @@ function Speech(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Speech(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -166,7 +166,7 @@ function Speech(options) { // eslint-disable-line
      * @param {string=} params.pageToken The standard list page token.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -207,7 +207,7 @@ function Speech(options) { // eslint-disable-line
      * @param {speech(v1).LongRunningRecognizeRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     longrunningrecognize: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -244,7 +244,7 @@ function Speech(options) { // eslint-disable-line
      * @param {speech(v1).RecognizeRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     recognize: function (params, options, callback) {
       if (typeof options === 'function') {

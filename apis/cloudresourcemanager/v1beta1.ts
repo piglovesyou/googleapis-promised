@@ -103,7 +103,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string=} params.organizationId The id of the Organization resource to fetch. This field is deprecated and will be removed in v1. Use name instead.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -197,7 +197,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -297,7 +297,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string=} params.pageToken A pagination token returned from a previous call to `ListOrganizations` that indicates from where listing should continue. This field is optional.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -391,7 +391,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -485,7 +485,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -581,7 +581,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).Organization} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -675,7 +675,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).Project} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -761,7 +761,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.projectId The Project ID (for example, `foo-bar-123`).  Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -850,7 +850,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.projectId The Project ID (for example, `my-project-123`).  Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -944,7 +944,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).GetAncestryRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAncestry: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1038,7 +1038,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1138,7 +1138,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string=} params.pageToken A pagination token returned from a previous call to ListProjects that indicates from where listing should continue.  Optional.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1232,7 +1232,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1326,7 +1326,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1417,7 +1417,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).UndeleteProjectRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     undelete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1512,7 +1512,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1beta1).Project} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

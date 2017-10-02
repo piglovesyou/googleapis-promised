@@ -51,7 +51,7 @@ function Gmail(options) { // eslint-disable-line
      * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getProfile: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -88,7 +88,7 @@ function Gmail(options) { // eslint-disable-line
      * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     stop: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Gmail(options) { // eslint-disable-line
      * @param {gmail(v1).WatchRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     watch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -168,7 +168,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -207,7 +207,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -246,7 +246,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -287,7 +287,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -328,7 +328,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       send: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -371,7 +371,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -416,7 +416,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -456,7 +456,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).Label} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -494,7 +494,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -532,7 +532,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -569,7 +569,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -608,7 +608,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).Label} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -647,7 +647,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).Label} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -687,7 +687,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).BatchDeleteMessagesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchDelete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -725,7 +725,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).BatchModifyMessagesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchModify: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -763,7 +763,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -803,7 +803,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -848,7 +848,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       import: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -892,7 +892,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       insert: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -935,7 +935,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -974,7 +974,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).ModifyMessageRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       modify: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1015,7 +1015,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       send: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1054,7 +1054,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       trash: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1092,7 +1092,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       untrash: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1132,7 +1132,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1172,7 +1172,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getAutoForwarding: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1209,7 +1209,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getImap: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1246,7 +1246,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getPop: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1283,7 +1283,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getVacation: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1321,7 +1321,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).AutoForwarding} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       updateAutoForwarding: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1359,7 +1359,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).ImapSettings} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       updateImap: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1397,7 +1397,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).PopSettings} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       updatePop: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1435,7 +1435,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).VacationSettings} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       updateVacation: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1474,7 +1474,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {gmail(v1).Filter} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1512,7 +1512,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1550,7 +1550,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1587,7 +1587,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1627,7 +1627,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {gmail(v1).ForwardingAddress} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1665,7 +1665,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1703,7 +1703,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1740,7 +1740,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1780,7 +1780,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {gmail(v1).SendAs} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1818,7 +1818,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1856,7 +1856,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1893,7 +1893,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1932,7 +1932,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {gmail(v1).SendAs} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         patch: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1971,7 +1971,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {gmail(v1).SendAs} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -2009,7 +2009,7 @@ function Gmail(options) { // eslint-disable-line
          * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         verify: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -2049,7 +2049,7 @@ function Gmail(options) { // eslint-disable-line
            * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           delete: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2088,7 +2088,7 @@ function Gmail(options) { // eslint-disable-line
            * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2127,7 +2127,7 @@ function Gmail(options) { // eslint-disable-line
            * @param {gmail(v1).SmimeInfo} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           insert: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2165,7 +2165,7 @@ function Gmail(options) { // eslint-disable-line
            * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2204,7 +2204,7 @@ function Gmail(options) { // eslint-disable-line
            * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           setDefault: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -2246,7 +2246,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2286,7 +2286,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2328,7 +2328,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2367,7 +2367,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {gmail(v1).ModifyThreadRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       modify: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2405,7 +2405,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       trash: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2443,7 +2443,7 @@ function Gmail(options) { // eslint-disable-line
        * @param {string} params.userId The user's email address. The special value me can be used to indicate the authenticated user.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       untrash: function (params, options, callback) {
         if (typeof options === 'function') {

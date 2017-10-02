@@ -52,7 +52,7 @@ function Civicinfo(options) { // eslint-disable-line
      * @param {civicinfo(v2).DivisionSearchRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -93,7 +93,7 @@ function Civicinfo(options) { // eslint-disable-line
      * @param {civicinfo(v2).ElectionsQueryRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     electionQuery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -134,7 +134,7 @@ function Civicinfo(options) { // eslint-disable-line
      * @param {civicinfo(v2).VoterInfoRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     voterInfoQuery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -179,7 +179,7 @@ function Civicinfo(options) { // eslint-disable-line
      * @param {civicinfo(v2).RepresentativeInfoRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     representativeInfoByAddress: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -220,7 +220,7 @@ function Civicinfo(options) { // eslint-disable-line
      * @param {civicinfo(v2).DivisionRepresentativeInfoRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     representativeInfoByDivision: function (params, options, callback) {
       if (typeof options === 'function') {

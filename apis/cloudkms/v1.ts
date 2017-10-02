@@ -52,7 +52,7 @@ function Cloudkms(options) { // eslint-disable-line
        * @param {string} params.name Resource name for the location.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -92,7 +92,7 @@ function Cloudkms(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -132,7 +132,7 @@ function Cloudkms(options) { // eslint-disable-line
          * @param {cloudkms(v1).KeyRing} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -169,7 +169,7 @@ function Cloudkms(options) { // eslint-disable-line
          * @param {string} params.name The name of the KeyRing to get.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -206,7 +206,7 @@ function Cloudkms(options) { // eslint-disable-line
          * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -245,7 +245,7 @@ function Cloudkms(options) { // eslint-disable-line
          * @param {string} params.parent Required. The resource name of the location associated with the KeyRings, in the format `projects/x/locations/x`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -283,7 +283,7 @@ function Cloudkms(options) { // eslint-disable-line
          * @param {cloudkms(v1).SetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -321,7 +321,7 @@ function Cloudkms(options) { // eslint-disable-line
          * @param {cloudkms(v1).TestIamPermissionsRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         testIamPermissions: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -361,7 +361,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).CryptoKey} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           create: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -399,7 +399,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).DecryptRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           decrypt: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -437,7 +437,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).EncryptRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           encrypt: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -474,7 +474,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {string} params.name The name of the CryptoKey to get.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -511,7 +511,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           getIamPolicy: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -550,7 +550,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {string} params.parent Required. The resource name of the KeyRing to list, in the format `projects/x/locations/x/keyRings/x`.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -589,7 +589,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).CryptoKey} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           patch: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -627,7 +627,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).SetIamPolicyRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           setIamPolicy: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -665,7 +665,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).TestIamPermissionsRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           testIamPermissions: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -703,7 +703,7 @@ function Cloudkms(options) { // eslint-disable-line
            * @param {cloudkms(v1).UpdateCryptoKeyPrimaryVersionRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           updatePrimaryVersion: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -742,7 +742,7 @@ function Cloudkms(options) { // eslint-disable-line
              * @param {cloudkms(v1).CryptoKeyVersion} params.resource Request body data
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             create: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -780,7 +780,7 @@ function Cloudkms(options) { // eslint-disable-line
              * @param {cloudkms(v1).DestroyCryptoKeyVersionRequest} params.resource Request body data
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             destroy: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -817,7 +817,7 @@ function Cloudkms(options) { // eslint-disable-line
              * @param {string} params.name The name of the CryptoKeyVersion to get.
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             get: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -856,7 +856,7 @@ function Cloudkms(options) { // eslint-disable-line
              * @param {string} params.parent Required. The resource name of the CryptoKey to list, in the format `projects/x/locations/x/keyRings/x/cryptoKeys/x`.
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             list: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -895,7 +895,7 @@ function Cloudkms(options) { // eslint-disable-line
              * @param {cloudkms(v1).CryptoKeyVersion} params.resource Request body data
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             patch: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -933,7 +933,7 @@ function Cloudkms(options) { // eslint-disable-line
              * @param {cloudkms(v1).RestoreCryptoKeyVersionRequest} params.resource Request body data
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             restore: function (params, options, callback) {
               if (typeof options === 'function') {

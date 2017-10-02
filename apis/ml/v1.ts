@@ -51,7 +51,7 @@ function Ml(options) { // eslint-disable-line
      * @param {string} params.name Required. The project name.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -89,7 +89,7 @@ function Ml(options) { // eslint-disable-line
      * @param {ml(v1).GoogleCloudMlV1__PredictRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     predict: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -128,7 +128,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleCloudMlV1__CancelJobRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -166,7 +166,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleCloudMlV1__Job} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -203,7 +203,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.name Required. The name of the job to get the description of.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -240,7 +240,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -280,7 +280,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.parent Required. The name of the project for which to list jobs.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -318,7 +318,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleIamV1__SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -356,7 +356,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleIamV1__TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -396,7 +396,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleCloudMlV1__Model} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -433,7 +433,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.name Required. The name of the model.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -470,7 +470,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.name Required. The name of the model.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -507,7 +507,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -546,7 +546,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.parent Required. The name of the project whose models are to be listed.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -584,7 +584,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleIamV1__SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -622,7 +622,7 @@ function Ml(options) { // eslint-disable-line
        * @param {ml(v1).GoogleIamV1__TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -661,7 +661,7 @@ function Ml(options) { // eslint-disable-line
          * @param {ml(v1).GoogleCloudMlV1__Version} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -698,7 +698,7 @@ function Ml(options) { // eslint-disable-line
          * @param {string} params.name Required. The name of the version. You can get the names of all the versions of a model by calling [projects.models.versions.list](/ml-engine/reference/rest/v1/projects.models.versions/list).
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -735,7 +735,7 @@ function Ml(options) { // eslint-disable-line
          * @param {string} params.name Required. The name of the version.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -774,7 +774,7 @@ function Ml(options) { // eslint-disable-line
          * @param {string} params.parent Required. The name of the model for which to list the version.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -812,7 +812,7 @@ function Ml(options) { // eslint-disable-line
          * @param {ml(v1).GoogleCloudMlV1__SetDefaultVersionRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setDefault: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -852,7 +852,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource to be cancelled.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -889,7 +889,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource to be deleted.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -926,7 +926,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -966,7 +966,7 @@ function Ml(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {

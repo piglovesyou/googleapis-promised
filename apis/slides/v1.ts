@@ -52,7 +52,7 @@ function Slides(options) { // eslint-disable-line
      * @param {slides(v1).BatchUpdatePresentationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     batchUpdate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -89,7 +89,7 @@ function Slides(options) { // eslint-disable-line
      * @param {slides(v1).Presentation} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Slides(options) { // eslint-disable-line
      * @param {string} params.presentationId The ID of the presentation to retrieve.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -165,7 +165,7 @@ function Slides(options) { // eslint-disable-line
        * @param {string} params.presentationId The ID of the presentation to retrieve.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -205,7 +205,7 @@ function Slides(options) { // eslint-disable-line
        * @param {string=} params.thumbnailProperties.thumbnailSize The optional thumbnail image size.  If you don't specify the size, the server chooses a default size of the image.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getThumbnail: function (params, options, callback) {
         if (typeof options === 'function') {

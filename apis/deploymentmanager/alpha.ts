@@ -52,7 +52,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -90,7 +90,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -128,7 +128,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).CompositeType} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -169,7 +169,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -208,7 +208,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).CompositeType} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -247,7 +247,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).CompositeType} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -290,7 +290,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).DeploymentsCancelPreviewRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancelPreview: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -329,7 +329,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -367,7 +367,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -405,7 +405,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.resource_ Name of the resource for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -444,7 +444,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Deployment} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -485,7 +485,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -527,7 +527,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Deployment} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -566,7 +566,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Policy} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -605,7 +605,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).DeploymentsStopRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     stop: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -644,7 +644,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).TestPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -686,7 +686,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Deployment} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -729,7 +729,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -771,7 +771,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -813,7 +813,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -854,7 +854,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -897,7 +897,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.resource_ The name of the resource for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -939,7 +939,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -981,7 +981,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.typeProvider The name of the type provider for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1019,7 +1019,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.typeProvider The name of the type provider for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1058,7 +1058,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.typeProvider The name of the type provider for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getType: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1096,7 +1096,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).TypeProvider} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1137,7 +1137,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1179,7 +1179,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.typeProvider The name of the type provider for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listTypes: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1218,7 +1218,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).TypeProvider} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1257,7 +1257,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).TypeProvider} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1299,7 +1299,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.type The name of the type for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1337,7 +1337,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.type The name of the type for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1375,7 +1375,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Type} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1416,7 +1416,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {string} params.project The project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1455,7 +1455,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Type} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1494,7 +1494,7 @@ function Deploymentmanager(options) { // eslint-disable-line
      * @param {deploymentmanager(alpha).Type} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

@@ -52,7 +52,7 @@ function Appstate(options) { // eslint-disable-line
      * @param {integer} params.stateKey The key for the data to be retrieved.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clear: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -89,7 +89,7 @@ function Appstate(options) { // eslint-disable-line
      * @param {integer} params.stateKey The key for the data to be retrieved.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Appstate(options) { // eslint-disable-line
      * @param {integer} params.stateKey The key for the data to be retrieved.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -163,7 +163,7 @@ function Appstate(options) { // eslint-disable-line
      * @param {boolean=} params.includeData Whether to include the full data in addition to the version number
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -202,7 +202,7 @@ function Appstate(options) { // eslint-disable-line
      * @param {appstate(v1).UpdateRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {

@@ -54,7 +54,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -98,7 +98,7 @@ function Games(options) { // eslint-disable-line
      * @param {integer} params.stepsToIncrement The number of steps to increment.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     increment: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -140,7 +140,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.state Tells the server to return only achievements with the specified state. If this parameter isn't specified, all achievements are returned.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -178,7 +178,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.consistencyToken The last-seen mutation timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reveal: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -217,7 +217,7 @@ function Games(options) { // eslint-disable-line
      * @param {integer} params.steps The minimum value to set the steps to.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setStepsAtLeast: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -255,7 +255,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.consistencyToken The last-seen mutation timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     unlock: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -293,7 +293,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).AchievementUpdateMultipleRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateMultiple: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -337,7 +337,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.platformType Restrict application details returned to the specific platform.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -374,7 +374,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.consistencyToken The last-seen mutation timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     played: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -412,7 +412,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.consistencyToken The last-seen mutation timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     verify: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -456,7 +456,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listByPlayer: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -496,7 +496,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listDefinitions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -535,7 +535,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).EventRecordRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     record: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -578,7 +578,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.leaderboardId The ID of the leaderboard.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -618,7 +618,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -659,7 +659,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.consistencyToken The last-seen mutation timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getMetagameConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -701,7 +701,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.playerId A player ID. A value of me may be used in place of the authenticated player's ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listCategoriesByPlayer: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -744,7 +744,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.playerId A player ID. A value of me may be used in place of the authenticated player's ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -785,7 +785,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -827,7 +827,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).PushTokenId} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     remove: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -865,7 +865,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).PushToken} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -909,7 +909,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.requestId A numeric ID to ensure that the request is handled correctly across retries. Your client application must generate this ID randomly.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     claim: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -952,7 +952,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.questId The ID of the quest.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     accept: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -993,7 +993,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.playerId A player ID. A value of me may be used in place of the authenticated player's ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1035,7 +1035,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.consistencyToken The last-seen mutation timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     check: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1078,7 +1078,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).RoomCreateRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1117,7 +1117,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.roomId The ID of the room.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     decline: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1155,7 +1155,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.roomId The ID of the room.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     dismiss: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1194,7 +1194,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.roomId The ID of the room.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1234,7 +1234,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).RoomJoinRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     join: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1274,7 +1274,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).RoomLeaveRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     leave: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1314,7 +1314,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1354,7 +1354,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).RoomP2PStatuses} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reportStatus: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1402,7 +1402,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.timeSpan The time span for the scores and ranks you're requesting.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1445,7 +1445,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.timeSpan The time span for the scores and ranks you're requesting.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1490,7 +1490,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.timeSpan The time span for the scores and ranks you're requesting.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listWindow: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1531,7 +1531,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.scoreTag Additional information about the score you're submitting. Values must contain no more than 64 URI-safe characters as defined by section 2.3 of RFC 3986.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     submit: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1570,7 +1570,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).PlayerScoreSubmissionList} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     submitMultiple: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1613,7 +1613,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.snapshotId The ID of the snapshot.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1654,7 +1654,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.playerId A player ID. A value of me may be used in place of the authenticated player's ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1696,7 +1696,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.matchId The ID of the match.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1735,7 +1735,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).TurnBasedMatchCreateRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1774,7 +1774,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.matchId The ID of the match.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     decline: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1812,7 +1812,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.matchId The ID of the match.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     dismiss: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1852,7 +1852,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).TurnBasedMatchResults} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     finish: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1892,7 +1892,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.matchId The ID of the match.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1931,7 +1931,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.matchId The ID of the match.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     join: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1970,7 +1970,7 @@ function Games(options) { // eslint-disable-line
      * @param {string} params.matchId The ID of the match.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     leave: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2011,7 +2011,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pendingParticipantId The ID of another participant who should take their turn next. If not set, the match will wait for other player(s) to join via automatching; this is only valid if automatch criteria is set on the match with remaining slots for automatched players.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     leaveTurn: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2053,7 +2053,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2093,7 +2093,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.requestId A randomly generated numeric ID for each request specified by the caller. This number is used at the server to ensure that the request is handled correctly across retries.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     rematch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2135,7 +2135,7 @@ function Games(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     sync: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2175,7 +2175,7 @@ function Games(options) { // eslint-disable-line
      * @param {games(v1).TurnBasedMatchTurn} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     takeTurn: function (params, options, callback) {
       if (typeof options === 'function') {

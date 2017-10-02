@@ -103,7 +103,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).BatchCreateAnnotationsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     batchCreate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -192,7 +192,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).Annotation} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -277,7 +277,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.annotationId The ID of the annotation to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -365,7 +365,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.annotationId The ID of the annotation to be retrieved.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -467,7 +467,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchAnnotationsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -562,7 +562,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).Annotation} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -655,7 +655,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).AnnotationSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -740,7 +740,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.annotationSetId The ID of the annotation set to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -828,7 +828,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.annotationSetId The ID of the annotation set to be retrieved.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -930,7 +930,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchAnnotationSetsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1025,7 +1025,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).AnnotationSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1118,7 +1118,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).CallSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1203,7 +1203,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.callSetId The ID of the call set to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1291,7 +1291,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.callSetId The ID of the call set.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1386,7 +1386,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).CallSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1488,7 +1488,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchCallSetsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1581,7 +1581,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).Dataset} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1666,7 +1666,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.datasetId The ID of the dataset to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1754,7 +1754,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.datasetId The ID of the dataset.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1848,7 +1848,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1948,7 +1948,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string=} params.projectId Required. The Google Cloud project ID to list datasets for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2043,7 +2043,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).Dataset} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2137,7 +2137,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2231,7 +2231,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2324,7 +2324,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).UndeleteDatasetRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     undelete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2418,7 +2418,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).CancelOperationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2506,7 +2506,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2610,7 +2610,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string=} params.pageToken The standard list page token.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2700,7 +2700,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.readGroupSetId The ID of the read group set to be deleted. The caller must have WRITE permissions to the dataset associated with this read group set.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2794,7 +2794,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).ExportReadGroupSetRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     export: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2882,7 +2882,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.readGroupSetId The ID of the read group set.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2971,7 +2971,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).ImportReadGroupSetsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     import: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3067,7 +3067,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).ReadGroupSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3169,7 +3169,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchReadGroupSetsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3277,7 +3277,7 @@ function Genomics(options) { // eslint-disable-line
        * @param {string=} params.targetBucketWidth The desired width of each reported coverage bucket in base pairs. This will be rounded down to the nearest precomputed bucket width; the value of which is returned as `bucketWidth` in the response. Defaults to infinity (each bucket spans an entire reference sequence) or the length of the target range, if specified. The smallest precomputed `bucketWidth` is currently 2048 base pairs; this is subject to change.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -3383,7 +3383,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchReadsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3475,7 +3475,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.referenceId The ID of the reference.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3577,7 +3577,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchReferencesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3681,7 +3681,7 @@ function Genomics(options) { // eslint-disable-line
        * @param {string=} params.start The start position (0-based) of this query. Defaults to 0.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -3773,7 +3773,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.referenceSetId The ID of the reference set.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3875,7 +3875,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchReferenceSetsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3968,7 +3968,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).Variant} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4053,7 +4053,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.variantId The ID of the variant to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4141,7 +4141,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.variantId The ID of the variant.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4230,7 +4230,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).ImportVariantsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     import: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4316,7 +4316,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).MergeVariantsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     merge: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4411,7 +4411,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).Variant} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4513,7 +4513,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchVariantsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4606,7 +4606,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).VariantSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4691,7 +4691,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.variantSetId The ID of the variant set to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4785,7 +4785,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).ExportVariantSetRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     export: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4873,7 +4873,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.variantSetId Required. The ID of the variant set.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -4968,7 +4968,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).VariantSet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -5070,7 +5070,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1).SearchVariantSetsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {

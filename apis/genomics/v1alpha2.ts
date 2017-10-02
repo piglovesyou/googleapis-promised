@@ -104,7 +104,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1alpha2).CancelOperationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -192,7 +192,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -296,7 +296,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string=} params.pageToken The standard list page token.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -389,7 +389,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1alpha2).Pipeline} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -475,7 +475,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.pipelineId Caller must have WRITE access to the project in which this pipeline is defined.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -564,7 +564,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string} params.pipelineId Caller must have READ access to the project in which this pipeline is defined.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -650,7 +650,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string=} params.validationToken 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getControllerConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -751,7 +751,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {string=} params.projectId Required. The name of the project to search for pipelines. Caller must have READ access to this project.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -840,7 +840,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1alpha2).RunPipelineRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     run: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -927,7 +927,7 @@ function Genomics(options) { // eslint-disable-line
      * @param {genomics(v1alpha2).SetOperationStatusRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setOperationStatus: function (params, options, callback) {
       if (typeof options === 'function') {

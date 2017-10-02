@@ -53,7 +53,7 @@ function Playmoviespartner(options) { // eslint-disable-line
        * @param {string} params.availId REQUIRED. Avail ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -99,7 +99,7 @@ function Playmoviespartner(options) { // eslint-disable-line
        * @param {string=} params.videoIds Filter Avails that match any of the given `video_id`s.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -139,7 +139,7 @@ function Playmoviespartner(options) { // eslint-disable-line
        * @param {string} params.orderId REQUIRED. Order ID.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -184,7 +184,7 @@ function Playmoviespartner(options) { // eslint-disable-line
        * @param {string=} params.videoIds Filter Orders that match any of the given `video_id`s.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -233,7 +233,7 @@ function Playmoviespartner(options) { // eslint-disable-line
        * @param {string=} params.videoIds Filter StoreInfos that match any of the given `video_id`s.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -273,7 +273,7 @@ function Playmoviespartner(options) { // eslint-disable-line
          * @param {string} params.videoId REQUIRED. Video ID.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {

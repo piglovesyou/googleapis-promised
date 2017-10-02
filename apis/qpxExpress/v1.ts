@@ -51,7 +51,7 @@ function Qpxexpress(options) { // eslint-disable-line
      * @param {qpxExpress(v1).TripsSearchRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {

@@ -109,7 +109,7 @@ function Sheets(options) { // eslint-disable-line
      * @param {sheets(v4).BatchUpdateSpreadsheetRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     batchUpdate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -195,7 +195,7 @@ function Sheets(options) { // eslint-disable-line
      * @param {sheets(v4).Spreadsheet} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -291,7 +291,7 @@ function Sheets(options) { // eslint-disable-line
      * @param {string} params.spreadsheetId The spreadsheet to request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -329,7 +329,7 @@ function Sheets(options) { // eslint-disable-line
      * @param {sheets(v4).GetSpreadsheetByDataFilterRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getByDataFilter: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -368,7 +368,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {string} params.spreadsheetId The ID of the spreadsheet to retrieve metadata from.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -406,7 +406,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).SearchDeveloperMetadataRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       search: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -505,7 +505,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).CopySheetToAnotherSpreadsheetRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       copyTo: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -613,7 +613,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).ValueRange} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       append: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -706,7 +706,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).BatchClearValuesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchClear: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -744,7 +744,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).BatchClearValuesByDataFilterRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchClearByDataFilter: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -848,7 +848,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {string=} params.valueRenderOption How values should be represented in the output. The default render option is ValueRenderOption.FORMATTED_VALUE.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchGet: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -886,7 +886,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).BatchGetValuesByDataFilterRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchGetByDataFilter: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -982,7 +982,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).BatchUpdateValuesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchUpdate: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1020,7 +1020,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).BatchUpdateValuesByDataFilterRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       batchUpdateByDataFilter: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1114,7 +1114,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).ClearValuesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       clear: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1218,7 +1218,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {string=} params.valueRenderOption How values should be represented in the output. The default render option is ValueRenderOption.FORMATTED_VALUE.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1320,7 +1320,7 @@ function Sheets(options) { // eslint-disable-line
        * @param {sheets(v4).ValueRange} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
