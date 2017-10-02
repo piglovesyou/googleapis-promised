@@ -70,7 +70,7 @@ function makeMethod (schema, method, context) {
       parameters.mediaUrl = mediaUrl.substring(1, mediaUrl.length - 1);
     }
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 }
 
@@ -280,7 +280,7 @@ Discovery.prototype.discoverAPI = function (apiDiscoveryUrl, callback) {
     };
     delete options.url;
     parameters.params = options;
-    createAPIRequest(parameters, _generate);
+    createAPIRequest(parameters);
   }
 };
 

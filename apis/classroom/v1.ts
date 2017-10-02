@@ -73,7 +73,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -110,7 +110,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -147,7 +147,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -188,7 +188,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -227,7 +227,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -265,7 +265,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     aliases: {
 
@@ -304,7 +304,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -342,7 +342,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -381,7 +381,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     announcements: {
@@ -421,7 +421,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -459,7 +459,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -497,7 +497,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -538,7 +538,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -577,7 +577,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -617,7 +617,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     courseWork: {
@@ -657,7 +657,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -695,7 +695,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -733,7 +733,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -774,7 +774,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -813,7 +813,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -853,7 +853,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       studentSubmissions: {
 
@@ -893,7 +893,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -936,7 +936,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -976,7 +976,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1017,7 +1017,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1057,7 +1057,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1097,7 +1097,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1137,7 +1137,7 @@ function Classroom(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     },
@@ -1179,7 +1179,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1217,7 +1217,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1255,7 +1255,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1294,7 +1294,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     teachers: {
@@ -1334,7 +1334,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1372,7 +1372,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1410,7 +1410,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1449,7 +1449,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };
@@ -1490,7 +1490,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1527,7 +1527,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1564,7 +1564,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1601,7 +1601,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1641,7 +1641,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -1682,7 +1682,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1719,7 +1719,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -1760,7 +1760,7 @@ function Classroom(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     guardianInvitations: {
 
@@ -1799,7 +1799,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1837,7 +1837,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1878,7 +1878,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1918,7 +1918,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     guardians: {
@@ -1958,7 +1958,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1996,7 +1996,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -2036,7 +2036,7 @@ function Classroom(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

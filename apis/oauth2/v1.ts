@@ -70,7 +70,7 @@ function Oauth2(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   /**
@@ -106,7 +106,7 @@ function Oauth2(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   /**
@@ -143,7 +143,7 @@ function Oauth2(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   /**
@@ -180,7 +180,7 @@ function Oauth2(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   /**
@@ -217,7 +217,7 @@ function Oauth2(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   /**
@@ -255,7 +255,7 @@ function Oauth2(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   self.userinfo = {
@@ -293,7 +293,7 @@ function Oauth2(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     v2: {
       me: {
@@ -331,7 +331,7 @@ function Oauth2(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     }

@@ -77,7 +77,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -114,7 +114,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -151,7 +151,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -189,7 +189,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -228,7 +228,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -267,7 +267,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -305,7 +305,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -343,7 +343,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         devices: {
 
@@ -382,7 +382,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -419,7 +419,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -456,7 +456,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -498,7 +498,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -536,7 +536,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -575,7 +575,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
           configVersions: {
 
@@ -614,7 +614,7 @@ function Cloudiot(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           },
           states: {
@@ -654,7 +654,7 @@ function Cloudiot(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           }
         }

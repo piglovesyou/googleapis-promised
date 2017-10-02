@@ -75,7 +75,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -112,7 +112,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -151,7 +151,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     locations: {
@@ -190,7 +190,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -230,7 +230,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       dataSources: {
 
@@ -269,7 +269,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -306,7 +306,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -345,7 +345,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       },
       transferConfigs: {
@@ -386,7 +386,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -423,7 +423,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -460,7 +460,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -500,7 +500,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -540,7 +540,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -578,7 +578,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         runs: {
 
@@ -616,7 +616,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -653,7 +653,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -694,7 +694,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
           transferLogs: {
 
@@ -735,7 +735,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           }
         }
@@ -779,7 +779,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -816,7 +816,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -853,7 +853,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -893,7 +893,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -933,7 +933,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -971,7 +971,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       runs: {
 
@@ -1009,7 +1009,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1046,7 +1046,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1087,7 +1087,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         transferLogs: {
 
@@ -1128,7 +1128,7 @@ function Bigquerydatatransfer(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         }
       }

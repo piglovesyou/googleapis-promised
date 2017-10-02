@@ -74,7 +74,7 @@ function Dataflow(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     jobs: {
 
@@ -117,7 +117,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -158,7 +158,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -198,7 +198,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -238,7 +238,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -280,7 +280,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -320,7 +320,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       debug: {
 
@@ -360,7 +360,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -399,7 +399,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       },
       messages: {
@@ -445,7 +445,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       },
       workItems: {
@@ -486,7 +486,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -525,7 +525,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     },
@@ -567,7 +567,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       jobs: {
 
@@ -609,7 +609,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -649,7 +649,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -689,7 +689,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -731,7 +731,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -771,7 +771,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         debug: {
 
@@ -812,7 +812,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -852,7 +852,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         },
         messages: {
@@ -898,7 +898,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         },
         workItems: {
@@ -940,7 +940,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -980,7 +980,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         }
       },
@@ -1022,7 +1022,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1062,7 +1062,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1103,7 +1103,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     },
@@ -1144,7 +1144,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1184,7 +1184,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1225,7 +1225,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

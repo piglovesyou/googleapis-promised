@@ -131,7 +131,7 @@ function Container(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       clusters: {
 
@@ -236,7 +236,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -340,7 +340,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -440,7 +440,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -539,7 +539,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -638,7 +638,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -742,7 +742,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -837,7 +837,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -941,7 +941,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1045,7 +1045,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1149,7 +1149,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1253,7 +1253,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1357,7 +1357,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1397,7 +1397,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1501,7 +1501,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1605,7 +1605,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1709,7 +1709,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1814,7 +1814,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         nodePools: {
 
@@ -1923,7 +1923,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2027,7 +2027,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2130,7 +2130,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2233,7 +2233,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2332,7 +2332,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2440,7 +2440,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2548,7 +2548,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2656,7 +2656,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -2764,7 +2764,7 @@ function Container(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         }
       },
@@ -2867,7 +2867,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -2966,7 +2966,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -3060,7 +3060,7 @@ function Container(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     }

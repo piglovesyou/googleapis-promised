@@ -73,7 +73,7 @@ function Toolresults(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -110,7 +110,7 @@ function Toolresults(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     histories: {
 
@@ -150,7 +150,7 @@ function Toolresults(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -188,7 +188,7 @@ function Toolresults(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -228,7 +228,7 @@ function Toolresults(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       executions: {
 
@@ -269,7 +269,7 @@ function Toolresults(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -308,7 +308,7 @@ function Toolresults(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -348,7 +348,7 @@ function Toolresults(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -389,7 +389,7 @@ function Toolresults(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         clusters: {
 
@@ -430,7 +430,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -469,7 +469,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         },
         steps: {
@@ -512,7 +512,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -552,7 +552,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -592,7 +592,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -633,7 +633,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -675,7 +675,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -716,7 +716,7 @@ function Toolresults(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
           perfMetricsSummary: {
 
@@ -758,7 +758,7 @@ function Toolresults(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           },
           perfSampleSeries: {
@@ -801,7 +801,7 @@ function Toolresults(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -842,7 +842,7 @@ function Toolresults(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -883,7 +883,7 @@ function Toolresults(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
             samples: {
 
@@ -926,7 +926,7 @@ function Toolresults(options) { // eslint-disable-line
                   context: self
                 };
 
-                return createAPIRequest(parameters, callback);
+                return createAPIRequest(parameters);
               },
 
               /**
@@ -969,7 +969,7 @@ function Toolresults(options) { // eslint-disable-line
                   context: self
                 };
 
-                return createAPIRequest(parameters, callback);
+                return createAPIRequest(parameters);
               }
             }
           },
@@ -1014,7 +1014,7 @@ function Toolresults(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           }
         }

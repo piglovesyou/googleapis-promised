@@ -74,7 +74,7 @@ function Cloudkms(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -114,7 +114,7 @@ function Cloudkms(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       keyRings: {
 
@@ -154,7 +154,7 @@ function Cloudkms(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -191,7 +191,7 @@ function Cloudkms(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -228,7 +228,7 @@ function Cloudkms(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -267,7 +267,7 @@ function Cloudkms(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -305,7 +305,7 @@ function Cloudkms(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -343,7 +343,7 @@ function Cloudkms(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         cryptoKeys: {
 
@@ -383,7 +383,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -421,7 +421,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -459,7 +459,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -496,7 +496,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -533,7 +533,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -572,7 +572,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -611,7 +611,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -649,7 +649,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -687,7 +687,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -725,7 +725,7 @@ function Cloudkms(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
           cryptoKeyVersions: {
 
@@ -764,7 +764,7 @@ function Cloudkms(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -802,7 +802,7 @@ function Cloudkms(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -839,7 +839,7 @@ function Cloudkms(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -878,7 +878,7 @@ function Cloudkms(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -917,7 +917,7 @@ function Cloudkms(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             },
 
             /**
@@ -955,7 +955,7 @@ function Cloudkms(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           }
         }
