@@ -89,10 +89,12 @@ describe('drive:v2', () => {
       });
 
       it('should return a Request object', (done) => {
-        let {req} = localDrive.files.insert({}, utils.noop);
-        assert.equal(req.constructor.name, 'Request');
-        req = remoteDrive.files.insert({}, utils.noop);
-        assert.equal(req.constructor.name, 'Request');
+        let p = localDrive.files.insert({});
+        p.catch(utils.noop);
+        assert.equal(p.req.constructor.name, 'Request');
+        p = remoteDrive.files.insert({});
+        p.catch(utils.noop);
+        assert.equal(p.req.constructor.name, 'Request');
         done();
       });
     });
@@ -109,37 +111,12 @@ describe('drive:v2', () => {
       });
 
       it('should return a Request object', () => {
-        let {req} = localDrive.files.get({ fileId: '123' }, utils.noop);
-        assert.equal(req.constructor.name, 'Request');
-        req = remoteDrive.files.get({ fileId: '123' }, utils.noop);
-        assert.equal(req.constructor.name, 'Request');
-      });
-
-      it('should use logError callback if no callback specified', (done) => {
-        const scope = nock('https://www.googleapis.com')
-          .get('/drive/v2/files?q=hello')
-          .times(2)
-          .reply(501, { error: 'not a real error' });
-
-        // logError internally uses console.error - let's monkey-patch the
-        // function to intercept calls to it, then restore the original function
-        // once we are done testing
-        const origFn = console.error;
-        let count = 0;
-        console.error = (err) => {
-          count++;
-          assert.equal(err.code, 501);
-          if (count === 2) {
-            console.error = origFn;
-            scope.done();
-            done();
-          }
-        };
-
-        assert.doesNotThrow(() => {
-          localDrive.files.list({ q: 'hello' });
-          remoteDrive.files.list({ q: 'hello' });
-        });
+        let p = localDrive.files.get({ fileId: '123' });
+        p.catch(utils.noop);
+        assert.equal(p.req.constructor.name, 'Request');
+        p = remoteDrive.files.get({ fileId: '123' });
+        p.catch(utils.noop);
+        assert.equal(p.req.constructor.name, 'Request');
       });
     });
   });
@@ -162,10 +139,8 @@ describe('drive:v2', () => {
         .get('/drive/v2/files?q=hello')
         .times(2)
         .reply(200);
-      localDrive.files.list({ q: 'hello' }, (err) => {
-        assert.equal(err, null);
-        remoteDrive.files.list({ q: 'hello' }, (err) => {
-          assert.equal(err, null);
+      localDrive.files.list({ q: 'hello' }).then(() => {
+        remoteDrive.files.list({ q: 'hello' }).then(() => {
           scope.done();
           done();
         });

@@ -469,11 +469,7 @@ function Drive(options) { // eslint-disable-line
      * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -507,14 +503,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string=} params.pageToken Page token for children.
      * @param {string=} params.q Query string for searching children.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    list: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    list: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';

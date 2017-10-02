@@ -191,7 +191,6 @@ function createAPIRequest (parameters) {
     // return req;
 
     function callback(err, responseData) {
-      logError(err);
       if (err) {
         reject(err);
         return;
