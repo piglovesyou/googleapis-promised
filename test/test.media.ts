@@ -28,7 +28,7 @@ function testMultpart (drive, cb) {
     path.join(__dirname, '/fixtures/media-response.txt'),
     { encoding: 'utf8' }
   );
-  const req = drive.files.insert({ resource: resource, media: media }, (err, body) => {
+  const {req} = drive.files.insert({ resource: resource, media: media }, (err, body) => {
     if (err) {
       return cb(err);
     }
@@ -58,7 +58,7 @@ function testMediaBody (drive, cb) {
     path.join(__dirname, '/fixtures/media-response.txt'),
     { encoding: 'utf8' }
   );
-  const req = drive.files.insert({ resource: resource, media: media }, (err, body) => {
+  const {req} = drive.files.insert({ resource: resource, media: media }, (err, body) => {
     if (err) {
       return cb(err);
     }
@@ -166,7 +166,7 @@ describe('Media', () => {
         return reqBody; // return request body as response for testing purposes
       });
     const media = { body: 'hey' };
-    let req = localDrive.files.insert({ media: media }, (err, body) => {
+    let {req} = localDrive.files.insert({ media: media }, (err, body) => {
       if (err) {
         return done(err);
       }
@@ -215,7 +215,7 @@ describe('Media', () => {
   });
 
   it('should not require parameters for insertion requests', () => {
-    let req = localDrive.files.insert({
+    let {req} = localDrive.files.insert({
       someAttr: 'someValue',
       media: { body: 'wat' }
     }, utils.noop);
@@ -228,7 +228,7 @@ describe('Media', () => {
   });
 
   it('should not multipart upload if no media body given', () => {
-    let req = localDrive.files.insert({ someAttr: 'someValue' }, utils.noop);
+    let {req} = localDrive.files.insert({ someAttr: 'someValue' }, utils.noop);
     assert.equal(req.uri.query, 'someAttr=someValue');
     req = remoteDrive.files.insert({ someAttr: 'someValue' }, utils.noop);
     assert.equal(req.uri.query, 'someAttr=someValue');
@@ -264,7 +264,7 @@ describe('Media', () => {
         return reqBody; // return request body as response for testing purposes
       });
     const resource = { message: { raw: (new Buffer('hello', 'binary')).toString('base64') } };
-    let req = localGmail.users.drafts.create(
+    let {req} = localGmail.users.drafts.create(
       { userId: 'me', resource: resource, media: { mimeType: 'message/rfc822' } },
       (err, resp) => {
         if (err) {
@@ -344,7 +344,7 @@ describe('Media', () => {
       path.join(__dirname, '/fixtures/media-response.txt'),
       { encoding: 'utf8' }
     );
-    let req = localGmail.users.drafts.create({
+    let {req} = localGmail.users.drafts.create({
       userId: 'me',
       resource: resource,
       media: media

@@ -134,7 +134,7 @@ describe('Clients', () => {
       version: 'v1beta3',
       params: { myParam: '123' }
     });
-    const req = datastore.projects.lookup({ projectId: 'test-project-id' }, utils.noop);
+    const {req} = datastore.projects.lookup({ projectId: 'test-project-id' }, utils.noop);
     // If the default param handling is broken, query might be undefined, thus
     // concealing the assertion message with some generic "cannot call .indexOf
     // of undefined"
@@ -153,7 +153,7 @@ describe('Clients', () => {
       if (err) {
         return done(err);
       }
-      const req = datastore.projects.lookup({ projectId: 'test-project-id' }, utils.noop);
+      const {req} = datastore.projects.lookup({ projectId: 'test-project-id' }, utils.noop);
       const query = req.uri.query || '';
 
       assert.notEqual(
@@ -172,7 +172,7 @@ describe('Clients', () => {
       params: { myParam: '123' }
     });
     // Override the default datasetId param for this particular API call
-    const req = datastore.projects.lookup({
+    const {req} = datastore.projects.lookup({
       projectId: 'test-project-id', myParam: '456'
     }, utils.noop);
     // If the default param handling is broken, query might be undefined, thus
@@ -195,7 +195,7 @@ describe('Clients', () => {
         return done(err);
       }
       // Override the default datasetId param for this particular API call
-      const req = datastore.projects.lookup({
+      const {req} = datastore.projects.lookup({
         projectId: 'test-project-id', myParam: '456'
       }, utils.noop);
       // If the default param handling is broken, query might be undefined, thus
@@ -222,7 +222,7 @@ describe('Clients', () => {
       }
     });
     // No params given - only callback
-    const req = datastore.projects.lookup(utils.noop);
+    const {req} = datastore.projects.lookup(utils.noop);
     // If the default param handling is broken, req or query might be undefined, thus concealing the
     // assertion message with some generic "cannot call .indexOf of undefined"
     const query = (req && req.uri.query) || '';
@@ -241,7 +241,7 @@ describe('Clients', () => {
         return done(err);
       }
       // No params given - only callback
-      const req = datastore.projects.lookup(utils.noop);
+      const {req} = datastore.projects.lookup(utils.noop);
       // If the default param handling is broken, req or query might be
       // undefined, thus concealing the assertion message with some generic
       // "cannot call .indexOf of undefined"

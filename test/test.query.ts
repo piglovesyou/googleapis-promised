@@ -65,42 +65,42 @@ describe('Query params', () => {
   });
 
   it('should be null if no object passed', () => {
-    let req = localDrive.files.list(utils.noop);
+    let {req} = localDrive.files.list(utils.noop);
     assert.equal(req.uri.query, null);
     req = remoteDrive.files.list(utils.noop);
     assert.equal(req.uri.query, null);
   });
 
   it('should be null if params passed are in path', () => {
-    let req = localDrive.files.get({ fileId: '123' }, utils.noop);
+    let {req} = localDrive.files.get({ fileId: '123' }, utils.noop);
     assert.equal(req.uri.query, null);
     req = remoteDrive.files.get({ fileId: '123' }, utils.noop);
     assert.equal(req.uri.query, null);
   });
 
   it('should be set if params passed are optional query params', () => {
-    let req = localDrive.files.get({ fileId: '123', updateViewedDate: true }, utils.noop);
+    let {req} = localDrive.files.get({ fileId: '123', updateViewedDate: true }, utils.noop);
     assert.equal(req.uri.query, 'updateViewedDate=true');
     req = remoteDrive.files.get({ fileId: '123', updateViewedDate: true }, utils.noop);
     assert.equal(req.uri.query, 'updateViewedDate=true');
   });
 
   it('should be set if params passed are unknown params', () => {
-    let req = localDrive.files.get({ fileId: '123', madeThisUp: 'hello' }, utils.noop);
+    let {req} = localDrive.files.get({ fileId: '123', madeThisUp: 'hello' }, utils.noop);
     assert.equal(req.uri.query, 'madeThisUp=hello');
     req = remoteDrive.files.get({ fileId: '123', madeThisUp: 'hello' }, utils.noop);
     assert.equal(req.uri.query, 'madeThisUp=hello');
   });
 
   it('should be set if params passed are aliased names', () => {
-    let req = localDrive.files.get({ fileId: '123', resource_: 'hello' }, utils.noop);
+    let {req} = localDrive.files.get({ fileId: '123', resource_: 'hello' }, utils.noop);
     assert.equal(req.uri.query, 'resource=hello');
     req = remoteDrive.files.get({ fileId: '123', resource_: 'hello' }, utils.noop);
     assert.equal(req.uri.query, 'resource=hello');
   });
 
   it('should be set if params passed are falsy', () => {
-    let req = localCompute.instances.setDiskAutoDelete({ project: '', zone: '', instance: '', autoDelete: false, deviceName: '' }, utils.noop);
+    let {req} = localCompute.instances.setDiskAutoDelete({ project: '', zone: '', instance: '', autoDelete: false, deviceName: '' }, utils.noop);
     assert.equal(req.uri.query, 'autoDelete=false&deviceName=');
     req = remoteCompute.instances.setDiskAutoDelete({ project: '', zone: '', instance: '', autoDelete: false, deviceName: '' }, utils.noop);
     assert.equal(req.uri.query, 'autoDelete=false&deviceName=');
@@ -112,7 +112,7 @@ describe('Query params', () => {
   });
 
   it('should chain together with & in order', () => {
-    let req = localDrive.files.get({
+    let {req} = localDrive.files.get({
       fileId: '123',
       madeThisUp: 'hello',
       thisToo: 'world'
@@ -133,7 +133,7 @@ describe('Query params', () => {
       'REDIRECT_URI'
     );
     oauth2client.setCredentials({ access_token: 'abc123' });
-    let req = localDrive.files.get({
+    let {req} = localDrive.files.get({
       fileId: '123',
       auth: oauth2client
     }, utils.noop);
@@ -146,7 +146,7 @@ describe('Query params', () => {
   });
 
   it('should handle multi-value query params properly', () => {
-    let req = localGmail.users.messages.get({
+    let {req} = localGmail.users.messages.get({
       userId: 'me',
       id: 'abc123',
       metadataHeaders: ['To', 'Date']

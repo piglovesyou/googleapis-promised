@@ -18,7 +18,7 @@ import utils from './utils';
 let googleapis = require('../');
 
 function testHeaders (drive) {
-  const req = drive.comments.insert({
+  const {req} = drive.comments.insert({
     fileId: 'a',
     headers: {
       'If-None-Match': '12345'
@@ -28,20 +28,20 @@ function testHeaders (drive) {
 }
 
 function testContentType (drive) {
-  const req = drive.comments.insert({
+  const {req} = drive.comments.insert({
     fileId: 'a'
   }, utils.noop);
   assert.equal(req.headers['content-type'], 'application/json');
 }
 
 function testBody (drive) {
-  const req = drive.files.list(utils.noop);
+  const {req} = drive.files.list(utils.noop);
   assert.equal(req.headers['content-type'], null);
   assert.equal(req.body, null);
 }
 
 function testBodyDelete (drive) {
-  const req = drive.files.delete({
+  const {req} = drive.files.delete({
     fileId: 'test'
   }, utils.noop);
   assert.equal(req.headers['content-type'], null);

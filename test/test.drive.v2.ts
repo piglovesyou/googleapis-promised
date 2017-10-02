@@ -89,7 +89,7 @@ describe('drive:v2', () => {
       });
 
       it('should return a Request object', (done) => {
-        let req = localDrive.files.insert({}, utils.noop);
+        let {req} = localDrive.files.insert({}, utils.noop);
         assert.equal(req.constructor.name, 'Request');
         req = remoteDrive.files.insert({}, utils.noop);
         assert.equal(req.constructor.name, 'Request');
@@ -109,7 +109,7 @@ describe('drive:v2', () => {
       });
 
       it('should return a Request object', () => {
-        let req = localDrive.files.get({ fileId: '123' }, utils.noop);
+        let {req} = localDrive.files.get({ fileId: '123' }, utils.noop);
         assert.equal(req.constructor.name, 'Request');
         req = remoteDrive.files.get({ fileId: '123' }, utils.noop);
         assert.equal(req.constructor.name, 'Request');

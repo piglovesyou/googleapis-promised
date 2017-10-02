@@ -45,7 +45,7 @@ describe('Options', () => {
     const google = new googleapis.GoogleApis();
     google.options({ hello: 'world' });
     const drive = google.drive({ version: 'v2', hello: 'changed' });
-    const req = drive.files.get({ fileId: '123' }, utils.noop);
+    const {req} = drive.files.get({ fileId: '123' }, utils.noop);
     assert.equal(req.hello, 'changed');
   });
 
@@ -53,7 +53,7 @@ describe('Options', () => {
     const google = new googleapis.GoogleApis();
     google.options({ params: { myParam: '123' } });
     const drive = google.drive('v2');
-    let req = drive.files.get({ fileId: '123' }, utils.noop);
+    let {req} = drive.files.get({ fileId: '123' }, utils.noop);
     // If the default param handling is broken, query might be undefined, thus concealing the
     // assertion message with some generic "cannot call .indexOf of undefined"
     let query = req.uri.query || '';
@@ -77,7 +77,7 @@ describe('Options', () => {
     const google = new googleapis.GoogleApis();
     google.options({ auth: 'apikey1' });
     const drive = google.drive({ version: 'v2', auth: 'apikey2' });
-    const req = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
+    const {req} = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
     assert.equal(req.uri.query, 'key=apikey3');
   });
 
@@ -85,7 +85,7 @@ describe('Options', () => {
     const google = new googleapis.GoogleApis();
     google.options({ proxy: 'http://proxy.example.com' });
     const drive = google.drive({ version: 'v2', auth: 'apikey2' });
-    const req = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
+    const {req} = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
     assert.equal(req.proxy.host, 'proxy.example.com');
     assert.equal(req.proxy.protocol, 'http:');
   });
@@ -93,7 +93,7 @@ describe('Options', () => {
   it('should apply endpoint options to request object like proxy', () => {
     const google = new googleapis.GoogleApis();
     const drive = google.drive({ version: 'v2', auth: 'apikey2', proxy: 'http://proxy.example.com' });
-    const req = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
+    const {req} = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
     assert.equal(req.proxy.host, 'proxy.example.com');
     assert.equal(req.proxy.protocol, 'http:');
     assert.equal(req.uri.query, 'key=apikey3');
@@ -102,7 +102,7 @@ describe('Options', () => {
   it('should allow overriding endpoint options', () => {
     const google = new googleapis.GoogleApis();
     const drive = google.drive('v3');
-    const req = drive.files.get({ fileId: 'woot' }, { url: 'https://myproxy.com/drive/v3/files/{fileId}', encoding: null }, utils.noop);
+    const {req} = drive.files.get({ fileId: 'woot' }, { url: 'https://myproxy.com/drive/v3/files/{fileId}', encoding: null }, utils.noop);
     assert.equal(req.url, 'https://myproxy.com/drive/v3/files/woot', 'Request used overridden url.');
     assert.equal(req.encoding, null, 'Request used overridden encoding.');
   });
@@ -113,7 +113,7 @@ describe('Options', () => {
     authClient = new OAuth2('CLIENTID', 'CLIENTSECRET', 'REDIRECTURI');
     authClient.setCredentials({ access_token: 'abc' });
     const drive = google.drive({ version: 'v2', auth: 'apikey2', proxy: 'http://proxy.example.com' });
-    const req = drive.files.get({ auth: authClient, fileId: 'woot' }, utils.noop);
+    const {req} = drive.files.get({ auth: authClient, fileId: 'woot' }, utils.noop);
     assert.equal(req.proxy.host, 'proxy.example.com');
     assert.equal(req.proxy.protocol, 'http:');
     assert.equal(req.headers.Authorization, 'Bearer abc');

@@ -18,7 +18,7 @@ import utils from './utils';
 let googleapis = require('../');
 
 function testGet (drive) {
-  const req = drive.files.get({
+  const {req} = drive.files.get({
     fileId: '123',
     auth: 'APIKEY'
   }, utils.noop);
@@ -26,7 +26,7 @@ function testGet (drive) {
 }
 
 function testParams2 (drive) {
-  const req = drive.files.get({
+  const {req} = drive.files.get({
     fileId: '123',
     auth: 'API KEY'
   }, utils.noop);
@@ -34,7 +34,7 @@ function testParams2 (drive) {
 }
 
 function testKeyParam (drive) {
-  const req = drive.files.get({
+  const {req} = drive.files.get({
     fileId: '123',
     auth: 'API KEY',
     key: 'abc123'
@@ -43,7 +43,7 @@ function testKeyParam (drive) {
 }
 
 function testAuthKey (urlshortener) {
-  const req = urlshortener.url.list({
+  const {req} = urlshortener.url.list({
     auth: 'YOUR API KEY'
   }, utils.noop);
   assert.equal(req.uri.href.indexOf('key=YOUR%20API%20KEY') > 0, true);
