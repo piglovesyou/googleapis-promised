@@ -18,35 +18,39 @@ import utils from './utils';
 let googleapis = require('../');
 
 function testGet (drive) {
-  const {req} = drive.files.get({
+  const p = drive.files.get({
     fileId: '123',
     auth: 'APIKEY'
-  }, utils.noop);
-  assert.equal(req.uri.query, 'key=APIKEY');
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.uri.query, 'key=APIKEY');
 }
 
 function testParams2 (drive) {
-  const {req} = drive.files.get({
+  const p = drive.files.get({
     fileId: '123',
     auth: 'API KEY'
-  }, utils.noop);
-  assert.equal(req.uri.query, 'key=API%20KEY');
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.uri.query, 'key=API%20KEY');
 }
 
 function testKeyParam (drive) {
-  const {req} = drive.files.get({
+  const p = drive.files.get({
     fileId: '123',
     auth: 'API KEY',
     key: 'abc123'
-  }, utils.noop);
-  assert.equal(req.uri.query, 'key=abc123');
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.uri.query, 'key=abc123');
 }
 
 function testAuthKey (urlshortener) {
-  const {req} = urlshortener.url.list({
+  const p = urlshortener.url.list({
     auth: 'YOUR API KEY'
-  }, utils.noop);
-  assert.equal(req.uri.href.indexOf('key=YOUR%20API%20KEY') > 0, true);
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.uri.href.indexOf('key=YOUR%20API%20KEY') > 0, true);
 }
 
 describe('API key', () => {
