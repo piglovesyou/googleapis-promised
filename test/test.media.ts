@@ -91,10 +91,10 @@ describe('Media', () => {
     nock.enableNetConnect();
     async.parallel([
       (cb) => {
-        utils.loadApi(google, 'drive', 'v2', {}, cb);
+        utils.loadApi(google, 'drive', 'v2', {}).then((result) => cb(null, result));
       },
       (cb) => {
-      utils.loadApi(google, 'gmail', 'v1', {}, cb);
+      utils.loadApi(google, 'gmail', 'v1', {}).then((result) => cb(null, result));
       }
     ], (err, apis) => {
       if (err) {

@@ -54,13 +54,13 @@ describe('Urlshortener', () => {
     nock.cleanAll();
     const google = new googleapis.GoogleApis();
     nock.enableNetConnect();
-    utils.loadApi(google, 'urlshortener', 'v1', {}, (err, urlshortener) => {
+    utils.loadApi(google, 'urlshortener', 'v1', {}).then((urlshortener) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
       remoteUrlshortener = urlshortener;
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 

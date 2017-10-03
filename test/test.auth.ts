@@ -117,10 +117,10 @@ describe('OAuth2 client', () => {
     nock.enableNetConnect();
     async.parallel([
       (cb) => {
-        utils.loadApi(google, 'drive', 'v2', {}, cb);
+        utils.loadApi(google, 'drive', 'v2', {}).then((result) => cb(null, result));
       },
       (cb) => {
-        utils.loadApi(google, 'urlshortener', 'v1', {}, cb);
+        utils.loadApi(google, 'urlshortener', 'v1', {}).then((result) => cb(null, result));
       }
     ], (err, apis) => {
       if (err) {

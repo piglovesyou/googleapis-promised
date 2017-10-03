@@ -29,10 +29,10 @@ describe('Clients', () => {
     nock.enableNetConnect();
     async.parallel([
       (cb) => {
-        utils.loadApi(google, 'plus', 'v1', {}, cb);
+        utils.loadApi(google, 'plus', 'v1', {}).then((result) => cb(null, result));
       },
       (cb) => {
-        utils.loadApi(google, 'oauth2', 'v2', {}, cb);
+        utils.loadApi(google, 'oauth2', 'v2', {}).then((result) => cb(null, result));
       }
     ], (err, apis) => {
       if (err) {
@@ -134,11 +134,12 @@ describe('Clients', () => {
       version: 'v1beta3',
       params: { myParam: '123' }
     });
-    const {req} = datastore.projects.lookup({ projectId: 'test-project-id' }, utils.noop);
+    const p = datastore.projects.lookup({ projectId: 'test-project-id' });
+    p.catch(utils.noop)
     // If the default param handling is broken, query might be undefined, thus
     // concealing the assertion message with some generic "cannot call .indexOf
     // of undefined"
-    const query = req.uri.query || '';
+    const query = p.req.uri.query || '';
 
     assert.notEqual(
       query.indexOf('myParam=123'),
@@ -148,13 +149,11 @@ describe('Clients', () => {
     nock.enableNetConnect();
     utils.loadApi(google, 'datastore', 'v1beta3', {
       params: { myParam: '123' }
-    }, (err, datastore) => {
+    }).then((datastore) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
-      const {req} = datastore.projects.lookup({ projectId: 'test-project-id' }, utils.noop);
-      const query = req.uri.query || '';
+      const p = datastore.projects.lookup({ projectId: 'test-project-id' });
+      p.catch(utils.noop)
+      const query = p.req.uri.query || '';
 
       assert.notEqual(
         query.indexOf('myParam=123'),
@@ -162,6 +161,9 @@ describe('Clients', () => {
         'Default param in query'
       );
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 
@@ -172,13 +174,14 @@ describe('Clients', () => {
       params: { myParam: '123' }
     });
     // Override the default datasetId param for this particular API call
-    const {req} = datastore.projects.lookup({
+    const p = datastore.projects.lookup({
       projectId: 'test-project-id', myParam: '456'
-    }, utils.noop);
+    });
+    p.catch(utils.noop);
     // If the default param handling is broken, query might be undefined, thus
     // concealing the assertion message with some generic "cannot call .indexOf
     // of undefined"
-    const query = req.uri.query || '';
+    const query = p.req.uri.query || '';
 
     assert.notEqual(
       query.indexOf('myParam=456'),
@@ -189,19 +192,17 @@ describe('Clients', () => {
     nock.enableNetConnect();
     utils.loadApi(google, 'datastore', 'v1beta3', {
       params: { myParam: '123' }
-    }, (err, datastore) => {
+    }).then((datastore) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
       // Override the default datasetId param for this particular API call
-      const {req} = datastore.projects.lookup({
+      const p = datastore.projects.lookup({
         projectId: 'test-project-id', myParam: '456'
-      }, utils.noop);
+      });
+      p.catch(utils.noop);
       // If the default param handling is broken, query might be undefined, thus
       // concealing the assertion message with some generic "cannot call .indexOf
       // of undefined"
-      const query = req.uri.query || '';
+      const query = p.req.uri.query || '';
 
       assert.notEqual(
         query.indexOf('myParam=456'),
@@ -209,6 +210,9 @@ describe('Clients', () => {
         'Default param not found in query'
       );
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 
@@ -222,10 +226,11 @@ describe('Clients', () => {
       }
     });
     // No params given - only callback
-    const {req} = datastore.projects.lookup(utils.noop);
+    const p = datastore.projects.lookup();
     // If the default param handling is broken, req or query might be undefined, thus concealing the
     // assertion message with some generic "cannot call .indexOf of undefined"
-    const query = (req && req.uri.query) || '';
+    p.catch(utils.noop);
+    const query = (p.req && p.req.uri.query) || '';
 
     assert.notEqual(query.indexOf('myParam=123'), -1, 'Default param not found in query');
 
@@ -235,20 +240,21 @@ describe('Clients', () => {
         projectId: 'test-project-id', // We must set this here - it is a required param
         myParam: '123'
       }
-    }, (err, datastore) => {
+    }).then((datastore) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
       // No params given - only callback
-      const {req} = datastore.projects.lookup(utils.noop);
+      const p = datastore.projects.lookup();
       // If the default param handling is broken, req or query might be
       // undefined, thus concealing the assertion message with some generic
       // "cannot call .indexOf of undefined"
-      const query = (req && req.uri.query) || '';
+      p.catch(utils.noop);
+      const query = (p.req && p.req.uri.query) || '';
 
       assert.notEqual(query.indexOf('myParam=123'), -1, 'Default param not found in query');
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 

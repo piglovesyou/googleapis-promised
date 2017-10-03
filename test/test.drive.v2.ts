@@ -23,13 +23,13 @@ describe('drive:v2', () => {
     nock.cleanAll();
     const google = new googleapis.GoogleApis();
     nock.enableNetConnect();
-    utils.loadApi(google, 'drive', 'v2', {}, (err, drive) => {
+    utils.loadApi(google, 'drive', 'v2', {}).then((drive) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
       remoteDrive = drive;
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 

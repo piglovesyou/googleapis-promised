@@ -61,11 +61,8 @@ describe('Options', () => {
     let query = p.req.uri.query || '';
     assert.notEqual(query.indexOf('myParam=123'), -1, 'Default param not found in query');
     nock.enableNetConnect();
-    utils.loadApi(google, 'drive', 'v2', {}, (err, drive) => {
+    utils.loadApi(google, 'drive', 'v2', {}).then((drive) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
       let p = drive.files.get({ fileId: '123' });
       p.catch(utils.noop);
       // If the default param handling is broken, query might be undefined, thus concealing the
@@ -73,6 +70,9 @@ describe('Options', () => {
       query = p.req.uri.query || '';
       assert.notEqual(query.indexOf('myParam=123'), -1, 'Default param not found in query');
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 
