@@ -45,7 +45,7 @@ function getPathParams (params) {
  * @param {object} context The context to add to the method.
  */
 function makeMethod (schema, method, context) {
-  return function (params, callback) {
+  return function (params) {
     const url = generatorUtils.buildurl(schema.rootUrl + schema.servicePath + method.path);
 
     const parameters = {
@@ -159,129 +159,143 @@ Discovery.prototype.log = function () {
 /**
  * Generate all APIs and return as in-memory object.
  *
- * @param {function} callback Callback when all APIs have been generated
+ * @param {string} discoveryUrl
+ * @return {Promise}
  * @throws {Error} If there is an error generating any of the APIs
  */
-Discovery.prototype.discoverAllAPIs = function (discoveryUrl, callback) {
+Discovery.prototype.discoverAllAPIs = function (discoveryUrl) {
   const self = this;
   const headers = this.options.includePrivate ? {} : { 'X-User-Ip': '0.0.0.0' };
-  transporter.request({
-    uri: discoveryUrl,
-    headers: headers
-  }, function (err, resp) {
-    if (err) {
-      return handleError(err, callback);
-    }
 
-    async.parallel(resp.items.map(function (api) {
-      return function (cb) {
-        self.discoverAPI(api.discoveryRestUrl, function (err, _api) {
-          if (err) {
-            return cb(err);
-          }
-          api.api = _api;
-          cb(null, api);
-        });
-      };
-    }), function (err, apis) {
+  const promise = new Promise(function(resolve, reject) {
+
+    transporter.request({
+      uri: discoveryUrl,
+      headers: headers
+    }, function (err, resp) {
       if (err) {
-        return callback(err);
+        return reject(err);
       }
 
-      const versionIndex = {};
-      const apisIndex = {};
-
-      apis.forEach(function (api) {
-        if (!apisIndex[api.name]) {
-          versionIndex[api.name] = {};
-          apisIndex[api.name] = function (options) {
-            const type = typeof options;
-            let version;
-            if (type === 'string') {
-              version = options;
-              options = {};
-            } else if (type === 'object') {
-              version = options.version;
-              delete options.version;
-            } else {
-              throw new Error('Argument error: Accepts only string or object');
+      async.parallel(resp.items.map(function (api) {
+        return function (cb) {
+          self.discoverAPI(api.discoveryRestUrl, function (err, _api) {
+            if (err) {
+              return cb(err);
             }
-            try {
-              const Endpoint = versionIndex[api.name][version];
-              const ep = new Endpoint(options);
-              ep.google = this; // for drive.google.transporter
-              return Object.freeze(ep); // create new & freeze
-            } catch (e) {
-              throw new Error(util.format('Unable to load endpoint %s("%s"): %s',
-                api.name, version, e.message));
-            }
-          };
+            api.api = _api;
+            cb(null, api);
+          });
+        };
+      }), function (err, apis) {
+        if (err) {
+          return reject(err);
         }
-        versionIndex[api.name][api.version] = api.api;
-      });
 
-      return callback(null, apisIndex);
+        const versionIndex = {};
+        const apisIndex = {};
+
+        apis.forEach(function (api) {
+          if (!apisIndex[api.name]) {
+            versionIndex[api.name] = {};
+            apisIndex[api.name] = function (options) {
+              const type = typeof options;
+              let version;
+              if (type === 'string') {
+                version = options;
+                options = {};
+              } else if (type === 'object') {
+                version = options.version;
+                delete options.version;
+              } else {
+                throw new Error('Argument error: Accepts only string or object');
+              }
+              try {
+                const Endpoint = versionIndex[api.name][version];
+                const ep = new Endpoint(options);
+                ep.google = this; // for drive.google.transporter
+                return Object.freeze(ep); // create new & freeze
+              } catch (e) {
+                throw new Error(util.format('Unable to load endpoint %s("%s"): %s',
+                  api.name, version, e.message));
+              }
+            };
+          }
+          versionIndex[api.name][api.version] = api.api;
+        });
+
+        return resolve(apisIndex);
+      });
     });
+
   });
+  return promise;
 };
 
 /**
  * Generate API file given discovery URL
  *
  * @param  {String} apiDiscoveryUrl URL or filename of discovery doc for API
- * @param {function} callback Callback when successful write of API
+ * @return {Promise}
  * @throws {Error} If there is an error generating the API.
  */
-Discovery.prototype.discoverAPI = function (apiDiscoveryUrl, callback) {
-  function _generate (err, resp) {
-    if (err) {
-      return handleError(err, callback);
+Discovery.prototype.discoverAPI = function (apiDiscoveryUrl) {
+
+  const promise = new Promise(function(resolve, reject) {
+
+    function _generate (err, resp) {
+      if (err) {
+        return reject(err);
+      }
+      return resolve(makeEndpoint(resp));
     }
-    return callback(null, makeEndpoint(resp));
-  }
 
-  if (typeof apiDiscoveryUrl === 'string') {
-    const parts = url.parse(apiDiscoveryUrl);
+    if (typeof apiDiscoveryUrl === 'string') {
+      const parts = url.parse(apiDiscoveryUrl);
 
-    if (apiDiscoveryUrl && !parts.protocol) {
-      this.log('Reading from file ' + apiDiscoveryUrl);
-      try {
-        return fs.readFile(apiDiscoveryUrl, {
-          encoding: 'utf8'
-        }, function (err, file) {
-          _generate(err, JSON.parse(file));
-        });
-      } catch (err) {
-        return handleError(err, callback);
+      if (apiDiscoveryUrl && !parts.protocol) {
+        this.log('Reading from file ' + apiDiscoveryUrl);
+        try {
+          return fs.readFile(apiDiscoveryUrl, {
+            encoding: 'utf8'
+          }, function (err, file) {
+            _generate(err, JSON.parse(file));
+          });
+        } catch (err) {
+          return reject(err);
+        }
+      } else {
+        this.log('Requesting ' + apiDiscoveryUrl);
+        transporter.request({
+          uri: apiDiscoveryUrl
+        }, _generate);
       }
     } else {
-      this.log('Requesting ' + apiDiscoveryUrl);
-      transporter.request({
-        uri: apiDiscoveryUrl
-      }, _generate);
-    }
-  } else {
-    const options = apiDiscoveryUrl;
-    this.log('Requesting ' + options.url);
-    const parameters = {
-      options: {
-        url: options.url,
-        method: 'GET'
-      },
-      requiredParams: [],
-      pathParams: [],
-      params: null,
-      context: {
-        google: {
-          _options: {}
+      const options = apiDiscoveryUrl;
+      this.log('Requesting ' + options.url);
+      const parameters = {
+        options: {
+          url: options.url,
+          method: 'GET'
         },
-        _options: {}
-      }
-    };
-    delete options.url;
-    parameters.params = options;
-    createAPIRequest(parameters);
-  }
+        requiredParams: [],
+        pathParams: [],
+        params: null,
+        context: {
+          google: {
+            _options: {}
+          },
+          _options: {}
+        }
+      };
+      delete options.url;
+      parameters.params = options;
+      createAPIRequest(parameters);
+    }
+
+  });
+
+  return promise;
 };
 
 /**
