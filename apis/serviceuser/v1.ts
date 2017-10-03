@@ -53,7 +53,7 @@ function Serviceuser(options) { // eslint-disable-line
        * @param {serviceuser(v1).DisableServiceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       disable: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -75,7 +75,7 @@ function Serviceuser(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -91,7 +91,7 @@ function Serviceuser(options) { // eslint-disable-line
        * @param {serviceuser(v1).EnableServiceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       enable: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -113,7 +113,7 @@ function Serviceuser(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -130,7 +130,7 @@ function Serviceuser(options) { // eslint-disable-line
        * @param {string} params.parent List enabled services for the specified parent.  An example valid parent would be: - projects/my-project
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -152,7 +152,7 @@ function Serviceuser(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };
@@ -172,7 +172,7 @@ function Serviceuser(options) { // eslint-disable-line
      * @param {string=} params.pageToken Token identifying which result to start with; returned by a previous list call.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -194,7 +194,7 @@ function Serviceuser(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

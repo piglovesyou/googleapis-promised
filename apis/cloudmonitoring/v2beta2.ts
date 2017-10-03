@@ -52,7 +52,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
      * @param {cloudmonitoring(v2beta2).MetricDescriptor} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -74,7 +74,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -90,7 +90,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
      * @param {string} params.project The project ID to which the metric belongs.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -112,7 +112,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -131,7 +131,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
      * @param {cloudmonitoring(v2beta2).ListMetricDescriptorsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -153,7 +153,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -182,7 +182,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
      * @param {cloudmonitoring(v2beta2).ListTimeseriesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -204,7 +204,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -220,7 +220,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
      * @param {cloudmonitoring(v2beta2).WriteTimeseriesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     write: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -242,7 +242,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -271,7 +271,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
      * @param {cloudmonitoring(v2beta2).ListTimeseriesDescriptorsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -293,7 +293,7 @@ function Cloudmonitoring(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

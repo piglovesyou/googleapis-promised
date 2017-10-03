@@ -54,7 +54,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -76,7 +76,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -95,7 +95,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -117,7 +117,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -135,7 +135,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -157,7 +157,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -177,7 +177,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).InstancesCloneRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clone: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -199,7 +199,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -215,7 +215,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance to be deleted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -237,7 +237,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -254,7 +254,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).InstancesExportRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     export: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -276,7 +276,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -292,7 +292,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -314,7 +314,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -331,7 +331,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).InstancesImportRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     import: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -353,7 +353,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -369,7 +369,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).DatabaseInstance} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -391,7 +391,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -408,7 +408,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list Cloud SQL instances.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -430,7 +430,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -447,7 +447,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).DatabaseInstance} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -469,7 +469,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -485,7 +485,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project ID of the project that contains the read replica.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     promoteReplica: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -507,7 +507,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -523,7 +523,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetSslConfig: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -545,7 +545,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -561,7 +561,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance to be restarted.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     restart: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -583,7 +583,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -601,7 +601,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     restoreBackup: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -623,7 +623,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -640,7 +640,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).InstanceSetRootPasswordRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setRootPassword: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -662,7 +662,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -679,7 +679,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).DatabaseInstance} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -701,7 +701,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -722,7 +722,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -744,7 +744,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -762,7 +762,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project that contains the instance.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -784,7 +784,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -805,7 +805,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.sha1Fingerprint Sha1 FingerPrint.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -827,7 +827,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -844,7 +844,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.sha1Fingerprint Sha1 FingerPrint.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -866,7 +866,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -883,7 +883,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {sqladmin(v1beta3).SslCertsInsertRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -905,7 +905,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -921,7 +921,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list Cloud SQL instances.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -943,7 +943,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -962,7 +962,7 @@ function Sqladmin(options) { // eslint-disable-line
      * @param {string} params.project Project ID of the project for which to list tiers.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -984,7 +984,7 @@ function Sqladmin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

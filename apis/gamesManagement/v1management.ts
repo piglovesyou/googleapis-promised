@@ -51,7 +51,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.achievementId The ID of the achievement used by this method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reset: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -87,7 +87,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -109,7 +109,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -123,7 +123,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAllForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -145,7 +145,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -160,7 +160,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.achievementId The ID of the achievement used by this method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -182,7 +182,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -197,7 +197,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {gamesManagement(v1management).AchievementResetMultipleForAllRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetMultipleForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -219,7 +219,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -240,7 +240,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string=} params.pageToken The token returned by the previous request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listHidden: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -262,7 +262,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -281,7 +281,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.eventId The ID of the event.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reset: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -303,7 +303,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -317,7 +317,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -339,7 +339,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -353,7 +353,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAllForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -375,7 +375,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -390,7 +390,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.eventId The ID of the event.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -412,7 +412,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -427,7 +427,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {gamesManagement(v1management).EventsResetMultipleForAllRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetMultipleForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -449,7 +449,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -469,7 +469,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.playerId A player ID. A value of me may be used in place of the authenticated player's ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     hide: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -491,7 +491,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -507,7 +507,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.playerId A player ID. A value of me may be used in place of the authenticated player's ID.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     unhide: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -529,7 +529,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -548,7 +548,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.questId The ID of the quest.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reset: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -570,7 +570,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -584,7 +584,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -606,7 +606,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -620,7 +620,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAllForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -642,7 +642,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -657,7 +657,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.questId The ID of the quest.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -679,7 +679,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -694,7 +694,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {gamesManagement(v1management).QuestsResetMultipleForAllRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetMultipleForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -716,7 +716,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -734,7 +734,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reset: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -756,7 +756,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -770,7 +770,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -792,7 +792,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -811,7 +811,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.leaderboardId The ID of the leaderboard.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reset: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -833,7 +833,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -847,7 +847,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAll: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -869,7 +869,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -883,7 +883,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetAllForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -905,7 +905,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -920,7 +920,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {string} params.leaderboardId The ID of the leaderboard.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -942,7 +942,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -957,7 +957,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {gamesManagement(v1management).ScoresResetMultipleForAllRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetMultipleForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -979,7 +979,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -997,7 +997,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reset: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1019,7 +1019,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1033,7 +1033,7 @@ function Gamesmanagement(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resetForAllPlayers: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1055,7 +1055,7 @@ function Gamesmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

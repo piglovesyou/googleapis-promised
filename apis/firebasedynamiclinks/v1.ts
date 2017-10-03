@@ -51,7 +51,7 @@ function Firebasedynamiclinks(options) { // eslint-disable-line
      * @param {firebasedynamiclinks(v1).CreateShortDynamicLinkRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Firebasedynamiclinks(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -93,7 +93,7 @@ function Firebasedynamiclinks(options) { // eslint-disable-line
      * @param {string} params.dynamicLink Dynamic Link URL. e.g. https://abcd.app.goo.gl/wxyz
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getLinkStats: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -115,7 +115,7 @@ function Firebasedynamiclinks(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -130,7 +130,7 @@ function Firebasedynamiclinks(options) { // eslint-disable-line
      * @param {firebasedynamiclinks(v1).GetIosPostInstallAttributionRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     installAttribution: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -152,7 +152,7 @@ function Firebasedynamiclinks(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

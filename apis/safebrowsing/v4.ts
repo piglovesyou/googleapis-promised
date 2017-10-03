@@ -53,7 +53,7 @@ function Safebrowsing(options) { // eslint-disable-line
      * @param {string} params.encodedRequest A serialized FindFullHashesRequest proto.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -75,7 +75,7 @@ function Safebrowsing(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -96,7 +96,7 @@ function Safebrowsing(options) { // eslint-disable-line
      * @param {string} params.encodedRequest A serialized FetchThreatListUpdatesRequest proto.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -118,7 +118,7 @@ function Safebrowsing(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -137,7 +137,7 @@ function Safebrowsing(options) { // eslint-disable-line
      * @param {safebrowsing(v4).FindFullHashesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     find: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -159,7 +159,7 @@ function Safebrowsing(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -178,7 +178,7 @@ function Safebrowsing(options) { // eslint-disable-line
      * @param {safebrowsing(v4).FetchThreatListUpdatesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     fetch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -200,7 +200,7 @@ function Safebrowsing(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -218,7 +218,7 @@ function Safebrowsing(options) { // eslint-disable-line
      * @param {object} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -240,7 +240,7 @@ function Safebrowsing(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -259,7 +259,7 @@ function Safebrowsing(options) { // eslint-disable-line
      * @param {safebrowsing(v4).FindThreatMatchesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     find: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -281,7 +281,7 @@ function Safebrowsing(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

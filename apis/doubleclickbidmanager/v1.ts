@@ -51,7 +51,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {doubleclickbidmanager(v1).DownloadLineItemsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     downloadlineitems: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -88,7 +88,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {doubleclickbidmanager(v1).UploadLineItemsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     uploadlineitems: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -110,7 +110,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -129,7 +129,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {doubleclickbidmanager(v1).Query} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     createquery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -151,7 +151,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -166,7 +166,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {string} params.queryId Query ID to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     deletequery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -188,7 +188,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -203,7 +203,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {string} params.queryId Query ID to retrieve.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getquery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -225,7 +225,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -239,7 +239,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listqueries: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -261,7 +261,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -277,7 +277,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {doubleclickbidmanager(v1).RunQueryRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     runquery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -299,7 +299,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -318,7 +318,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {string} params.queryId Query ID with which the reports are associated.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listreports: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -340,7 +340,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -359,7 +359,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
      * @param {doubleclickbidmanager(v1).DownloadRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     download: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -381,7 +381,7 @@ function Doubleclickbidmanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

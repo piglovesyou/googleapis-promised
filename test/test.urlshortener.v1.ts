@@ -19,30 +19,31 @@ let googleapis = require('../');
 
 function testSingleRequest (urlshortener) {
   const obj = { longUrl: 'http://someurl...' };
-  const req = urlshortener.url.insert(obj, utils.noop);
+  const p = urlshortener.url.insert(obj);
+  p.catch(utils.noop);
   assert.equal(
-    req.uri.href,
+    p.req.uri.href,
     'https://www.googleapis.com/urlshortener/v1/url?longUrl=http%3A%2F%2Fsomeurl...'
   );
-  assert.equal(req.method, 'POST');
+  assert.equal(p.req.method, 'POST');
 }
 
 function testParams (urlshortener) {
   const params = { shortUrl: 'a' };
-  const req = urlshortener.url.get(params, utils.noop);
-  assert.equal(req.uri.href, 'https://www.googleapis.com/urlshortener/v1/url?shortUrl=a');
-  assert.equal(req.method, 'GET');
+  const p = urlshortener.url.get(params);
+  p.catch(utils.noop);
+  assert.equal(p.req.uri.href, 'https://www.googleapis.com/urlshortener/v1/url?shortUrl=a');
+  assert.equal(p.req.method, 'GET');
 }
 
 function testInsert (urlshortener, cb) {
   const obj = { longUrl: 'http://google.com/' };
-  urlshortener.url.insert({ resource: obj }, (err, result) => {
-    assert.equal(err, null);
+  urlshortener.url.insert({ resource: obj }).then((result) => {
     assert.notEqual(result, null);
     assert.notEqual(result.kind, null);
     assert.notEqual(result.id, null);
     assert.equal(result.longUrl, 'http://google.com/');
-    cb(err);
+    cb();
   });
 }
 
@@ -53,13 +54,13 @@ describe('Urlshortener', () => {
     nock.cleanAll();
     const google = new googleapis.GoogleApis();
     nock.enableNetConnect();
-    utils.loadApi(google, 'urlshortener', 'v1', {}, (err, urlshortener) => {
+    utils.loadApi(google, 'urlshortener', 'v1', {}).then((urlshortener) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
       remoteUrlshortener = urlshortener;
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 

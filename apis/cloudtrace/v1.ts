@@ -106,7 +106,7 @@ function Cloudtrace(options) { // eslint-disable-line
      * @param {cloudtrace(v1).Traces} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patchTraces: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -128,7 +128,7 @@ function Cloudtrace(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     traces: {
 
@@ -199,7 +199,7 @@ function Cloudtrace(options) { // eslint-disable-line
        * @param {string} params.traceId ID of the trace to return.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -221,7 +221,7 @@ function Cloudtrace(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -307,7 +307,7 @@ function Cloudtrace(options) { // eslint-disable-line
        * @param {string=} params.view Type of data returned for traces in the list. Optional. Default is `MINIMAL`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -329,7 +329,7 @@ function Cloudtrace(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

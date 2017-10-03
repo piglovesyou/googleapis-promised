@@ -53,7 +53,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -75,7 +75,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -92,7 +92,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -114,7 +114,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -131,7 +131,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {replicapoolupdater(v1beta1).RollingUpdate} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -153,7 +153,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -172,7 +172,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -194,7 +194,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -214,7 +214,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listInstanceUpdates: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -236,7 +236,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -253,7 +253,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     pause: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -275,7 +275,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -292,7 +292,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     resume: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -314,7 +314,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -331,7 +331,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone The name of the zone in which the update's target resides.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     rollback: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -353,7 +353,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -374,7 +374,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone Name of the zone scoping this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -396,7 +396,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -415,7 +415,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
      * @param {string} params.zone Name of the zone scoping this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -437,7 +437,7 @@ function Replicapoolupdater(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

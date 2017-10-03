@@ -55,7 +55,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {cloudiot(v1beta1).DeviceRegistry} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -77,7 +77,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -92,7 +92,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {string} params.name The name of the device registry. For example, `projects/example-project/locations/us-central1/registries/my-registry`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -114,7 +114,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -129,7 +129,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {string} params.name The name of the device registry. For example, `projects/example-project/locations/us-central1/registries/my-registry`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -151,7 +151,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -167,7 +167,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {cloudiot(v1beta1).GetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -189,7 +189,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -206,7 +206,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {string} params.parent The project and cloud region path. For example, `projects/example-project/locations/us-central1`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -228,7 +228,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -245,7 +245,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {cloudiot(v1beta1).DeviceRegistry} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         patch: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -267,7 +267,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -283,7 +283,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {cloudiot(v1beta1).SetIamPolicyRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         setIamPolicy: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -305,7 +305,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -321,7 +321,7 @@ function Cloudiot(options) { // eslint-disable-line
          * @param {cloudiot(v1beta1).TestIamPermissionsRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         testIamPermissions: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -343,7 +343,7 @@ function Cloudiot(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         devices: {
 
@@ -360,7 +360,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {cloudiot(v1beta1).Device} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           create: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -382,7 +382,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -397,7 +397,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {string} params.name The name of the device. For example, `projects/p0/locations/us-central1/registries/registry0/devices/device0` or `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           delete: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -419,7 +419,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -434,7 +434,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {string} params.name The name of the device. For example, `projects/p0/locations/us-central1/registries/registry0/devices/device0` or `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           get: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -456,7 +456,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -472,7 +472,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {string} params.name The name of the device. For example, `projects/p0/locations/us-central1/registries/registry0/devices/device0`.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           getConfig: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -494,7 +494,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -514,7 +514,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {string} params.parent The device registry path. Required. For example, `projects/my-project/locations/us-central1/registries/my-registry`.
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -536,7 +536,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -552,7 +552,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {cloudiot(v1beta1).ModifyCloudToDeviceConfigRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           modifyCloudToDeviceConfig: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -574,7 +574,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -591,7 +591,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {cloudiot(v1beta1).Device} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           patch: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -613,7 +613,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -629,7 +629,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {cloudiot(v1beta1).HttpPublishEventRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           publishEvent: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -651,7 +651,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -667,7 +667,7 @@ function Cloudiot(options) { // eslint-disable-line
            * @param {cloudiot(v1beta1).HttpSetDeviceStateRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           setState: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -689,7 +689,7 @@ function Cloudiot(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
           configVersions: {
 
@@ -706,7 +706,7 @@ function Cloudiot(options) { // eslint-disable-line
              * @param {integer=} params.numVersions The number of versions to list. Versions are listed in decreasing order of the version number. The maximum number of versions retained is 10. If this value is zero, it will return all the versions available.
              * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
              * @param {callback} callback The callback that handles the response.
-             * @return {object} Request object
+             * @return {PromiseWithReq}  Promise that resolves response data
              */
             list: function (params, options, callback) {
               if (typeof options === 'function') {
@@ -728,7 +728,7 @@ function Cloudiot(options) { // eslint-disable-line
                 context: self
               };
 
-              return createAPIRequest(parameters, callback);
+              return createAPIRequest(parameters);
             }
           }
         }

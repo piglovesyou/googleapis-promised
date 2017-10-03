@@ -53,7 +53,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta1).GoogleDatastoreAdminV1beta1ExportEntitiesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     export: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -75,7 +75,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -91,7 +91,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1beta1).GoogleDatastoreAdminV1beta1ImportEntitiesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     import: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -113,7 +113,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

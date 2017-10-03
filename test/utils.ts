@@ -17,12 +17,8 @@ abstract class utils {
       '/' + version + '/rest';
   }
 
-  public static loadApi (google, name, version, options, cb) {
-    if (typeof options === 'function') {
-      cb = options;
-      options = {};
-    }
-    return google.discoverAPI(utils.getDiscoveryUrl(name, version), options, cb);
+  public static loadApi (google, name, version, options) {
+    return google.discoverAPI(utils.getDiscoveryUrl(name, version), options);
   }
 
   public static readonly noop = () => {};

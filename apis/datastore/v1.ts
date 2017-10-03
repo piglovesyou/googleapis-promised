@@ -53,7 +53,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1).AllocateIdsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     allocateIds: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -75,7 +75,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -91,7 +91,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1).BeginTransactionRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     beginTransaction: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -113,7 +113,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -129,7 +129,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1).CommitRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     commit: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -151,7 +151,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -167,7 +167,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1).LookupRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     lookup: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -189,7 +189,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -205,7 +205,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1).RollbackRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     rollback: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -227,7 +227,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -243,7 +243,7 @@ function Datastore(options) { // eslint-disable-line
      * @param {datastore(v1).RunQueryRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     runQuery: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -265,7 +265,7 @@ function Datastore(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     operations: {
 
@@ -281,7 +281,7 @@ function Datastore(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource to be cancelled.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -303,7 +303,7 @@ function Datastore(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -318,7 +318,7 @@ function Datastore(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource to be deleted.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -340,7 +340,7 @@ function Datastore(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -355,7 +355,7 @@ function Datastore(options) { // eslint-disable-line
        * @param {string} params.name The name of the operation resource.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -377,7 +377,7 @@ function Datastore(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -395,7 +395,7 @@ function Datastore(options) { // eslint-disable-line
        * @param {string=} params.pageToken The standard list page token.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -417,7 +417,7 @@ function Datastore(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

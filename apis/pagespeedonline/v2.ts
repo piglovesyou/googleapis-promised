@@ -56,7 +56,7 @@ function Pagespeedonline(options) { // eslint-disable-line
      * @param {string} params.url The URL to fetch and analyze
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     runpagespeed: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -78,7 +78,7 @@ function Pagespeedonline(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
