@@ -124,14 +124,9 @@ function Siteverification(options) { // eslint-disable-line
      * @param {object} params Parameters for request
      * @param {siteVerification(v1).SiteVerificationWebResourceGettokenRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    getToken: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    getToken: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';

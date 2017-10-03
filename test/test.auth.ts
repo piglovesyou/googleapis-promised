@@ -61,9 +61,8 @@ function testNoTokens (urlshortener, oauth2client, cb) {
   urlshortener.url.get({
     shortUrl: '123',
     auth: oauth2client
-  }, (err, result) => {
+  }).then(assert.error, (err) => {
     assert.equal(err.message, 'No access or refresh token is set.');
-    assert.equal(result, null);
     cb();
   });
 }
@@ -71,7 +70,7 @@ function testNoTokens (urlshortener, oauth2client, cb) {
 function testNoBearer (urlshortener, oauth2client, cb) {
   urlshortener.url.list({
     auth: oauth2client
-  }, (err) => {
+  }).then(cb, (err) => {
     assert.equal(oauth2client.credentials.token_type, 'Bearer');
     cb(err);
   });
@@ -81,7 +80,7 @@ function testExpired (drive, oauth2client, now, cb) {
   drive.files.get({
     fileId: 'wat',
     auth: oauth2client
-  }, () => {
+  }).catch(() => {
     const expiryDate = oauth2client.credentials.expiry_date;
     assert.notEqual(expiryDate, undefined);
     assert(expiryDate > now);
@@ -96,7 +95,7 @@ function testNoAccessToken (drive, oauth2client, now, cb) {
   drive.files.get({
     fileId: 'wat',
     auth: oauth2client
-  }, () => {
+  }).catch(() => {
     const expiryDate = oauth2client.credentials.expiry_date;
     assert.notEqual(expiryDate, undefined);
     assert(expiryDate > now);
@@ -165,8 +164,8 @@ describe('OAuth2 client', () => {
     oauth2client.credentials = { refresh_token: 'refresh_token' };
     assert.doesNotThrow(() => {
       const options = { auth: oauth2client, shortUrl: '...' };
-      localUrlshortener.url.get(options, utils.noop);
-      remoteUrlshortener.url.get(options, utils.noop);
+      localUrlshortener.url.get(options).catch(utils.noop);
+      remoteUrlshortener.url.get(options).catch(utils.noop);
     });
   });
 
@@ -245,7 +244,7 @@ describe('OAuth2 client', () => {
       refresh_token: 'abc',
       expiry_date: tenSecondsFromNow
     };
-    localDrive.files.get({ fileId: 'wat', auth: oauth2client }, () => {
+    localDrive.files.get({ fileId: 'wat', auth: oauth2client }).catch(() => {
       assert.equal(JSON.stringify(oauth2client.credentials), JSON.stringify({
         access_token: 'abc123',
         refresh_token: 'abc',
@@ -269,7 +268,7 @@ describe('OAuth2 client', () => {
         expiry_date: tenSecondsFromNow
       };
 
-      remoteDrive.files.get({ fileId: 'wat', auth: oauth2client }, () => {
+      remoteDrive.files.get({ fileId: 'wat', auth: oauth2client }).catch(() => {
         assert.equal(JSON.stringify(oauth2client.credentials), JSON.stringify({
           access_token: 'abc123',
           refresh_token: 'abc',
@@ -282,8 +281,8 @@ describe('OAuth2 client', () => {
         }, 'AssertionError');
         nock.cleanAll();
         done();
-      });
-    });
+      }, utils.noop);
+    }, utils.noop);
   });
 
   it('should refresh if have refresh token but no access token', (done) => {
