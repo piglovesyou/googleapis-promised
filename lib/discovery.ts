@@ -179,19 +179,17 @@ Discovery.prototype.discoverAllAPIs = function (discoveryUrl) {
 
       async.parallel(resp.items.map(function (api) {
         return function (cb) {
-          self.discoverAPI(api.discoveryRestUrl, function (err, _api) {
-            if (err) {
-              return cb(err);
-            }
+          self.discoverAPI(api.discoveryRestUrl).then((_api) => {
             api.api = _api;
             cb(null, api);
+          }).catch(err => {
+            return cb(err);
           });
         };
       }), function (err, apis) {
         if (err) {
           return reject(err);
         }
-
         const versionIndex = {};
         const apisIndex = {};
 
@@ -241,7 +239,7 @@ Discovery.prototype.discoverAllAPIs = function (discoveryUrl) {
  */
 Discovery.prototype.discoverAPI = function (apiDiscoveryUrl) {
 
-  const promise = new Promise(function(resolve, reject) {
+  const promise = new Promise((resolve, reject) => {
 
     function _generate (err, resp) {
       if (err) {
