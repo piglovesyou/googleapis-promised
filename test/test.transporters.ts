@@ -18,38 +18,42 @@ import utils from './utils';
 let googleapis = require('../');
 
 function testHeaders (drive) {
-  const {req} = drive.comments.insert({
+  const p = drive.comments.insert({
     fileId: 'a',
     headers: {
       'If-None-Match': '12345'
     }
-  }, utils.noop);
-  assert.equal(req.headers['If-None-Match'], '12345');
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.headers['If-None-Match'], '12345');
 }
 
 function testContentType (drive) {
-  const {req} = drive.comments.insert({
+  const p = drive.comments.insert({
     fileId: 'a'
-  }, utils.noop);
-  assert.equal(req.headers['content-type'], 'application/json');
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.headers['content-type'], 'application/json');
 }
 
 function testBody (drive) {
-  const {req} = drive.files.list(utils.noop);
-  assert.equal(req.headers['content-type'], null);
-  assert.equal(req.body, null);
+  const p = drive.files.list();
+  p.catch(utils.noop);
+  assert.equal(p.req.headers['content-type'], null);
+  assert.equal(p.req.body, null);
 }
 
 function testBodyDelete (drive) {
-  const {req} = drive.files.delete({
+  const p = drive.files.delete({
     fileId: 'test'
-  }, utils.noop);
-  assert.equal(req.headers['content-type'], null);
-  assert.equal(req.body, null);
+  });
+  p.catch(utils.noop);
+  assert.equal(p.req.headers['content-type'], null);
+  assert.equal(p.req.body, null);
 }
 
 function testResponseError (drive, cb) {
-  drive.files.list({ q: 'hello' }, (err) => {
+  drive.files.list({ q: 'hello' }).then(assert.error, (err) => {
     assert(err instanceof Error);
     assert.equal(err.message, 'Error!');
     assert.equal(err.code, 400);
@@ -58,7 +62,7 @@ function testResponseError (drive, cb) {
 }
 
 function testNotObjectError (oauth2, cb) {
-  oauth2.tokeninfo({ access_token: 'hello' }, (err) => {
+  oauth2.tokeninfo({ access_token: 'hello' }).then(assert.error, (err) => {
     assert(err instanceof Error);
     assert.equal(err.message, 'invalid_grant');
     assert.equal(err.code, 400);
@@ -68,11 +72,10 @@ function testNotObjectError (oauth2, cb) {
 
 function testBackendError (urlshortener, cb) {
   const obj = { longUrl: 'http://google.com/' };
-  urlshortener.url.insert({ resource: obj }, (err, result) => {
+  urlshortener.url.insert({ resource: obj }).then(assert.error, (err) => {
     assert(err instanceof Error);
     assert.equal(err.code, 500);
     assert.equal(err.message, 'There was an error!');
-    assert.equal(result, null);
     cb();
   });
 }
