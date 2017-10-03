@@ -620,11 +620,7 @@ function Drive(options) { // eslint-disable-line
      * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -658,14 +654,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string=} params.pageToken The continuation token, used to page through large result sets. To get the next page of results, set this parameter to the value of "nextPageToken" from the previous response.
      * @param {string=} params.updatedMin Only discussions that were updated after this timestamp will be returned. Formatted as an RFC 3339 timestamp.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    list: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    list: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -697,14 +688,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string} params.fileId The ID of the file.
      * @param {drive(v2).Comment} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    patch: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    patch: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -736,14 +722,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string} params.fileId The ID of the file.
      * @param {drive(v2).Comment} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    update: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    update: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -1027,14 +1008,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string} params.media.mimeType Media mime-type
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -1459,14 +1435,9 @@ function Drive(options) { // eslint-disable-line
      * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
      * @param {drive(v2).ParentReference} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -1656,14 +1627,9 @@ function Drive(options) { // eslint-disable-line
      * @param {boolean=} params.supportsTeamDrives Whether the requesting application supports Team Drives.
      * @param {drive(v2).Permission} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -1900,14 +1866,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string} params.fileId The ID of the file.
      * @param {drive(v2).Property} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -2223,14 +2184,9 @@ function Drive(options) { // eslint-disable-line
      * @param {string} params.fileId The ID of the file.
      * @param {drive(v2).CommentReply} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-     * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';
@@ -2660,11 +2616,7 @@ function Drive(options) { // eslint-disable-line
      * @param {callback} callback The callback that handles the response.
      * @return {PromiseWithReq}  Promise that resolves response data
      */
-    insert: function (params, options, callback) {
-      if (typeof options === 'function') {
-        callback = options;
-        options = {};
-      }
+    insert: function (params, options) {
       options || (options = {});
 
       const rootUrl = options.rootUrl || 'https://www.googleapis.com/';

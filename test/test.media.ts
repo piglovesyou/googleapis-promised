@@ -17,28 +17,27 @@ import * as fs from 'fs';
 import * as nock from 'nock';
 import * as path from 'path';
 import utils from './utils';
+
 let googleapis = require('../');
 
 const boundaryPrefix = 'multipart/related; boundary=';
 
-function testMultpart (drive, cb) {
-  const resource = { title: 'title', mimeType: 'text/plain' };
-  const media = { body: 'hey' };
+function testMultpart(drive, cb) {
+  const resource = {title: 'title', mimeType: 'text/plain'};
+  const media = {body: 'hey'};
   let expectedResp = fs.readFileSync(
-    path.join(__dirname, '/fixtures/media-response.txt'),
-    { encoding: 'utf8' }
+      path.join(__dirname, '/fixtures/media-response.txt'),
+      {encoding: 'utf8'}
   );
-  const {req} = drive.files.insert({ resource: resource, media: media }, (err, body) => {
-    if (err) {
-      return cb(err);
-    }
-    assert.equal(req.method, 'POST');
+  const p = drive.files.insert({resource: resource, media: media});
+  p.then((body) => {
+    assert.equal(p.req.method, 'POST');
     assert.equal(
-      req.uri.href,
-      'https://www.googleapis.com/upload/drive/v2/files?uploadType=multipart'
+        p.req.uri.href,
+        'https://www.googleapis.com/upload/drive/v2/files?uploadType=multipart'
     );
-    assert.equal(req.headers['content-type'].indexOf('multipart/related;'), 0);
-    const boundary = req.headers['content-type'].replace(boundaryPrefix, '');
+    assert.equal(p.req.headers['content-type'].indexOf('multipart/related;'), 0);
+    const boundary = p.req.headers['content-type'].replace(boundaryPrefix, '');
     expectedResp = expectedResp
         .replace(/\n/g, '\r\n')
         .replace(/\$boundary/g, boundary)
@@ -48,27 +47,25 @@ function testMultpart (drive, cb) {
         .trim();
     assert.strictEqual(expectedResp, body);
     cb();
-  });
+  }, cb);
 }
 
-function testMediaBody (drive, cb) {
-  const resource = { title: 'title' };
-  const media = { body: 'hey' };
+function testMediaBody(drive, cb) {
+  const resource = {title: 'title'};
+  const media = {body: 'hey'};
   let expectedResp = fs.readFileSync(
-    path.join(__dirname, '/fixtures/media-response.txt'),
-    { encoding: 'utf8' }
+      path.join(__dirname, '/fixtures/media-response.txt'),
+      {encoding: 'utf8'}
   );
-  const {req} = drive.files.insert({ resource: resource, media: media }, (err, body) => {
-    if (err) {
-      return cb(err);
-    }
-    assert.equal(req.method, 'POST');
+  const p = drive.files.insert({resource: resource, media: media});
+  p.then((body) => {
+    assert.equal(p.req.method, 'POST');
     assert.equal(
-      req.uri.href,
-      'https://www.googleapis.com/upload/drive/v2/files?uploadType=multipart'
+        p.req.uri.href,
+        'https://www.googleapis.com/upload/drive/v2/files?uploadType=multipart'
     );
-    assert.equal(req.headers['content-type'].indexOf('multipart/related;'), 0);
-    const boundary = req.headers['content-type'].replace(boundaryPrefix, '');
+    assert.equal(p.req.headers['content-type'].indexOf('multipart/related;'), 0);
+    const boundary = p.req.headers['content-type'].replace(boundaryPrefix, '');
     expectedResp = expectedResp
         .replace(/\n/g, '\r\n')
         .replace(/\$boundary/g, boundary)
@@ -78,7 +75,7 @@ function testMediaBody (drive, cb) {
         .trim();
     assert.strictEqual(expectedResp, body);
     cb();
-  });
+  }, cb);
 }
 
 describe('Media', () => {
@@ -94,7 +91,7 @@ describe('Media', () => {
         utils.loadApi(google, 'drive', 'v2', {}).then((result) => cb(null, result));
       },
       (cb) => {
-      utils.loadApi(google, 'gmail', 'v1', {}).then((result) => cb(null, result));
+        utils.loadApi(google, 'gmail', 'v1', {}).then((result) => cb(null, result));
       }
     ], (err, apis) => {
       if (err) {
@@ -119,86 +116,70 @@ describe('Media', () => {
     const scope = nock('https://www.googleapis.com')
         .post('/upload/drive/v2/files?uploadType=multipart')
         .times(2)
-        .reply(200, { fileId: 'abc123' });
+        .reply(200, {fileId: 'abc123'});
 
-    localDrive.files.insert({ resource: {}, media: { body: 'hello' } }, (err, body) => {
-      if (err) {
-        return done(err);
-      }
-      assert.equal(JSON.stringify(body), JSON.stringify({ fileId: 'abc123' }));
-      remoteDrive.files.insert({ resource: {}, media: { body: 'hello' } }, (err, body) => {
-        if (err) {
-          return done(err);
-        }
-        assert.equal(JSON.stringify(body), JSON.stringify({ fileId: 'abc123' }));
+    localDrive.files.insert({resource: {}, media: {body: 'hello'}}).then((body) => {
+      assert.equal(JSON.stringify(body), JSON.stringify({fileId: 'abc123'}));
+      remoteDrive.files.insert({resource: {}, media: {body: 'hello'}}).then((body) => {
+        assert.equal(JSON.stringify(body), JSON.stringify({fileId: 'abc123'}));
         scope.done();
         done();
-      });
-    });
+      }, done);
+    }, done);
   });
 
   it('should post with uploadType=media media set but not resource', (done) => {
     const scope = nock('https://www.googleapis.com')
         .post('/upload/drive/v2/files?uploadType=media')
         .times(2)
-        .reply(200, { fileId: 'abc123' });
-    localDrive.files.insert({ media: { body: 'hello' } }, (err, body) => {
-      if (err) {
-        return done(err);
-      }
-      assert.equal(JSON.stringify(body), JSON.stringify({ fileId: 'abc123' }));
-      remoteDrive.files.insert({ media: { body: 'hello' } }, (err, body) => {
-        if (err) {
-          return done(err);
-        }
-        assert.equal(JSON.stringify(body), JSON.stringify({ fileId: 'abc123' }));
+        .reply(200, {fileId: 'abc123'});
+    localDrive.files.insert({media: {body: 'hello'}}).then((body) => {
+      assert.equal(JSON.stringify(body), JSON.stringify({fileId: 'abc123'}));
+      remoteDrive.files.insert({media: {body: 'hello'}}).then((body) => {
+        assert.equal(JSON.stringify(body), JSON.stringify({fileId: 'abc123'}));
         scope.done();
         done();
-      });
-    });
+      }, done);
+    }, done);
   });
 
   it('should generate a valid media upload if media is set, metadata is not set', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/upload/drive/v2/files?uploadType=media')
-      .times(2)
-      .reply(201, (uri, reqBody) => {
-        return reqBody; // return request body as response for testing purposes
-      });
-    const media = { body: 'hey' };
-    let {req} = localDrive.files.insert({ media: media }, (err, body) => {
-      if (err) {
-        return done(err);
-      }
-      assert.equal(req.method, 'POST');
+        .post('/upload/drive/v2/files?uploadType=media')
+        .times(2)
+        .reply(201, (uri, reqBody) => {
+          return reqBody; // return request body as response for testing purposes
+        });
+    const media = {body: 'hey'};
+    let p = localDrive.files.insert({media: media});
+    p.then((body) => {
+      assert.equal(p.req.method, 'POST');
       assert.equal(
-        req.uri.href,
-        'https://www.googleapis.com/upload/drive/v2/files?uploadType=media'
+          p.req.uri.href,
+          'https://www.googleapis.com/upload/drive/v2/files?uploadType=media'
       );
       assert.strictEqual(media.body, body);
-      req = remoteDrive.files.insert({ media: media }, (err, body) => {
-        if (err) {
-          return done(err);
-        }
-        assert.equal(req.method, 'POST');
+      p = remoteDrive.files.insert({media: media});
+      p.then((body) => {
+        assert.equal(p.req.method, 'POST');
         assert.equal(
-          req.uri.href,
-          'https://www.googleapis.com/upload/drive/v2/files?uploadType=media'
+            p.req.uri.href,
+            'https://www.googleapis.com/upload/drive/v2/files?uploadType=media'
         );
         assert.strictEqual(media.body, body);
         scope.done();
         done();
-      });
-    });
+      }, done);
+    }, done);
   });
 
   it('should generate valid multipart upload if media and metadata are both set', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/upload/drive/v2/files?uploadType=multipart')
-      .times(2)
-      .reply(201, (uri, reqBody) => {
-        return reqBody; // return request body as response for testing purposes
-      });
+        .post('/upload/drive/v2/files?uploadType=multipart')
+        .times(2)
+        .reply(201, (uri, reqBody) => {
+          return reqBody; // return request body as response for testing purposes
+        });
 
     testMultpart(localDrive, (err) => {
       if (err) {
@@ -215,32 +196,36 @@ describe('Media', () => {
   });
 
   it('should not require parameters for insertion requests', () => {
-    let {req} = localDrive.files.insert({
+    let p = localDrive.files.insert({
       someAttr: 'someValue',
-      media: { body: 'wat' }
-    }, utils.noop);
-    assert.equal(req.uri.query, 'someAttr=someValue&uploadType=media');
-    req = remoteDrive.files.insert({
+      media: {body: 'wat'}
+    });
+    p.catch(utils.noop);
+    assert.equal(p.req.uri.query, 'someAttr=someValue&uploadType=media');
+    p = remoteDrive.files.insert({
       someAttr: 'someValue',
-      media: { body: 'wat' }
-    }, utils.noop);
-    assert.equal(req.uri.query, 'someAttr=someValue&uploadType=media');
+      media: {body: 'wat'}
+    });
+    p.catch(utils.noop);
+    assert.equal(p.req.uri.query, 'someAttr=someValue&uploadType=media');
   });
 
   it('should not multipart upload if no media body given', () => {
-    let {req} = localDrive.files.insert({ someAttr: 'someValue' }, utils.noop);
-    assert.equal(req.uri.query, 'someAttr=someValue');
-    req = remoteDrive.files.insert({ someAttr: 'someValue' }, utils.noop);
-    assert.equal(req.uri.query, 'someAttr=someValue');
+    let p = localDrive.files.insert({someAttr: 'someValue'});
+    p.catch(utils.noop);
+    assert.equal(p.req.uri.query, 'someAttr=someValue');
+    p = remoteDrive.files.insert({someAttr: 'someValue'});
+    p.catch(utils.noop);
+    assert.equal(p.req.uri.query, 'someAttr=someValue');
   });
 
   it('should set text/plain when passed a string as media body', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/upload/drive/v2/files?uploadType=multipart')
-      .times(2)
-      .reply(201, (uri, reqBody) => {
-        return reqBody; // return request body as response for testing purposes
-      });
+        .post('/upload/drive/v2/files?uploadType=multipart')
+        .times(2)
+        .reply(201, (uri, reqBody) => {
+          return reqBody; // return request body as response for testing purposes
+        });
 
     testMediaBody(localDrive, (err) => {
       if (err) {
@@ -258,43 +243,35 @@ describe('Media', () => {
 
   it('should handle metadata-only media requests properly', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/gmail/v1/users/me/drafts')
-      .times(2)
-      .reply(201, (uri, reqBody) => {
-        return reqBody; // return request body as response for testing purposes
-      });
-    const resource = { message: { raw: (new Buffer('hello', 'binary')).toString('base64') } };
-    let {req} = localGmail.users.drafts.create(
-      { userId: 'me', resource: resource, media: { mimeType: 'message/rfc822' } },
-      (err, resp) => {
-        if (err) {
-          return done(err);
-        }
-        assert.equal(req.headers['content-type'], 'application/json');
+        .post('/gmail/v1/users/me/drafts')
+        .times(2)
+        .reply(201, (uri, reqBody) => {
+          return reqBody; // return request body as response for testing purposes
+        });
+    const resource = {message: {raw: (new Buffer('hello', 'binary')).toString('base64')}};
+    let p = localGmail.users.drafts.create(
+        {userId: 'me', resource: resource, media: {mimeType: 'message/rfc822'}});
+    p.then((resp) => {
+      assert.equal(p.req.headers['content-type'], 'application/json');
+      assert.equal(JSON.stringify(resp), JSON.stringify(resource));
+      p = remoteGmail.users.drafts.create(
+          {userId: 'me', resource: resource, media: {mimeType: 'message/rfc822'}});
+      p.then((resp) => {
+        assert.equal(p.req.headers['content-type'], 'application/json');
         assert.equal(JSON.stringify(resp), JSON.stringify(resource));
-        req = remoteGmail.users.drafts.create(
-        { userId: 'me', resource: resource, media: { mimeType: 'message/rfc822' } },
-        (err, resp) => {
-          if (err) {
-            return done(err);
-          }
-          assert.equal(req.headers['content-type'], 'application/json');
-          assert.equal(JSON.stringify(resp), JSON.stringify(resource));
-          scope.done();
-          done();
-        }
-      );
-      }
-    );
+        scope.done();
+        done();
+      }, done);
+    }, done);
   });
 
   it('should accept readable stream as media body without metadata', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/upload/gmail/v1/users/me/drafts?uploadType=media')
-      .times(2)
-      .reply(201, (uri, reqBody) => {
-        return reqBody; // return request body as response for testing purposes
-      });
+        .post('/upload/gmail/v1/users/me/drafts?uploadType=media')
+        .times(2)
+        .reply(201, (uri, reqBody) => {
+          return reqBody; // return request body as response for testing purposes
+        });
 
     let body = fs.createReadStream(path.join(__dirname, '/fixtures/mediabody.txt'));
     let expectedBody = fs.readFileSync(path.join(__dirname, '/fixtures/mediabody.txt'));
@@ -304,10 +281,7 @@ describe('Media', () => {
         mimeType: 'message/rfc822',
         body: body
       }
-    }, (err, resp) => {
-      if (err) {
-        return done(err);
-      }
+    }).then((resp) => {
       assert.equal(resp, expectedBody);
       body = fs.createReadStream(path.join(__dirname, '/fixtures/mediabody.txt'));
       expectedBody = fs.readFileSync(path.join(__dirname, '/fixtures/mediabody.txt'));
@@ -317,42 +291,37 @@ describe('Media', () => {
           mimeType: 'message/rfc822',
           body: body
         }
-      }, (err, resp) => {
-        if (err) {
-          return done(err);
-        }
+      }).then(resp => {
         assert.equal(resp, expectedBody);
         scope.done();
         done();
-      });
-    });
+      }, done);
+    }, done);
   });
 
   it('should accept readable stream as media body with metadata', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/upload/gmail/v1/users/me/drafts?uploadType=multipart')
-      .times(2)
-      .reply(201, (uri, reqBody) => {
-        return reqBody; // return request body as response for testing purposes
-      });
+        .post('/upload/gmail/v1/users/me/drafts?uploadType=multipart')
+        .times(2)
+        .reply(201, (uri, reqBody) => {
+          return reqBody; // return request body as response for testing purposes
+        });
 
-    let resource = { message: { raw: (new Buffer('hello', 'binary')).toString('base64') } };
+    let resource = {message: {raw: (new Buffer('hello', 'binary')).toString('base64')}};
     let body = fs.createReadStream(path.join(__dirname, '/fixtures/mediabody.txt'));
-    let bodyString = fs.readFileSync(path.join(__dirname, '/fixtures/mediabody.txt'), { encoding: 'utf8' });
-    let media = { mimeType: 'message/rfc822', body: body };
+    let bodyString = fs.readFileSync(path.join(__dirname, '/fixtures/mediabody.txt'), {encoding: 'utf8'});
+    let media = {mimeType: 'message/rfc822', body: body};
     let expectedBody = fs.readFileSync(
-      path.join(__dirname, '/fixtures/media-response.txt'),
-      { encoding: 'utf8' }
+        path.join(__dirname, '/fixtures/media-response.txt'),
+        {encoding: 'utf8'}
     );
-    let {req} = localGmail.users.drafts.create({
+    let p = localGmail.users.drafts.create({
       userId: 'me',
       resource: resource,
       media: media
-    }, (err, resp) => {
-      if (err) {
-        return done(err);
-      }
-      const boundary = req.headers['content-type'].replace(boundaryPrefix, '');
+    });
+    p.then((resp) => {
+      const boundary = p.req.headers['content-type'].replace(boundaryPrefix, '');
       expectedBody = expectedBody
           .replace(/\n/g, '\r\n')
           .replace(/\$boundary/g, boundary)
@@ -361,23 +330,21 @@ describe('Media', () => {
           .replace('$mimeType', 'message/rfc822')
           .trim();
       assert.strictEqual(expectedBody, resp);
-      resource = { message: { raw: (new Buffer('hello', 'binary')).toString('base64') } };
+      resource = {message: {raw: (new Buffer('hello', 'binary')).toString('base64')}};
       body = fs.createReadStream(path.join(__dirname, '/fixtures/mediabody.txt'));
-      bodyString = fs.readFileSync(path.join(__dirname, '/fixtures/mediabody.txt'), { encoding: 'utf8' });
-      media = { mimeType: 'message/rfc822', body: body };
+      bodyString = fs.readFileSync(path.join(__dirname, '/fixtures/mediabody.txt'), {encoding: 'utf8'});
+      media = {mimeType: 'message/rfc822', body: body};
       expectedBody = fs.readFileSync(
-        path.join(__dirname, '/fixtures/media-response.txt'),
-        { encoding: 'utf8' }
+          path.join(__dirname, '/fixtures/media-response.txt'),
+          {encoding: 'utf8'}
       );
-      req = remoteGmail.users.drafts.create({
+      p = remoteGmail.users.drafts.create({
         userId: 'me',
         resource: resource,
         media: media
-      }, (err, resp) => {
-        if (err) {
-          return done(err);
-        }
-        const boundary = req.headers['content-type'].replace(boundaryPrefix, '');
+      });
+      p.then((resp) => {
+        const boundary = p.req.headers['content-type'].replace(boundaryPrefix, '');
         expectedBody = expectedBody
             .replace(/\n/g, '\r\n')
             .replace(/\$boundary/g, boundary)
@@ -388,52 +355,47 @@ describe('Media', () => {
         assert.strictEqual(expectedBody, resp);
         scope.done();
         done();
-      });
-    });
+      }, done);
+    }, done);
   });
 
   it('should return err, {object}body, resp for streaming media requests', (done) => {
     const scope = nock('https://www.googleapis.com')
-      .post('/upload/gmail/v1/users/me/drafts?uploadType=multipart')
-      .times(2)
-      .reply(201, () => {
-        return JSON.stringify({ hello: 'world' });
-      });
+        .post('/upload/gmail/v1/users/me/drafts?uploadType=multipart')
+        .times(2)
+        .reply(201, () => {
+          return JSON.stringify({hello: 'world'});
+        });
 
-    let resource = { message: { raw: (new Buffer('hello', 'binary')).toString('base64') } };
+    let resource = {message: {raw: (new Buffer('hello', 'binary')).toString('base64')}};
     let body = fs.createReadStream(path.join(__dirname, '/fixtures/mediabody.txt'));
-    let media = { mimeType: 'message/rfc822', body: body };
+    let media = {mimeType: 'message/rfc822', body: body};
+
     localGmail.users.drafts.create({
       userId: 'me',
       resource: resource,
       media: media
-    }, (err, body, resp) => {
-      if (err) {
-        return done(err);
-      }
+    }).then((body) => {
       assert.equal(typeof body, 'object');
       assert.equal(body.hello, 'world');
-      assert.equal(typeof resp, 'object');
-      assert.equal(resp.body, JSON.stringify(body));
-      resource = { message: { raw: (new Buffer('hello', 'binary')).toString('base64') } };
+      // assert.equal(typeof resp, 'object');
+      // assert.equal(resp.body, JSON.stringify(body));
+      resource = {message: {raw: (new Buffer('hello', 'binary')).toString('base64')}};
       body = fs.createReadStream(path.join(__dirname, '/fixtures/mediabody.txt'));
-      media = { mimeType: 'message/rfc822', body: body };
+      media = {mimeType: 'message/rfc822', body: body};
       remoteGmail.users.drafts.create({
         userId: 'me',
         resource: resource,
         media: media
-      }, (err, body, resp) => {
-        if (err) {
-          return done(err);
-        }
+      }).then((body) => {
         assert.equal(typeof body, 'object');
         assert.equal(body.hello, 'world');
-        assert.equal(typeof resp, 'object');
-        assert.equal(resp.body, JSON.stringify(body));
+        // assert.equal(typeof resp, 'object');
+        // assert.equal(resp.body, JSON.stringify(body));
         scope.done();
         done();
-      });
-    });
+      }, done);
+    }, done);
   });
 
   after(() => {
