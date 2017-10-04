@@ -52,7 +52,7 @@ function Servicecontrol(options) { // eslint-disable-line
      * @param {servicecontrol(v1).AllocateQuotaRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     allocateQuota: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -74,7 +74,7 @@ function Servicecontrol(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -90,7 +90,7 @@ function Servicecontrol(options) { // eslint-disable-line
      * @param {servicecontrol(v1).CheckRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     check: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -112,7 +112,7 @@ function Servicecontrol(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -128,7 +128,7 @@ function Servicecontrol(options) { // eslint-disable-line
      * @param {servicecontrol(v1).EndReconciliationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     endReconciliation: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -150,7 +150,7 @@ function Servicecontrol(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -166,7 +166,7 @@ function Servicecontrol(options) { // eslint-disable-line
      * @param {servicecontrol(v1).ReleaseQuotaRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     releaseQuota: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -188,7 +188,7 @@ function Servicecontrol(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -204,7 +204,7 @@ function Servicecontrol(options) { // eslint-disable-line
      * @param {servicecontrol(v1).ReportRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     report: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -226,7 +226,7 @@ function Servicecontrol(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -242,7 +242,7 @@ function Servicecontrol(options) { // eslint-disable-line
      * @param {servicecontrol(v1).StartReconciliationRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     startReconciliation: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -264,7 +264,7 @@ function Servicecontrol(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

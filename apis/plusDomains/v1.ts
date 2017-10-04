@@ -51,7 +51,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.activityId The ID of the activity to get.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -90,7 +90,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {plusDomains(v1).Activity} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -112,7 +112,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -130,7 +130,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user to get activities for. The special value "me" can be used to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -152,7 +152,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -173,7 +173,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user to get audiences for. The special value "me" can be used to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -195,7 +195,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -216,7 +216,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string=} params.userId IDs of the people to add to the circle. Optional, can be repeated.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addPeople: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -238,7 +238,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -253,7 +253,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.circleId The ID of the circle to get.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -275,7 +275,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -291,7 +291,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {plusDomains(v1).Circle} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -313,7 +313,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -330,7 +330,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the user to get circles for. The special value "me" can be used to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -352,7 +352,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -368,7 +368,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {plusDomains(v1).Circle} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -390,7 +390,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -405,7 +405,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.circleId The ID of the circle to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     remove: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -427,7 +427,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -444,7 +444,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string=} params.userId IDs of the people to remove from the circle. Optional, can be repeated.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removePeople: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -466,7 +466,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -482,7 +482,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {plusDomains(v1).Circle} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -504,7 +504,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -523,7 +523,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.commentId The ID of the comment to get.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -545,7 +545,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -561,7 +561,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {plusDomains(v1).Comment} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -583,7 +583,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -601,7 +601,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string=} params.sortOrder The order in which to sort the list of comments.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -623,7 +623,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -647,7 +647,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string|object} params.media.body Media body contents
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -670,7 +670,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -689,7 +689,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.userId The ID of the person to get the profile for. The special value "me" can be used to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -711,7 +711,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -730,7 +730,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string} params.userId Get the collection of people for the person identified. Use "me" to indicate the authenticated user.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -752,7 +752,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -770,7 +770,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string=} params.pageToken The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of "nextPageToken" from the previous response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listByActivity: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -792,7 +792,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -809,7 +809,7 @@ function Plusdomains(options) { // eslint-disable-line
      * @param {string=} params.pageToken The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of "nextPageToken" from the previous response.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listByCircle: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -831,7 +831,7 @@ function Plusdomains(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

@@ -51,7 +51,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string} params.customerId Either the customer's primary domain name or the customer's unique identifier. If using the domain name, we do not recommend using a customerId as a key for persistent data. If the domain name for a customerId is changed, the Google system automatically updates.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -89,7 +89,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).Customer} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -111,7 +111,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -127,7 +127,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).Customer} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -149,7 +149,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -165,7 +165,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).Customer} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -187,7 +187,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -205,7 +205,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {object=} params Parameters for request
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getwatchdetails: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -227,7 +227,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -242,7 +242,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string=} params.serviceAccountEmailAddress The service account which will own the created Cloud-PubSub topic.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     register: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -264,7 +264,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -279,7 +279,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string=} params.serviceAccountEmailAddress The service account which owns the Cloud-PubSub topic.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     unregister: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -301,7 +301,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -321,7 +321,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string} params.subscriptionId This is a required property. The subscriptionId is the subscription identifier and is unique for each customer. Since a subscriptionId changes when a subscription is updated, we recommend to not use this ID as a key for persistent data. And the subscriptionId can be found using the retrieve all reseller subscriptions method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     activate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -343,7 +343,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -360,7 +360,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).ChangePlanRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     changePlan: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -382,7 +382,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -399,7 +399,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).RenewalSettings} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     changeRenewalSettings: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -421,7 +421,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -438,7 +438,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).Seats} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     changeSeats: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -460,7 +460,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -477,7 +477,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string} params.subscriptionId This is a required property. The subscriptionId is the subscription identifier and is unique for each customer. Since a subscriptionId changes when a subscription is updated, we recommend to not use this ID as a key for persistent data. And the subscriptionId can be found using the retrieve all reseller subscriptions method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -499,7 +499,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -515,7 +515,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string} params.subscriptionId This is a required property. The subscriptionId is the subscription identifier and is unique for each customer. Since a subscriptionId changes when a subscription is updated, we recommend to not use this ID as a key for persistent data. And the subscriptionId can be found using the retrieve all reseller subscriptions method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -537,7 +537,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -554,7 +554,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {reseller(v1).Subscription} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -576,7 +576,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -595,7 +595,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string=} params.pageToken Token to specify next page in the list
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -617,7 +617,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -633,7 +633,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string} params.subscriptionId This is a required property. The subscriptionId is the subscription identifier and is unique for each customer. Since a subscriptionId changes when a subscription is updated, we recommend to not use this ID as a key for persistent data. And the subscriptionId can be found using the retrieve all reseller subscriptions method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     startPaidService: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -655,7 +655,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -671,7 +671,7 @@ function Reseller(options) { // eslint-disable-line
      * @param {string} params.subscriptionId This is a required property. The subscriptionId is the subscription identifier and is unique for each customer. Since a subscriptionId changes when a subscription is updated, we recommend to not use this ID as a key for persistent data. And the subscriptionId can be found using the retrieve all reseller subscriptions method.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     suspend: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -693,7 +693,7 @@ function Reseller(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

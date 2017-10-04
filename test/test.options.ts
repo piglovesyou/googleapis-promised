@@ -45,31 +45,34 @@ describe('Options', () => {
     const google = new googleapis.GoogleApis();
     google.options({ hello: 'world' });
     const drive = google.drive({ version: 'v2', hello: 'changed' });
-    const req = drive.files.get({ fileId: '123' }, utils.noop);
-    assert.equal(req.hello, 'changed');
+    const p = drive.files.get({ fileId: '123' });
+    p.catch(utils.noop);
+    assert.equal(p.req.hello, 'changed');
   });
 
   it('should support global request params', (done) => {
     const google = new googleapis.GoogleApis();
     google.options({ params: { myParam: '123' } });
     const drive = google.drive('v2');
-    let req = drive.files.get({ fileId: '123' }, utils.noop);
+    let p = drive.files.get({ fileId: '123' });
+    p.catch(utils.noop);
     // If the default param handling is broken, query might be undefined, thus concealing the
     // assertion message with some generic "cannot call .indexOf of undefined"
-    let query = req.uri.query || '';
+    let query = p.req.uri.query || '';
     assert.notEqual(query.indexOf('myParam=123'), -1, 'Default param not found in query');
     nock.enableNetConnect();
-    utils.loadApi(google, 'drive', 'v2', {}, (err, drive) => {
+    utils.loadApi(google, 'drive', 'v2', {}).then((drive) => {
       nock.disableNetConnect();
-      if (err) {
-        return done(err);
-      }
-      req = drive.files.get({ fileId: '123' }, utils.noop);
+      let p = drive.files.get({ fileId: '123' });
+      p.catch(utils.noop);
       // If the default param handling is broken, query might be undefined, thus concealing the
       // assertion message with some generic "cannot call .indexOf of undefined"
-      query = req.uri.query || '';
+      query = p.req.uri.query || '';
       assert.notEqual(query.indexOf('myParam=123'), -1, 'Default param not found in query');
       done();
+    }).catch(err => {
+      nock.disableNetConnect();
+      return done(err);
     });
   });
 
@@ -77,34 +80,38 @@ describe('Options', () => {
     const google = new googleapis.GoogleApis();
     google.options({ auth: 'apikey1' });
     const drive = google.drive({ version: 'v2', auth: 'apikey2' });
-    const req = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
-    assert.equal(req.uri.query, 'key=apikey3');
+    const p =  drive.files.get({ auth: 'apikey3', fileId: 'woot' });
+    p.catch(utils.noop);
+    assert.equal(p.req.uri.query, 'key=apikey3');
   });
 
   it('should apply google options to request object like proxy', () => {
     const google = new googleapis.GoogleApis();
     google.options({ proxy: 'http://proxy.example.com' });
     const drive = google.drive({ version: 'v2', auth: 'apikey2' });
-    const req = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
-    assert.equal(req.proxy.host, 'proxy.example.com');
-    assert.equal(req.proxy.protocol, 'http:');
+    const p =  drive.files.get({ auth: 'apikey3', fileId: 'woot' });
+    p.catch(utils.noop);
+    assert.equal(p.req.proxy.host, 'proxy.example.com');
+    assert.equal(p.req.proxy.protocol, 'http:');
   });
 
   it('should apply endpoint options to request object like proxy', () => {
     const google = new googleapis.GoogleApis();
     const drive = google.drive({ version: 'v2', auth: 'apikey2', proxy: 'http://proxy.example.com' });
-    const req = drive.files.get({ auth: 'apikey3', fileId: 'woot' }, utils.noop);
-    assert.equal(req.proxy.host, 'proxy.example.com');
-    assert.equal(req.proxy.protocol, 'http:');
-    assert.equal(req.uri.query, 'key=apikey3');
+    const p =  drive.files.get({ auth: 'apikey3', fileId: 'woot' });
+    p.catch(utils.noop);
+    assert.equal(p.req.proxy.host, 'proxy.example.com');
+    assert.equal(p.req.proxy.protocol, 'http:');
+    assert.equal(p.req.uri.query, 'key=apikey3');
   });
 
   it('should allow overriding endpoint options', () => {
     const google = new googleapis.GoogleApis();
     const drive = google.drive('v3');
-    const req = drive.files.get({ fileId: 'woot' }, { url: 'https://myproxy.com/drive/v3/files/{fileId}', encoding: null }, utils.noop);
-    assert.equal(req.url, 'https://myproxy.com/drive/v3/files/woot', 'Request used overridden url.');
-    assert.equal(req.encoding, null, 'Request used overridden encoding.');
+    const p =  drive.files.get({ fileId: 'woot' }, { url: 'https://myproxy.com/drive/v3/files/{fileId}', encoding: null });
+    p.catch(utils.noop);
+    assert.equal(p.req.url, 'https://myproxy.com/drive/v3/files/woot', 'Request used overridden url.');
+    assert.equal(p.req.encoding, null, 'Request used overridden encoding.');
   });
 
   it('should apply endpoint options like proxy to oauth transporter', () => {
@@ -113,19 +120,22 @@ describe('Options', () => {
     authClient = new OAuth2('CLIENTID', 'CLIENTSECRET', 'REDIRECTURI');
     authClient.setCredentials({ access_token: 'abc' });
     const drive = google.drive({ version: 'v2', auth: 'apikey2', proxy: 'http://proxy.example.com' });
-    const req = drive.files.get({ auth: authClient, fileId: 'woot' }, utils.noop);
-    assert.equal(req.proxy.host, 'proxy.example.com');
-    assert.equal(req.proxy.protocol, 'http:');
-    assert.equal(req.headers.Authorization, 'Bearer abc');
+    const p =  drive.files.get({ auth: authClient, fileId: 'woot' });
+    p.catch(utils.noop);
+    assert.equal(p.req.proxy.host, 'proxy.example.com');
+    assert.equal(p.req.proxy.protocol, 'http:');
+    assert.equal(p.req.headers.Authorization, 'Bearer abc');
   });
 
   it('should allow overriding rootUrl via options', () => {
     const google = new googleapis.GoogleApis();
     const drive = google.drive('v3');
-    const reqWithSlash = drive.files.get({ fileId: 'woot' }, { rootUrl: 'https://myrooturl.com/' }, utils.noop);
-    assert.equal(reqWithSlash.url, 'https://myrooturl.com/drive/v3/files/woot', 'Request used overridden rootUrl with trailing slash.');
-    const reqWithoutSlash = drive.files.get({ fileId: 'woot' }, { rootUrl: 'https://myrooturl.com' }, utils.noop);
-    assert.equal(reqWithoutSlash.url, 'https://myrooturl.com/drive/v3/files/woot', 'Request used overridden rootUrl.');
+    let p = drive.files.get({ fileId: 'woot' }, { rootUrl: 'https://myrooturl.com/' });
+    p.catch(utils.noop);
+    assert.equal(p.req.url, 'https://myrooturl.com/drive/v3/files/woot', 'Request used overridden rootUrl with trailing slash.');
+    p = drive.files.get({ fileId: 'woot' }, { rootUrl: 'https://myrooturl.com' });
+    p.catch(utils.noop);
+    assert.equal(p.req.url, 'https://myrooturl.com/drive/v3/files/woot', 'Request used overridden rootUrl.');
   });
 
   after(() => {

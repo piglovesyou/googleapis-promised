@@ -54,7 +54,7 @@ function Androidmanagement(options) { // eslint-disable-line
      * @param {androidmanagement(v1).Enterprise} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -76,7 +76,7 @@ function Androidmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -91,7 +91,7 @@ function Androidmanagement(options) { // eslint-disable-line
      * @param {string} params.name The name of the enterprise in the form enterprises/{enterpriseId}
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -113,7 +113,7 @@ function Androidmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -130,7 +130,7 @@ function Androidmanagement(options) { // eslint-disable-line
      * @param {androidmanagement(v1).Enterprise} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -152,7 +152,7 @@ function Androidmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     applications: {
 
@@ -169,7 +169,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.name The name of the application in the form enterprises/{enterpriseId}/applications/{package_name}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -191,7 +191,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     devices: {
@@ -208,7 +208,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.name The name of the device in the form enterprises/{enterpriseId}/devices/{deviceId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -230,7 +230,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -245,7 +245,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.name The name of the device in the form enterprises/{enterpriseId}/devices/{deviceId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -267,7 +267,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -283,7 +283,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {androidmanagement(v1).Command} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       issueCommand: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -305,7 +305,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -322,7 +322,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.parent The name of the enterprise in the form enterprises/{enterpriseId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -344,7 +344,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -361,7 +361,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {androidmanagement(v1).Device} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -383,7 +383,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       operations: {
 
@@ -399,7 +399,7 @@ function Androidmanagement(options) { // eslint-disable-line
          * @param {string} params.name The name of the operation resource to be cancelled.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         cancel: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -421,7 +421,7 @@ function Androidmanagement(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -436,7 +436,7 @@ function Androidmanagement(options) { // eslint-disable-line
          * @param {string} params.name The name of the operation resource to be deleted.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         delete: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -458,7 +458,7 @@ function Androidmanagement(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -473,7 +473,7 @@ function Androidmanagement(options) { // eslint-disable-line
          * @param {string} params.name The name of the operation resource.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -495,7 +495,7 @@ function Androidmanagement(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -513,7 +513,7 @@ function Androidmanagement(options) { // eslint-disable-line
          * @param {string=} params.pageToken The standard list page token.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -535,7 +535,7 @@ function Androidmanagement(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     },
@@ -554,7 +554,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {androidmanagement(v1).EnrollmentToken} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -576,7 +576,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -591,7 +591,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.name The name of the enrollment token in the form enterprises/{enterpriseId}/enrollmentTokens/{enrollmentTokenId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -613,7 +613,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     policies: {
@@ -630,7 +630,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.name The name of the policy in the form enterprises/{enterpriseId}/policies/{policyId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -652,7 +652,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -667,7 +667,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.name The name of the policy in the form enterprises/{enterpriseId}/policies/{policyId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -689,7 +689,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -706,7 +706,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {string} params.parent The name of the enterprise in the form enterprises/{enterpriseId}
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -728,7 +728,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -745,7 +745,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {androidmanagement(v1).Policy} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -767,7 +767,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     webTokens: {
@@ -785,7 +785,7 @@ function Androidmanagement(options) { // eslint-disable-line
        * @param {androidmanagement(v1).WebToken} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -807,7 +807,7 @@ function Androidmanagement(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };
@@ -827,7 +827,7 @@ function Androidmanagement(options) { // eslint-disable-line
      * @param {string=} params.projectId The id of the Google Cloud Platform project which will own the enterprise.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -849,7 +849,7 @@ function Androidmanagement(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

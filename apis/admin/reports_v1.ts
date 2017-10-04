@@ -60,7 +60,7 @@ function Admin(options) { // eslint-disable-line
      * @param {string} params.userKey Represents the profile id or the user email for which the data should be filtered. When 'all' is specified as the userKey, it returns usageReports for all users.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -82,7 +82,7 @@ function Admin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -107,7 +107,7 @@ function Admin(options) { // eslint-disable-line
      * @param {admin(reports_v1).Channel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     watch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -129,7 +129,7 @@ function Admin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -148,7 +148,7 @@ function Admin(options) { // eslint-disable-line
      * @param {admin(reports_v1).Channel} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     stop: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -170,7 +170,7 @@ function Admin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -192,7 +192,7 @@ function Admin(options) { // eslint-disable-line
      * @param {string=} params.parameters Represents the application name, parameter name pairs to fetch in csv as app_name1:param_name1, app_name2:param_name2.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -214,7 +214,7 @@ function Admin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -239,7 +239,7 @@ function Admin(options) { // eslint-disable-line
      * @param {string} params.userKey Represents the profile id or the user email for which the data should be filtered.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -261,7 +261,7 @@ function Admin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

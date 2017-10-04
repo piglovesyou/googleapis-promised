@@ -138,17 +138,10 @@ GoogleApis.prototype.addAPIs = function (apis) {
  * @method
  * @param {string} url Url to the discovery service for a set of APIs. e.g.,
  * https://www.googleapis.com/discovery/v1/apis
- * @param {Function} callback Callback function.
  */
-GoogleApis.prototype.discover = function (url, callback) {
-  const self = this;
-
-  discovery.discoverAllAPIs(url, function (err, apis) {
-    if (err) {
-      return callback(err);
-    }
-    self.addAPIs(apis);
-    callback();
+GoogleApis.prototype.discover = function (url) {
+  return discovery.discoverAllAPIs(url).then((apis) => {
+    this.addAPIs(apis);
   });
 };
 
@@ -168,23 +161,16 @@ GoogleApis.prototype.discover = function (url, callback) {
  * @param {object} [options] Options to configure the Endpoint object generated
  * from the discovery doc.
  * @param {Function} callback Callback function.
+ * @return {Promise}
  */
-GoogleApis.prototype.discoverAPI = function (path, options, callback) {
-  const self = this;
-  if (typeof options === 'function') {
-    callback = options;
-    options = {};
-  }
+GoogleApis.prototype.discoverAPI = function (path, options) {
   if (!options) {
     options = {};
   }
-  discovery.discoverAPI(path, function (err, Endpoint) {
-    if (err) {
-      return callback(err);
-    }
+  return discovery.discoverAPI(path).then((Endpoint) => {
     const ep = new Endpoint(options);
-    ep.google = self; // for drive.google.transporter
-    return callback(null, Object.freeze(ep)); // create new & freeze
+    ep.google = this; // for drive.google.transporter
+    return Object.freeze(ep); // create new & freeze
   });
 };
 

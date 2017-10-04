@@ -53,7 +53,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersAcknowledgeRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     acknowledge: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -75,7 +75,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -91,7 +91,7 @@ function Content(options) { // eslint-disable-line
      * @param {string} params.orderId The ID of the test order to modify.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     advancetestorder: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -113,7 +113,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -130,7 +130,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersCancelRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancel: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -152,7 +152,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -169,7 +169,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersCancelLineItemRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     cancellineitem: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -191,7 +191,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -207,7 +207,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersCreateTestOrderRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     createtestorder: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -229,7 +229,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -244,7 +244,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersCustomBatchRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     custombatch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -266,7 +266,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -282,7 +282,7 @@ function Content(options) { // eslint-disable-line
      * @param {string} params.orderId The ID of the order.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -304,7 +304,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -320,7 +320,7 @@ function Content(options) { // eslint-disable-line
      * @param {string} params.merchantOrderId The merchant order id to be looked for.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getbymerchantorderid: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -342,7 +342,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -358,7 +358,7 @@ function Content(options) { // eslint-disable-line
      * @param {string} params.templateName The name of the template to retrieve.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     gettestordertemplate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -380,7 +380,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -402,7 +402,7 @@ function Content(options) { // eslint-disable-line
      * @param {string=} params.statuses Obtains orders that match any of the specified statuses. Multiple values can be specified with comma separation. Additionally, please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped , partiallyDelivered, delivered, partiallyReturned, returned, and canceled.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -424,7 +424,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -441,7 +441,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersRefundRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     refund: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -463,7 +463,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -480,7 +480,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersReturnLineItemRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     returnlineitem: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -502,7 +502,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -519,7 +519,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersShipLineItemsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     shiplineitems: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -541,7 +541,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -558,7 +558,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersUpdateMerchantOrderIdRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updatemerchantorderid: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -580,7 +580,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -597,7 +597,7 @@ function Content(options) { // eslint-disable-line
      * @param {content(v2sandbox).OrdersUpdateShipmentRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     updateshipment: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -619,7 +619,7 @@ function Content(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

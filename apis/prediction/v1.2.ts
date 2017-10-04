@@ -50,7 +50,7 @@ function Prediction(options) { // eslint-disable-line
    * @param {prediction(v1.2).Input} params.resource Request body data
    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
    * @param {callback} callback The callback that handles the response.
-   * @return {object} Request object
+   * @return {PromiseWithReq}  Promise that resolves response data
    */
   this.predict = function (params, options, callback) {
     if (typeof options === 'function') {
@@ -72,7 +72,7 @@ function Prediction(options) { // eslint-disable-line
       context: self
     };
 
-    return createAPIRequest(parameters, callback);
+    return createAPIRequest(parameters);
   };
 
   self.hostedmodels = {
@@ -90,7 +90,7 @@ function Prediction(options) { // eslint-disable-line
      * @param {prediction(v1.2).Input} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     predict: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -112,7 +112,7 @@ function Prediction(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -131,7 +131,7 @@ function Prediction(options) { // eslint-disable-line
      * @param {string} params.data mybucket/mydata resource in Google Storage
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -153,7 +153,7 @@ function Prediction(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -168,7 +168,7 @@ function Prediction(options) { // eslint-disable-line
      * @param {string} params.data mybucket/mydata resource in Google Storage
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -190,7 +190,7 @@ function Prediction(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -206,7 +206,7 @@ function Prediction(options) { // eslint-disable-line
      * @param {prediction(v1.2).Training} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -228,7 +228,7 @@ function Prediction(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -244,7 +244,7 @@ function Prediction(options) { // eslint-disable-line
      * @param {prediction(v1.2).Update} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -266,7 +266,7 @@ function Prediction(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

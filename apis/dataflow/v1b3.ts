@@ -52,7 +52,7 @@ function Dataflow(options) { // eslint-disable-line
      * @param {dataflow(v1b3).SendWorkerMessagesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     workerMessages: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -74,7 +74,7 @@ function Dataflow(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     jobs: {
 
@@ -95,7 +95,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {string=} params.view Level of information requested in response. Default is `JOB_VIEW_SUMMARY`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       aggregated: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -117,7 +117,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -136,7 +136,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {dataflow(v1b3).Job} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -158,7 +158,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -176,7 +176,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {string=} params.view The level of information requested in response.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -198,7 +198,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -216,7 +216,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {string=} params.startTime Return only metric data that has changed since this time. Default is to return all information about all metrics for the job.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getMetrics: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -238,7 +238,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -258,7 +258,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {string=} params.view Level of information requested in response. Default is `JOB_VIEW_SUMMARY`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -280,7 +280,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -298,7 +298,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {dataflow(v1b3).Job} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -320,7 +320,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       debug: {
 
@@ -338,7 +338,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).GetDebugConfigRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getConfig: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -360,7 +360,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -377,7 +377,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).SendDebugCaptureRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         sendCapture: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -399,7 +399,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       },
       messages: {
@@ -423,7 +423,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {string=} params.startTime If specified, return only messages with timestamps >= start_time. The default is the job creation time (i.e. beginning of messages).
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -445,7 +445,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       },
       workItems: {
@@ -464,7 +464,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).LeaseWorkItemRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         lease: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -486,7 +486,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -503,7 +503,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).ReportWorkItemStatusRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         reportStatus: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -525,7 +525,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     },
@@ -545,7 +545,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {dataflow(v1b3).SendWorkerMessagesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       workerMessages: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -567,7 +567,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       jobs: {
 
@@ -587,7 +587,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).Job} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -609,7 +609,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -627,7 +627,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {string=} params.view The level of information requested in response.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -649,7 +649,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -667,7 +667,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {string=} params.startTime Return only metric data that has changed since this time. Default is to return all information about all metrics for the job.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         getMetrics: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -689,7 +689,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -709,7 +709,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {string=} params.view Level of information requested in response. Default is `JOB_VIEW_SUMMARY`.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -731,7 +731,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -749,7 +749,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).Job} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         update: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -771,7 +771,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
         debug: {
 
@@ -790,7 +790,7 @@ function Dataflow(options) { // eslint-disable-line
            * @param {dataflow(v1b3).GetDebugConfigRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           getConfig: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -812,7 +812,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -830,7 +830,7 @@ function Dataflow(options) { // eslint-disable-line
            * @param {dataflow(v1b3).SendDebugCaptureRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           sendCapture: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -852,7 +852,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         },
         messages: {
@@ -876,7 +876,7 @@ function Dataflow(options) { // eslint-disable-line
            * @param {string=} params.startTime If specified, return only messages with timestamps >= start_time. The default is the job creation time (i.e. beginning of messages).
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           list: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -898,7 +898,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         },
         workItems: {
@@ -918,7 +918,7 @@ function Dataflow(options) { // eslint-disable-line
            * @param {dataflow(v1b3).LeaseWorkItemRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           lease: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -940,7 +940,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           },
 
           /**
@@ -958,7 +958,7 @@ function Dataflow(options) { // eslint-disable-line
            * @param {dataflow(v1b3).ReportWorkItemStatusRequest} params.resource Request body data
            * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
            * @param {callback} callback The callback that handles the response.
-           * @return {object} Request object
+           * @return {PromiseWithReq}  Promise that resolves response data
            */
           reportStatus: function (params, options, callback) {
             if (typeof options === 'function') {
@@ -980,7 +980,7 @@ function Dataflow(options) { // eslint-disable-line
               context: self
             };
 
-            return createAPIRequest(parameters, callback);
+            return createAPIRequest(parameters);
           }
         }
       },
@@ -1000,7 +1000,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).CreateJobFromTemplateRequest} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         create: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1022,7 +1022,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1040,7 +1040,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {string=} params.view The view to retrieve. Defaults to METADATA_ONLY.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         get: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1062,7 +1062,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         },
 
         /**
@@ -1081,7 +1081,7 @@ function Dataflow(options) { // eslint-disable-line
          * @param {dataflow(v1b3).LaunchTemplateParameters} params.resource Request body data
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         launch: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -1103,7 +1103,7 @@ function Dataflow(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     },
@@ -1122,7 +1122,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {dataflow(v1b3).CreateJobFromTemplateRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1144,7 +1144,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1162,7 +1162,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {string=} params.view The view to retrieve. Defaults to METADATA_ONLY.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1184,7 +1184,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1203,7 +1203,7 @@ function Dataflow(options) { // eslint-disable-line
        * @param {dataflow(v1b3).LaunchTemplateParameters} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       launch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1225,7 +1225,7 @@ function Dataflow(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

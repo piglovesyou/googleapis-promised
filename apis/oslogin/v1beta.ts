@@ -51,7 +51,7 @@ function Oslogin(options) { // eslint-disable-line
      * @param {string} params.name The unique ID for the user in format `users/{user}`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getLoginProfile: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Oslogin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -89,7 +89,7 @@ function Oslogin(options) { // eslint-disable-line
      * @param {oslogin(v1beta).SshPublicKey} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     importSshPublicKey: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -111,7 +111,7 @@ function Oslogin(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     sshPublicKeys: {
 
@@ -127,7 +127,7 @@ function Oslogin(options) { // eslint-disable-line
        * @param {string} params.name The fingerprint of the public key to update. Public keys are identified by their SHA-256 fingerprint. The fingerprint of the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -149,7 +149,7 @@ function Oslogin(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -164,7 +164,7 @@ function Oslogin(options) { // eslint-disable-line
        * @param {string} params.name The fingerprint of the public key to retrieve. Public keys are identified by their SHA-256 fingerprint. The fingerprint of the public key is in format `users/{user}/sshPublicKeys/{fingerprint}`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -186,7 +186,7 @@ function Oslogin(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -203,7 +203,7 @@ function Oslogin(options) { // eslint-disable-line
        * @param {oslogin(v1beta).SshPublicKey} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -225,7 +225,7 @@ function Oslogin(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

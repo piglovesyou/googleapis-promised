@@ -52,7 +52,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     commit: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -74,7 +74,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -90,7 +90,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -112,7 +112,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -128,7 +128,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -150,7 +150,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -166,7 +166,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {androidpublisher(v2).AppEdit} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -188,7 +188,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -204,7 +204,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     validate: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -226,7 +226,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
     apklistings: {
 
@@ -245,7 +245,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -267,7 +267,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -284,7 +284,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       deleteall: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -306,7 +306,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -324,7 +324,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -346,7 +346,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -363,7 +363,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -385,7 +385,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -404,7 +404,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).ApkListing} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -426,7 +426,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -445,7 +445,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).ApkListing} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -467,7 +467,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     apks: {
@@ -486,7 +486,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).ApksAddExternallyHostedRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       addexternallyhosted: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -508,7 +508,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -524,7 +524,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -546,7 +546,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -565,7 +565,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       upload: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -588,7 +588,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     deobfuscationfiles: {
@@ -611,7 +611,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       upload: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -634,7 +634,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     details: {
@@ -652,7 +652,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -674,7 +674,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -691,7 +691,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).AppDetails} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -713,7 +713,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -730,7 +730,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).AppDetails} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -752,7 +752,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     expansionfiles: {
@@ -772,7 +772,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -794,7 +794,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -813,7 +813,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).ExpansionFile} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -835,7 +835,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -854,7 +854,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).ExpansionFile} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -876,7 +876,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -897,7 +897,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       upload: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -920,7 +920,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     images: {
@@ -941,7 +941,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -963,7 +963,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -981,7 +981,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       deleteall: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1003,7 +1003,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1021,7 +1021,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1043,7 +1043,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1064,7 +1064,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string|object} params.media.body Media body contents
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       upload: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1087,7 +1087,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     listings: {
@@ -1106,7 +1106,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1128,7 +1128,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1144,7 +1144,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       deleteall: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1166,7 +1166,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1183,7 +1183,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1205,7 +1205,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1221,7 +1221,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1243,7 +1243,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1261,7 +1261,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).Listing} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1283,7 +1283,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1301,7 +1301,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).Listing} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1323,7 +1323,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     testers: {
@@ -1342,7 +1342,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.track 
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1364,7 +1364,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1382,7 +1382,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).Testers} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1404,7 +1404,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1422,7 +1422,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).Testers} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1444,7 +1444,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     tracks: {
@@ -1463,7 +1463,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.track The track type to read or modify.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1485,7 +1485,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1501,7 +1501,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.packageName Unique identifier for the Android app that is being updated; for example, "com.spiffygame".
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1523,7 +1523,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1541,7 +1541,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).Track} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       patch: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1563,7 +1563,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -1581,7 +1581,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).Track} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       update: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1603,7 +1603,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };
@@ -1626,7 +1626,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string=} params.token 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1648,7 +1648,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -1667,7 +1667,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {androidpublisher(v2).InappproductsBatchRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     batch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1689,7 +1689,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1705,7 +1705,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string} params.sku Unique identifier for the in-app product.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1727,7 +1727,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1743,7 +1743,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string} params.sku Unique identifier for the in-app product.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1765,7 +1765,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1782,7 +1782,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {androidpublisher(v2).InAppProduct} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1804,7 +1804,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1822,7 +1822,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string=} params.token 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1844,7 +1844,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1862,7 +1862,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {androidpublisher(v2).InAppProduct} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     patch: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1884,7 +1884,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1902,7 +1902,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {androidpublisher(v2).InAppProduct} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1924,7 +1924,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -1946,7 +1946,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.token The token provided to the user's device when the inapp product was purchased.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -1968,7 +1968,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     subscriptions: {
@@ -1987,7 +1987,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.token The token provided to the user's device when the subscription was purchased.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       cancel: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2009,7 +2009,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -2027,7 +2027,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {androidpublisher(v2).SubscriptionPurchasesDeferRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       defer: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2049,7 +2049,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -2066,7 +2066,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.token The token provided to the user's device when the subscription was purchased.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2088,7 +2088,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -2105,7 +2105,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.token The token provided to the user's device when the subscription was purchased.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       refund: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2127,7 +2127,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -2144,7 +2144,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string} params.token The token provided to the user's device when the subscription was purchased.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       revoke: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2166,7 +2166,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     voidedpurchases: {
@@ -2188,7 +2188,7 @@ function Androidpublisher(options) { // eslint-disable-line
        * @param {string=} params.token 
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -2210,7 +2210,7 @@ function Androidpublisher(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };
@@ -2231,7 +2231,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string=} params.translationLanguage 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2253,7 +2253,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2272,7 +2272,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {string=} params.translationLanguage 
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2294,7 +2294,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2311,7 +2311,7 @@ function Androidpublisher(options) { // eslint-disable-line
      * @param {androidpublisher(v2).ReviewsReplyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     reply: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2333,7 +2333,7 @@ function Androidpublisher(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

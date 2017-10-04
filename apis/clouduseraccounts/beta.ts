@@ -103,7 +103,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -125,7 +125,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -195,7 +195,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -217,7 +217,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -300,7 +300,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -322,7 +322,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -401,7 +401,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {clouduseraccounts(beta).GroupsAddMemberRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addMember: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -423,7 +423,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -493,7 +493,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -515,7 +515,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -585,7 +585,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -607,7 +607,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -678,7 +678,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {clouduseraccounts(beta).Group} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -700,7 +700,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -783,7 +783,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -805,7 +805,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -880,7 +880,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {clouduseraccounts(beta).GroupsRemoveMemberRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removeMember: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -902,7 +902,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -985,7 +985,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.zone Name of the zone for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAuthorizedKeysView: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1007,7 +1007,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1085,7 +1085,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.zone Name of the zone for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getLinuxAccountViews: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1107,7 +1107,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -1186,7 +1186,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {clouduseraccounts(beta).PublicKey} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addPublicKey: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1208,7 +1208,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1278,7 +1278,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.user Name of the user resource to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1300,7 +1300,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1370,7 +1370,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.user Name of the user resource to return.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1392,7 +1392,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1463,7 +1463,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {clouduseraccounts(beta).User} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1485,7 +1485,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1568,7 +1568,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.project Project ID for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1590,7 +1590,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1665,7 +1665,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
      * @param {string} params.user Name of the user for this request.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removePublicKey: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1687,7 +1687,7 @@ function Clouduseraccounts(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

@@ -54,7 +54,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).AcknowledgeRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       acknowledge: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -76,7 +76,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -92,7 +92,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).Subscription} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -114,7 +114,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -129,7 +129,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.subscription The subscription to delete.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -151,7 +151,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -166,7 +166,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.subscription The name of the subscription to get.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -188,7 +188,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -203,7 +203,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -225,7 +225,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -242,7 +242,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.project The name of the cloud project that subscriptions belong to.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -264,7 +264,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -280,7 +280,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).ModifyAckDeadlineRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       modifyAckDeadline: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -302,7 +302,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -318,7 +318,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).ModifyPushConfigRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       modifyPushConfig: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -340,7 +340,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -356,7 +356,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).PullRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       pull: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -378,7 +378,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -394,7 +394,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -416,7 +416,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -432,7 +432,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -454,7 +454,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     topics: {
@@ -472,7 +472,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).Topic} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -494,7 +494,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -509,7 +509,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.topic Name of the topic to delete.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       delete: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -531,7 +531,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -546,7 +546,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.topic The name of the topic to get.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -568,7 +568,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -583,7 +583,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.resource_ REQUIRED: The resource for which the policy is being requested. See the operation documentation for the appropriate value for this field.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       getIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -605,7 +605,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -622,7 +622,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {string} params.project The name of the cloud project that topics belong to.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -644,7 +644,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -660,7 +660,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).PublishRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       publish: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -682,7 +682,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -698,7 +698,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).SetIamPolicyRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       setIamPolicy: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -720,7 +720,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -736,7 +736,7 @@ function Pubsub(options) { // eslint-disable-line
        * @param {pubsub(v1beta2).TestIamPermissionsRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       testIamPermissions: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -758,7 +758,7 @@ function Pubsub(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
       subscriptions: {
 
@@ -776,7 +776,7 @@ function Pubsub(options) { // eslint-disable-line
          * @param {string} params.topic The name of the topic that subscriptions are attached to.
          * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
          * @param {callback} callback The callback that handles the response.
-         * @return {object} Request object
+         * @return {PromiseWithReq}  Promise that resolves response data
          */
         list: function (params, options, callback) {
           if (typeof options === 'function') {
@@ -798,7 +798,7 @@ function Pubsub(options) { // eslint-disable-line
             context: self
           };
 
-          return createAPIRequest(parameters, callback);
+          return createAPIRequest(parameters);
         }
       }
     }

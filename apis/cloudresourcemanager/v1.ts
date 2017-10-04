@@ -104,7 +104,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ClearOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clearOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -126,7 +126,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -197,7 +197,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetEffectiveOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getEffectiveOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -219,7 +219,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -290,7 +290,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -312,7 +312,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -396,7 +396,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ListAvailableOrgPolicyConstraintsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listAvailableOrgPolicyConstraints: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -418,7 +418,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -502,7 +502,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ListOrgPoliciesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listOrgPolicies: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -524,7 +524,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -595,7 +595,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).SetOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -617,7 +617,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -688,7 +688,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).Lien} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -710,7 +710,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -773,7 +773,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.name The name/identifier of the Lien to delete.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -795,7 +795,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -873,7 +873,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string=} params.parent The name of the resource to list all attached Liens. For example, `projects/1234`.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -895,7 +895,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -965,7 +965,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -987,7 +987,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -1059,7 +1059,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ClearOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clearOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1081,7 +1081,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1147,7 +1147,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.name The resource name of the Organization to fetch, e.g. "organizations/1234".
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1169,7 +1169,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1240,7 +1240,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetEffectiveOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getEffectiveOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1262,7 +1262,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1334,7 +1334,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1356,7 +1356,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1427,7 +1427,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1449,7 +1449,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1533,7 +1533,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ListAvailableOrgPolicyConstraintsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listAvailableOrgPolicyConstraints: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1555,7 +1555,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1639,7 +1639,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ListOrgPoliciesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listOrgPolicies: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1661,7 +1661,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1741,7 +1741,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).SearchOrganizationsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     search: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1763,7 +1763,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1835,7 +1835,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1857,7 +1857,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -1928,7 +1928,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).SetOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -1950,7 +1950,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2022,7 +2022,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2044,7 +2044,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -2116,7 +2116,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ClearOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     clearOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2138,7 +2138,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2205,7 +2205,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).Project} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     create: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2227,7 +2227,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2291,7 +2291,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.projectId The Project ID (for example, `foo-bar-123`).  Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2313,7 +2313,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2380,7 +2380,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string} params.projectId The Project ID (for example, `my-project-123`).  Required.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2402,7 +2402,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2474,7 +2474,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetAncestryRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getAncestry: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2496,7 +2496,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2567,7 +2567,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetEffectiveOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getEffectiveOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2589,7 +2589,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2661,7 +2661,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2683,7 +2683,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2754,7 +2754,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).GetOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     getOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2776,7 +2776,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2854,7 +2854,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {string=} params.pageToken A pagination token returned from a previous call to ListProjects that indicates from where listing should continue.  Optional.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2876,7 +2876,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -2960,7 +2960,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ListAvailableOrgPolicyConstraintsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listAvailableOrgPolicyConstraints: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -2982,7 +2982,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -3066,7 +3066,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).ListOrgPoliciesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listOrgPolicies: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3088,7 +3088,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -3160,7 +3160,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).SetIamPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setIamPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3182,7 +3182,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -3253,7 +3253,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).SetOrgPolicyRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     setOrgPolicy: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3275,7 +3275,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -3347,7 +3347,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).TestIamPermissionsRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     testIamPermissions: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3369,7 +3369,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -3438,7 +3438,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).UndeleteProjectRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     undelete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3460,7 +3460,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -3533,7 +3533,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
      * @param {cloudresourcemanager(v1).Project} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     update: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -3555,7 +3555,7 @@ function Cloudresourcemanager(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

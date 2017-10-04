@@ -51,7 +51,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
      * @param {string} params.name The name of the operation resource.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -73,7 +73,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -94,7 +94,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).CreateCustomerRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       create: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -116,7 +116,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -131,7 +131,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {string} params.partnerId The ID of the partner.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       list: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -153,7 +153,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     },
     devices: {
@@ -171,7 +171,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).ClaimDeviceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       claim: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -193,7 +193,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -209,7 +209,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).ClaimDevicesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       claimAsync: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -231,7 +231,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -247,7 +247,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).FindDevicesByDeviceIdentifierRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       findByIdentifier: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -269,7 +269,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -285,7 +285,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).FindDevicesByOwnerRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       findByOwner: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -307,7 +307,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -322,7 +322,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {string} params.name Resource name in `partners/[PARTNER_ID]/devices/[DEVICE_ID]`.
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       get: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -344,7 +344,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -361,7 +361,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).UpdateDeviceMetadataRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       metadata: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -383,7 +383,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -399,7 +399,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).UnclaimDeviceRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       unclaim: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -421,7 +421,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -437,7 +437,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).UnclaimDevicesRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       unclaimAsync: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -459,7 +459,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       },
 
       /**
@@ -475,7 +475,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
        * @param {androiddeviceprovisioning(v1).UpdateDeviceMetadataInBatchRequest} params.resource Request body data
        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
        * @param {callback} callback The callback that handles the response.
-       * @return {object} Request object
+       * @return {PromiseWithReq}  Promise that resolves response data
        */
       updateMetadataAsync: function (params, options, callback) {
         if (typeof options === 'function') {
@@ -497,7 +497,7 @@ function Androiddeviceprovisioning(options) { // eslint-disable-line
           context: self
         };
 
-        return createAPIRequest(parameters, callback);
+        return createAPIRequest(parameters);
       }
     }
   };

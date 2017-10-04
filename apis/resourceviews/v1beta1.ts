@@ -54,7 +54,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {resourceviews(v1beta1).RegionViewsAddResourcesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addresources: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -76,7 +76,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -93,7 +93,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.resourceViewName The name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -115,7 +115,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -132,7 +132,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.resourceViewName The name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -154,7 +154,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -171,7 +171,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {resourceviews(v1beta1).ResourceView} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -193,7 +193,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -211,7 +211,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.region The region name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -233,7 +233,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -252,7 +252,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.resourceViewName The name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listresources: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -274,7 +274,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -292,7 +292,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {resourceviews(v1beta1).RegionViewsRemoveResourcesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removeresources: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -314,7 +314,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };
@@ -336,7 +336,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {resourceviews(v1beta1).ZoneViewsAddResourcesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     addresources: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -358,7 +358,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -375,7 +375,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.zone The zone name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     delete: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -397,7 +397,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -414,7 +414,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.zone The zone name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     get: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -436,7 +436,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -453,7 +453,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {resourceviews(v1beta1).ResourceView} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     insert: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -475,7 +475,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -493,7 +493,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.zone The zone name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     list: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -515,7 +515,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -534,7 +534,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {string} params.zone The zone name of the resource view.
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     listresources: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -556,7 +556,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     },
 
     /**
@@ -574,7 +574,7 @@ function Resourceviews(options) { // eslint-disable-line
      * @param {resourceviews(v1beta1).ZoneViewsRemoveResourcesRequest} params.resource Request body data
      * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
      * @param {callback} callback The callback that handles the response.
-     * @return {object} Request object
+     * @return {PromiseWithReq}  Promise that resolves response data
      */
     removeresources: function (params, options, callback) {
       if (typeof options === 'function') {
@@ -596,7 +596,7 @@ function Resourceviews(options) { // eslint-disable-line
         context: self
       };
 
-      return createAPIRequest(parameters, callback);
+      return createAPIRequest(parameters);
     }
 
   };

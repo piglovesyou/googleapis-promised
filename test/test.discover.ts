@@ -33,11 +33,7 @@ describe('GoogleApis#discover', () => {
 
     assert.equal(google.drive, undefined);
 
-    google.discover('https://www.googleapis.com/discovery/v1/apis', (err) => {
-      if (err) {
-        console.warn(err);
-        return done();
-      }
+    google.discover('https://www.googleapis.com/discovery/v1/apis').then(() => {
       // APIs have all been re-added
       localApis.forEach(name => {
         assert(google[name]);
@@ -51,6 +47,9 @@ describe('GoogleApis#discover', () => {
         assert(remoteDrive[key], 'generated drive has same keys');
       }
       done();
+    }).catch((err) => {
+      console.warn(err);
+      return done();
     });
   }).timeout(120000);
 });
